@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="book.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li class="affix"><a href="./index.html" class="active">Главная</a></li><li><a href="./quickstart.html"><strong>1.</strong> Быстрый старт</a></li><li><a href="./goodies.html"><strong>2.</strong> Ништяки</a></li><li><a href="./workflow.html"><strong>3.</strong> Как мы переводим</a></li><li><ul class="section"><li><a href="./stream.html"><strong>3.1.</strong> Просмотр стрима</a></li><li><a href="./transcript.html"><strong>3.2.</strong> Транскрипт</a></li><li><a href="./timing.html"><strong>3.3.</strong> Тайминг</a></li><li><a href="./translation.html"><strong>3.4.</strong> Первичный перевод</a></li><li><a href="./needlework.html"><strong>3.5.</strong> Вышивка</a></li><li><a href="./proofwatching.html"><strong>3.6.</strong> Высмотр</a></li></ul></li><li><a href="./glossary.html"><strong>4.</strong> Глоссарий анонов</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <p>[На данный момент сайт залит на гитхаб фактически ради бэкапа. Заполнение пока в процессе.]</p>
+<a class="header" href="./index.html#Кто-такие-anon2anon" name="Кто-такие-anon2anon"><h3>Кто такие anon2anon?</h3></a>
+<p>Мы переводим серии &quot;My Little Pony: Friendship is Magic&quot;, и нам это нравится. Ты можешь к нам присоединиться и помочь в этом непростом деле, а можешь просто скачать субтитры к старым или новым сериям нашего любимого сериала.</p>
+<p>Наш официальный сайт находится <a href="http://sunnysubs.com">тут</a>. Чтобы узнать о нас чуть больше, ты можешь ознакомиться с официальным <a href="http://sunnysubs.com/faq">F.A.Q.</a> Сайт, на котором ты находишься сейчас — альтернативный, и создан для более подробного описания процесса и более удобного поиска информации, связанной с нашей командой.</p>
+<a class="header" href="./index.html#Где-взять-ваши-субтитры" name="Где-взять-ваши-субтитры"><h3>Где взять ваши субтитры?</h3></a>
+<p>Их проще всего найти в коллекционных раздачах на рутрекере от <a href="https://tabun.everypony.ru/profile/ALEKSKV/">ALEKSKV</a> или <a href="https://tabun.everypony.ru/profile/ShprotaNa/">ShprotaNa</a>. (Напоминание: если рутрекер у вас заблокирован, можно воспользоваться <a href="https://rutracker.cr">зеркалом</a>.) Есть также <a href="http://www.sunnysubs.com/index.php/video">официальные хардсабы</a>. В субтитрах после релиза периодически находят мелкие баги, которые могут не быть исправлены в вышеуказанных источниках. Полный официальный архив с последними версиями субтитров находится <a href="http://files.sunnysubs.com/files/">здесь</a>. Их можно наложить на видео в VLC Media Player или каком-нибудь ещё плеере. Видео iTunes-версий (т.н. тунцы) находятся <a href="http://yayponies.no/">здесь</a>.</p>
+<a class="header" href="./index.html#Я-не-знаюплохо-знаю-английский-Могу-ли-я-чем-то-помочь-вашей-команде" name="Я-не-знаюплохо-знаю-английский-Могу-ли-я-чем-то-помочь-вашей-команде"><h3>Я не знаю/плохо знаю английский. Могу ли я чем-то помочь вашей команде?</h3></a>
+<p>Да, подробнее смотри в разделе, посвящённом описанию нашего рабочего процесса. Практически любой человек может внести свою лепту в создание субтитров, т.к. работы много и она довольно разноплановая. К тому же, для большей части процесса перевода нужно хорошо знать русский, а не английский.</p>
+<a class="header" href="./index.html#Контакты" name="Контакты"><h4>Контакты</h4></a>
+<p>Создатель этого сайта - <a href="https://tabun.everypony.ru/profile/Wolfram/">Wolfram</a>. По всем багам и вопросам писать в личку на Табуне или по электронной почте <a href="wolframep@yandex.ru">wolframep@yandex.ru</a>.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+
+                
+                    <a href="./quickstart.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+
+            
+                <a href="./quickstart.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>
