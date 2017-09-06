@@ -9,7 +9,8 @@
 
 
         <link rel="stylesheet" href="book.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
 
         <link rel="shortcut icon" href="favicon.png">
 
@@ -18,9 +19,20 @@
 
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
 
-        <!-- MathJax -->
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
 
         <!-- Fetch JQuery from CDN but have a local fallback -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -29,18 +41,25 @@
                 document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
             }
         </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+        <!-- Custom JS script -->
+        
+
     </head>
     <body class="light">
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script type="text/javascript">
-            var theme = localStorage.getItem('theme');
-            if (theme == null) { theme = 'light'; }
+            var theme = store.get('theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
             $('body').removeClass().addClass(theme);
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script type="text/javascript">
-            var sidebar = localStorage.getItem('sidebar');
+            var sidebar = store.get('sidebar');
             if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
             else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
         </script>
@@ -51,7 +70,7 @@
 
         <div id="page-wrapper" class="page-wrapper">
 
-            <div class="page">
+            <div class="page" tabindex="-1">
                 <div id="menu-bar" class="menu-bar">
                     <div class="left-buttons">
                         <i id="sidebar-toggle" class="fa fa-bars"></i>
@@ -66,16 +85,16 @@
                 </div>
 
                 <div id="content" class="content">
-                    <a class="header" href="./goodies.html#Ништяки" name="Ништяки"><h1>Ништяки</h1></a>
+                    <a class="header" href="goodies.html#Ништяки" id="Ништяки"><h1>Ништяки</h1></a>
 <p>Здесь коллекционируются всевозможные скрипты, программы и полезные фишки пада, используемые анонами.</p>
-<a class="header" href="./goodies.html#aegisub" name="aegisub"><h3>Aegisub</h3></a>
+<a class="header" href="goodies.html#aegisub" id="aegisub"><h3>Aegisub</h3></a>
 <p><a href="http://www.aegisub.org/">Aegisub</a> (правильно читать &quot;Иджисаб&quot;, но все обычно забивают и называют &quot;Аегисабом&quot; или &quot;Аегисом&quot;) — программа, предназначенная для всевозможных манипуляций с субтитрами, используемая анонами в основном для <a href="./timing.html">тайминга</a>, а также швеёй в процессе вычитки.</p>
-<a class="header" href="./goodies.html#Божественный-скрипт-от-u0" name="Божественный-скрипт-от-u0"><h3>Божественный скрипт от u0</h3></a>
+<a class="header" href="goodies.html#Божественный скрипт от u0" id="Божественный скрипт от u0"><h3>Божественный скрипт от u0</h3></a>
 <p><a href="https://xzzv.github.io/script-pages/compare-subtitles.html">Скрипт</a>, имеющий несколько предназначений, основное из которых — перенос тайминга из файла .ass в пад. Также используется для создания сравнения наших субтитров с субтитрами <a href="./glossary.html#TDT">Доков</a> и ловли лулзов с их перлов. <a href="./magic.html">Зеркало</a> на этом сайте.</p>
-<a class="header" href="./goodies.html#Плеер" name="Плеер"><h3>Плеер</h3></a>
+<a class="header" href="goodies.html#Плеер" id="Плеер"><h3>Плеер</h3></a>
 <p>Костыль, эмитирующий одну из главных функций <a href="http://ponypad.etherpad.svimik.com/">пада SviMik'а</a>. Для установки поставьте <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a> (Chrome и ко)/<a href="https://addons.mozilla.org/ru/firefox/addon/greasemonkey/">Greasemonkey</a> (Firefox), если у вас ещё не стоит это расширение.  Затем перейдите <a href="https://gist.github.com/WoIfram/c3de6065f6ac36e5f58b145450d78fa0/raw/9a2a5a2d9a059a72c4c093545b3aa8c7b5660afc/Player.user.js">сюда</a> и дайте согласие на установку скрипта. (<a href="https://gist.github.com/WoIfram/c3de6065f6ac36e5f58b145450d78fa0">Исходники</a>) Скорее всего, потребуется ещё активировать скрипт (зайдите в пад, нажмите на иконку расширения и поставьте поставьте там галочку напротив Pleer (Greasemonkey) или переведите рычаг в &quot;зелёное положение&quot; (Tampermonkey), затем обновите страницу).</p>
 <p>Для определённости будем считать, что мы находимся в паде с адресом 'http://pony.pad.sunnysubs.com/s07e0102'. Теперь при наведении на номера строк не из шапки (т.е. с номерами без &quot;A&quot;) они будут подсвечиваться красным (если не подсвечиваются, что-то пошло не так — перепроверьте всё или переспросите в паде). При щелчке, если в строке содержится тайминг, включится видео по адресу 'http://stream.sunnysubs.com/s07e0102.mp4' (<em>s07e0102</em> вытаскивается из адреса пада) на нужном моменте.</p>
-<a class="header" href="./goodies.html#Настройки-скрипта" name="Настройки-скрипта"><h4>Настройки скрипта</h4></a>
+<a class="header" href="goodies.html#Настройки скрипта" id="Настройки скрипта"><h4>Настройки скрипта</h4></a>
 <p>Для настроек скрипта не предусмотрен интерфейс, так что редактировать придётся исходники скрипта. Под иконкой Greasemonkey выберите пункт &quot;Manage User Scripts&quot;, напротив Pleer щёлкните &quot;Options&quot; и на нижней панели &quot;Edit this User Script&quot;. Под Tampermonkey нажмите &quot;Добавить новый скрипт&quot;, перейдите на вкладку &quot;Установленные скрипты&quot; и выберите иконку с бумагой и карадашом около мусорного ведра справа. Теперь вы можете отредактировать и сохранить скрипт. В самой верхушке находятся настройки скрипта. В комментариях описано, что означает каждая настройка. Вероятно, вам может пригодиться поменять следующее:</p>
 <ul>
 <li><strong>offset</strong>: изначально установлено, чтобы видео запускалось на моменте за 0.1 секунды до начала реплики. Вы можете изменить это число, если эта настройка кажется вам некомфортной (например, можно поставить 0).</li>
@@ -89,18 +108,18 @@
 <p>Установите расширение <a href="https://addons.mozilla.org/ru/firefox/addon/noscript/">NoScript</a>. Перейдите в настройки и добавьте sunnysubs.com в белый список, чтобы падик вообще мог работать. (Не советую выбирать пункт &quot;Allow scripts globally&quot; вместе с действиями ниже, т.к. это может позволить любому сайту, на который вы попадёте во время перевода, обращаться к вашему жёсткому диску. Напрямую читать он там навряд ли что-то сможет из-за cross origin policy, но косвенные способы атаки есть.) В разделе &quot;Advanced→Trusted&quot; настроек поставьте галку &quot;Allow local links&quot;. Снимите эту галку после выхода из пада, т.к. она ослабляет вашу безопасность.</p>
 <p><strong>delayOnPageLoad</strong> и <strong>updateDelay</strong> можно увеличить, если страничка внезапно начнёт тормозить из-за скрипта, но я не думаю, что такое возможно.</p>
 <p>Параметры <strong>w, h, l</strong> экспериментальные и могут использоваться для настройки характеристик окна, в котором открывается видео. Например, если у вас два монитора, можно сделать, чтобы видео открывалось не на том, где у вас открыт падик. Для этого, возможно, придётся подкрутить <strong>l</strong> на ширину в пикселях одного из мониторов.</p>
-<a class="header" href="./goodies.html#Принцип-работы" name="Принцип-работы"><h4>Принцип работы</h4></a>
+<a class="header" href="goodies.html#Принцип работы" id="Принцип работы"><h4>Принцип работы</h4></a>
 <p>Для тех, кому захочется поковыряться в скрипте: общий принцип работы таков. Функция <em>waitForSideDivInner</em> ждёт появления боковой панели с номерами строк, вставляет функцию <em>onClickSideDiv</em> в заголовок нужного айфрейма и после этого запускает бесконечный цикл выполнения функции <em>updateSideDivInner</em>. Последняя периодически проверяет, все ли строки кликабельны, и если нет, то добавляет вызов функции <em>onClickSideDiv</em> по клику (ну и заодно меняет стиль при наведении). <em>onClickSideDiv</em> получает единственный аргумент — элемент, на который мы нажали, извлекает его номер, находит строку в паде с таким номером, извлекает из неё тайминг или выдаёт окно, что тайминг не найден. После извлечения тайминга она открывает проставленный путь к видео в новом окне с приписанным к адресу <code>#t=%искомая секунда%</code>.</p>
-<a class="header" href="./goodies.html#Архив-субтитров" name="Архив-субтитров"><h3>Архив субтитров</h3></a>
+<a class="header" href="goodies.html#Архив субтитров" id="Архив субтитров"><h3>Архив субтитров</h3></a>
 <p>Его можно скачать <a href="./subtitles.tar.gz">тут</a>. Также есть скомпилированная версия всех субтитров, начиная с третьего сезона, <a href="./united_subs.txt">одним текстовым файлом</a>, чтобы можно было быстро искать, как что перевели. (В Firefox кодировка UTF-8 отображается некорректно, скачайте текстовый файл или смените кодировку Alt-&gt;View-&gt;Text Encoding-&gt;Unicode).</p>
-<a class="header" href="./goodies.html#Планируется" name="Планируется"><h1>Планируется</h1></a>
-<a class="header" href="./goodies.html#Автодвигалка-тайминга" name="Автодвигалка-тайминга"><h3>Автодвигалка тайминга</h3></a>
+<a class="header" href="goodies.html#Планируется" id="Планируется"><h1>Планируется</h1></a>
+<a class="header" href="goodies.html#Автодвигалка тайминга" id="Автодвигалка тайминга"><h3>Автодвигалка тайминга</h3></a>
 <p>Недопиленный <a href="https://github.com/WoIfram/audio2audio">скрипт</a>, позволяющий автоматически двигать субтитры от одного рипа под другой рип, основываясь на похожести звукодорожек. Планируется нормальный юзерский интерфейс и частичне переписывание с Python на Rust, ибо сейчас работает он дико медленно, сжирая при этом невменяемое количество оперативки (по отношению к длинам загруженных видео). Однако в ближайшее время этого не будет, ибо есть более насущные проблемы.</p>
-<a class="header" href="./goodies.html#Автошвея" name="Автошвея"><h3>Автошвея</h3></a>
+<a class="header" href="goodies.html#Автошвея" id="Автошвея"><h3>Автошвея</h3></a>
 <p><a href="https://autohotkey.com/">AutoHotKey</a>-скрипт, использующийся Wolfram'ом для автоматизации определённых функций швеи во время вышивки. Чудовищный говнокод практически без документации можно найти <a href="https://gist.github.com/WoIfram/33e705ae533d2da630228004cfe7fa6e">здесь</a>.</p>
-<a class="header" href="./goodies.html#Полуавтоматическая-таймилка" name="Полуавтоматическая-таймилка"><h3>Полуавтоматическая таймилка</h3></a>
+<a class="header" href="goodies.html#Полуавтоматическая таймилка" id="Полуавтоматическая таймилка"><h3>Полуавтоматическая таймилка</h3></a>
 <p>Не готова ни в каком виде и не факт, что будет готова. Планируется использование <a href="https://github.com/lowerquality/gentle">gentle</a> для автоматического сопоставления транскрипта и звукодорожек и генерации субтитров. С последующим исправлением багов со стороны таймера. Пока что эксперименты не очень удачны, ибо работы у таймера остаётся порядочно.</p>
-<a class="header" href="./goodies.html#Вставлялка-тайминга-в-пад" name="Вставлялка-тайминга-в-пад"><h3>Вставлялка тайминга в пад</h3></a>
+<a class="header" href="goodies.html#Вставлялка тайминга в пад" id="Вставлялка тайминга в пад"><h3>Вставлялка тайминга в пад</h3></a>
 <p>Сейчас невозможно вкинуть транскрипт в пад, затаймить его, а потом вставить в тайминг в пад, не стирая накаляканные варианты перевода. В процессе написания ультракостыль, позволяющий это сделать, даже если в паде и Аегисабе реплики немного отличаются (что частенько случается).</p>
 
                 </div>
@@ -127,6 +146,10 @@
         </script>
 
         <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
         
 
         <script src="highlight.js"></script>
