@@ -280,6 +280,22 @@
                 return [];
             var result = [];
             var rows = ignoreIntersections ? evaluateRowsIgnoringIntersections() : evaluateRows();
+            /***** Force saving of english timing, by Wolfram */
+            var english_rows = [];
+            for(var iRow = 0; iRow<rows.length; ++iRow) {
+                var cell = rows[iRow][0];
+                if(cell.length>0) {
+                    rows[iRow][0] = [cell[0]];
+                    english_rows.push(rows[iRow]);
+                    for(var iiLine = 1; iiLine<cell.length; ++iiLine) {
+                        english_rows.push([[cell[iiLine]]].concat(Array(parsedFiles.length - 1).fill([])));
+                    }
+                } else {
+                    english_rows.push(rows[iRow]);
+                }
+            }
+            rows = english_rows;
+            /* Force saving of english timing *****/
             for(var iRow = 0; iRow<rows.length; ++iRow) {
                 var lines = [];
                 var names = [];
@@ -303,9 +319,9 @@
                         var style = parsedLine.style.replace(/ /g, '&nbsp;');
                         if(names[iFile].indexOf(style)==-1)
                             names[iFile].push(style);
-                        if(msecStart==null || parsedLine.msecStart<msecStart)
+                        if(msecStart==null)
                             msecStart = parsedLine.msecStart;
-                        if(msecEnd==null || parsedLine.msecEnd>msecEnd)
+                        if(msecEnd==null)
                             msecEnd = parsedLine.msecEnd;
                     }
                     if(names[iFile].length>0 && namesStr.length==0) {
