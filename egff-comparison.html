@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html>
+<head>
     <meta charset="utf-8">
-    <title></title>
     <style>
+
         body {font-family: sans-serif; color: #444; font-size: 15px;}
         .mode_selection {font-size: 18px;}
         .drop_zone {font-size: 18px; text-align: center; line-height: 75px; border: 3px dashed #ccc;}
@@ -33,580 +33,36 @@
         div.cl_sub_inner2{position:static;padding:0px 6px;color:inherit;}
         div.cl_timeline{border-right-style:solid;border-top-style:solid;}
         div.cl_time{color:#999999;text-align:right;border-style:none;}
+    
     </style>
-    <script>
-        var numDroppedFiles = 0;
-        var parsedFiles = [];
-        var optShowTags = false;
-        var optShowAccurateTiming = false;
-        var debugPreserveFilesOnRefresh = false;
-        var debugPreservedFiles = [];
-
-        function getMsecFromAssTimeString(str) {
-            var match = str.match(/^(\d+):(\d+):(\d+(\.\d+)?)$/i);
-            return match ? Math.round((parseFloat(match[1])*3600+parseFloat(match[2])*60+parseFloat(match[3]))*1000) : null;
-        }
-
-        function getMsecFromSrtTimeString(str) {
-            var match = str.match(/^(\d+:)?(\d+:)?(\d+)(,\d+)?/);
-            if(!match)
-                return null;
-            var msec = parseFloat(match[3])*1000;
-            if(match[4])
-                msec += parseFloat('0.'+match[4].slice(1))*1000;
-            if(match[2])
-                msec += parseFloat(match[2].slice(0, -1))*60*1000;
-            if(match[1])
-                msec += parseFloat(match[1].slice(0, -1))*3600*1000;
-            return msec;
-        }
-
-        function getMinutesAndSecondsStringFromMsec(msec, padMinutesWithZeroes) {
-            var minutes = Math.floor(msec/60000);
-            var seconds = Math.floor(msec/1000)%60;
-            return ((minutes>=10||!padMinutesWithZeroes)?minutes:('0'+minutes))+':'+(seconds>=10?seconds:('0'+seconds));
-        }
-
-        function getCentisecondIntervalStringFromMsec(msecStart, msecEnd, padMinutesWithZeroes) {
-            var minutesStart = Math.floor(msecStart/60000);
-            var secondsStart = Math.floor(msecStart/1000)%60;
-            var centisecondsStart = Math.floor(msecStart/10)%100;
-            var secondsDuration = Math.floor((msecEnd-msecStart)/1000);
-            var centisecondsDuration = Math.floor((msecEnd-msecStart)/10)%100;
-            return ((minutesStart>=10||!padMinutesWithZeroes)?minutesStart:('0'+minutesStart))+':'+
-                (secondsStart>=10?secondsStart:('0'+secondsStart))+'.'+
-                (centisecondsStart>=10?centisecondsStart:('0'+centisecondsStart))+','+
-                secondsDuration+'.'+
-                (centisecondsDuration>=10?centisecondsDuration:('0'+centisecondsDuration));
-        }
-        
-        function escapeHtml(str) {
-            var elem = document.createElement('pre');
-            elem.appendChild(document.createTextNode(str));
-            return elem.innerHTML;
-        }
-        
-        function removeAssDrawing(str) {
-            return str.replace(/\{[^{}]*\\p[1-9][^{}]*\}[^{}]*(\{[^{}]*\\p0[^{}]*\}|$)/g, '');
-        }
-        
-        function removeAssPositionedText(str) {
-            return str.replace(/\{[^{}]*\\(pos|move|org|fr|k|K).*$/g, '');
-        }
-
-        function removeAssTags(str) {
-            return str.replace(/(\{[^{}]*\\[^{}]*\})/g, '');
-        }
-        
-        function highlightAssTagsAndComments(str) {
-            return str.replace(/(\{[^{}]*\}|\\N)/g, '<span class="ass_tags">$1</span>');
-        }
-        
-        function highlightAssPositionedText(str) {
-            return str.replace(/(\{[^{}]*\\(pos|move|org|fr|k|K)[^{}]*\})(.*)$/g, '$1<span class="positioned_text">$3</span>');
-        }
-        
-        function getLineAlignment(line) {
-            var match = line.text.match(/\{[^{}]*\\an(\d)/);
-            if(match)
-                return parseInt(match[1]);
-            else if(line.styleFields && line.styleFields['Alignment'])
-                return parseInt(line.styleFields['Alignment']);
-            else
-                return 2;
-        }
-
-        function formatString(str) {
-            var args = arguments;
-            return str.replace(/\{\{|\}\}|\{(\d+)\}/g, function (matchString, matchIndex) {
-                if(matchString == "{{") 
-                    return "{";
-                if(matchString == "}}")
-                    return "}";
-                return args[parseFloat(matchIndex)+1];
-            });
-        }
-        
-        function getCookie(name, defaultValue) {
-            var cookies = document.cookie.split(';');
-            for(var i=0; i<cookies.length; ++i) {
-                var pair = cookies[i].split('=', 2);
-                if(pair[0]==name)
-                    return pair[1];
-            }
-            return defaultValue;
-        }
-
-        function setCookie(name, value) {
-            document.cookie = name+'='+value;
-        }
-        
-        function parseAssFile(str) {
-            var lines = str.replace(/\r/g, '').split('\n');
-            var parsedFile = {lines: [], styles: {}};
-            var format = {};
-            for(var i=0; i<lines.length; ++i) {
-                var matchFormat = lines[i].match(/^Format: (.*)$/i);
-                if(matchFormat)
-                    format = matchFormat[1].split(',').map(function(field) {return field.trim();});
-                var matchStyle = lines[i].match(/^Style: (.*)$/i);
-                if(matchStyle) {
-                    var style = {};
-                    matchStyle[1].split(',').forEach(function(value, index) {style[format[index]] = value;});
-                    if(style['Name'])
-                        parsedFile.styles[style['Name']] = style;
-                }
-                var match = lines[i].match(/^Dialogue: ?\d+,(\d+:\d+:\d+\.\d+),(\d+:\d+:\d+\.\d+),([^,]*),[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,(.*)$/i);
-                if(match) {
-                    var line = {source: str, timeStart: match[1], timeEnd: match[2], style: match[3], text: match[4], msecStart: getMsecFromAssTimeString(match[1]), msecEnd: getMsecFromAssTimeString(match[2]), styleFields: parsedFile.styles[match[3]]};
-                    line.alignment = getLineAlignment(line);
-                    parsedFile.lines.push(line);
-                }
-            }
-            return parsedFile;
-        }
-
-        function parseSrtFile(str) {
-            var lineGroups = str.replace(/\r/g, '').split('\n').map(function(x) {return x.trim()}).join('\n').split(/\n\n+/).map(function(x) {return x.trim().split('\n')});
-            var parsedFile = {lines: []};
-            for(var i=0; i<lineGroups.length; ++i) {
-                var lineGroup = lineGroups[i];
-                if(lineGroup.length>=2) {
-                    var matchNumber = lineGroup[0].match(/^\d+$/);
-                    var matchTime = lineGroup[1].match(/^(\d+:\d+:\d+,\d+) +--> +(\d+:\d+:\d+,\d+)/);
-                    if(matchNumber && matchTime) {
-                        var text = lineGroup.slice(2).join('\\N');
-                        var line = {source: lineGroup.join('\n'), timeStart: matchTime[1], timeEnd: matchTime[2], style: '', text: text, msecStart: getMsecFromSrtTimeString(matchTime[1]), msecEnd: getMsecFromSrtTimeString(matchTime[2]), styleFields: null};
-                        line.alignment = 2;
-                        parsedFile.lines.push(line);
-                    }
-                }
-            }
-            return parsedFile;
-        }
-        
-        function evaluateSortedParsedLines() {
-            var allParsedLines = [];
-            for(var iFile = 0; iFile<parsedFiles.length; ++iFile)
-                for(var iLine = 0; iLine<parsedFiles[iFile].lines.length; ++iLine) {
-                    var parsedLine = parsedFiles[iFile].lines[iLine];
-                    parsedLine.fileIndex = iFile;
-                    parsedLine.lineIndex = iLine;
-                    allParsedLines.push(parsedLine);
-                }
-            allParsedLines.sort(function(parsedLine1, parsedLine2) {
-                if(parsedLine1.msecStart < parsedLine2.msecStart)
-                    return -1;
-                if(parsedLine1.msecStart > parsedLine2.msecStart)
-                    return 1;
-                if(parsedLine1.fileIndex < parsedLine2.fileIndex)
-                    return -1;
-                if(parsedLine1.fileIndex > parsedLine2.fileIndex)
-                    return 1;
-                if(parsedLine1.lineIndex < parsedLine2.lineIndex)
-                    return -1;
-                if(parsedLine1.lineIndex > parsedLine2.lineIndex)
-                    return 1;
-                return 0;
-            });
-            return allParsedLines;
-        }
-
-        function evaluateRowsIgnoringIntersections() {
-            var allParsedLines = evaluateSortedParsedLines();
-            var result = [];
-            var indexInAllParsedLines = 0;
-            for(var indexInAllParsedLines = 0; indexInAllParsedLines<allParsedLines.length; ++indexInAllParsedLines) {
-                var parsedLine = allParsedLines[indexInAllParsedLines];
-                var lines = [];
-                for(var iFile = 0; iFile<parsedFiles.length; ++iFile)
-                    lines.push([]);
-                lines[parsedLine.fileIndex].push(parsedLine.lineIndex);
-                result.push(lines);
-            }
-            return result;
-        }
-
-        function evaluateRows() {
-            if(parsedFiles.length<1)
-                return null;
-            //var thresholdNonEmptyCells = 2;
-            var thresholdNonEmptyCells = parsedFiles.length;
-
-            var allParsedLines = evaluateSortedParsedLines();
-            var result = [];
-            var indexInAllParsedLines = 0;
-            while(indexInAllParsedLines<allParsedLines.length) {
-                var interval = null;
-                var lines = [];
-                for(var iFile = 0; iFile<parsedFiles.length; ++iFile)
-                    lines.push([]);
-                while(indexInAllParsedLines<allParsedLines.length) {
-                    var parsedLine = allParsedLines[indexInAllParsedLines];
-                    var fileIndex = parsedLine.fileIndex;
-                    if(interval==null)
-                        interval = {msecStart: parsedLine.msecStart, msecEnd: parsedLine.msecEnd};
-                    else if(parsedLine.msecStart>=interval.msecEnd)
-                        break;
-                    var parsedLineMsecCenter = (parsedLine.msecStart+parsedLine.msecEnd)/2;
-                    if(parsedLineMsecCenter>interval.msecEnd) {
-                        var numNonEmptyCells = lines.filter(function(elem) {return elem.length>0;}).length;
-                        if(numNonEmptyCells>=thresholdNonEmptyCells) {
-                            var nextNonEmptyCells = {};
-                            nextNonEmptyCells[parsedLine.fileIndex] = true;
-                            for(var nextIndexInAllParsedLines = indexInAllParsedLines+1; nextIndexInAllParsedLines<allParsedLines.length; ++nextIndexInAllParsedLines) {
-                                var nextParsedLine = allParsedLines[nextIndexInAllParsedLines];
-                                if(nextParsedLine.msecStart>=parsedLine.msecEnd)
-                                    break;
-                                if(nextParsedLine.fileIndex!=fileIndex && nextParsedLine.msecStart<=parsedLineMsecCenter)
-                                    nextNonEmptyCells[nextParsedLine.fileIndex] = true;
-                            }
-                            if(Object.keys(nextNonEmptyCells).length>=thresholdNonEmptyCells)
-                                break;
-                        }
-                    }
-                    lines[fileIndex].push(parsedLine.lineIndex);
-                    if(interval.msecEnd<parsedLine.msecEnd)
-                        interval.msecEnd = parsedLine.msecEnd;
-                    ++indexInAllParsedLines;
-                }
-                result.push(lines);
-            }
-            return result;
-        }
-
-        function evaluateRowStrings(ignoreIntersections, accurateTiming) {
-            if(parsedFiles.length<1)
-                return [];
-            var result = [];
-            var rows = ignoreIntersections ? evaluateRowsIgnoringIntersections() : evaluateRows();
-            for(var iRow = 0; iRow<rows.length; ++iRow) {
-                var lines = [];
-                var names = [];
-                var namesStr = '';
-                var msecStart = null;
-                var msecEnd = null;
-                for(var iFile = 0; iFile<parsedFiles.length; ++iFile) {
-                    var cell = rows[iRow][iFile];
-                    lines.push([]);
-                    names.push([]);
-                    for(var iiLine = 0; iiLine<cell.length; ++iiLine) {
-                        var iLine = cell[iiLine];
-                        var parsedLine = parsedFiles[iFile].lines[iLine];
-                        var text = highlightAssPositionedText(removeAssDrawing(parsedLine.text));
-                        if(!optShowTags)
-                            text = removeAssTags(text);
-                        text = highlightAssTagsAndComments(text);
-                        if(parsedLine.alignment!=2)
-                            text = '<span class="non_bottom_center_text">'+text+'</span>';
-                        lines[iFile].push(text);
-                        var style = parsedLine.style.replace(/ /g, '&nbsp;');
-                        if(names[iFile].indexOf(style)==-1)
-                            names[iFile].push(style);
-                        if(msecStart==null || parsedLine.msecStart<msecStart)
-                            msecStart = parsedLine.msecStart;
-                        if(msecEnd==null || parsedLine.msecEnd>msecEnd)
-                            msecEnd = parsedLine.msecEnd;
-                    }
-                    if(names[iFile].length>0 && namesStr.length==0) {
-                        namesStr = names[iFile].join(', ');
-                        if(iFile>0)
-                            namesStr = '('+namesStr+')';
-                    }
-                }
-                rowString = [];
-                if (accurateTiming)
-                    rowString.push(getCentisecondIntervalStringFromMsec(msecStart, msecEnd, true));
-                else
-                    rowString.push(getMinutesAndSecondsStringFromMsec(msecStart, true));
-                rowString.push(namesStr);
-                for(var iFile = 0; iFile<parsedFiles.length; ++iFile)
-                    rowString.push(lines[iFile].join(' || ').replace(/(\\N|\)|\})/g, '$1<wbr>').replace(/(\\|\(|\{)/g, '<wbr>$1'));
-                result.push(rowString);
-            }
-            return result;
-        }
-        
-        function evaluateResultForComparison() {
-            var rowStrings = evaluateRowStrings(false, false);
-            if(parsedFiles.length<1)
-                return '';
-            var result = '';
-            var nameColumnWidthInPercents = Math.min(10, 100/(parsedFiles.length+1));
-            var textColumnWidthInPercents = Math.floor(100*(100-nameColumnWidthInPercents)/parsedFiles.length)/100;
-            result += '\r\n    <tr><td style="width: 4em;"></td><td style="width: '+nameColumnWidthInPercents+'%;"></td>';
-            for(var iFile = 0; iFile<parsedFiles.length; ++iFile) 
-                result += '<td style="width: '+textColumnWidthInPercents+'%;"><b>'+escapeHtml(parsedFiles[iFile].filename).replace(/(_|\[)/g, '<wbr>$1')+'</b>'+/*'<br/><small>('+parsedFiles[iFile].fileSize+' байт, '+parsedFiles[iFile].lines.length+' строк)<br/>&nbsp;</small>'+*/'</td>';
-            result += '</tr>';
-            for(var iRow = 0; iRow<rowStrings.length; ++iRow) {
-                result += '\r\n    <tr><td style="width: 4em;">'+rowStrings[iRow][0]+'</td><td style="width: '+nameColumnWidthInPercents+'%;"><b>'+rowStrings[iRow][1]+':</b></td>';
-                for(var iFile = 0; iFile<parsedFiles.length; ++iFile)
-                    result += '<td style="width: '+textColumnWidthInPercents+'%;">'+rowStrings[iRow][iFile+2]+'</td>';
-                result += '</tr>';
-            }
-            return '\r\n<table class="comparison_table">'+result+'\r\n</table>\r\n';
-        }
-        
-        function evaluateResultForPad() {
-            var rowStrings = evaluateRowStrings(parsedFiles.length==1, optShowAccurateTiming);
-            if(parsedFiles.length<1)
-                return '';
-            var result = '';
-            for(var iRow = 0; iRow<rowStrings.length; ++iRow) {
-                result += '\r\n';
-                if (!optShowAccurateTiming) {
-                    result += '&nbsp;&nbsp;&nbsp;&nbsp;';
-                }
-                result += rowStrings[iRow][0]+'&nbsp;<b>'+rowStrings[iRow][1]+':</b>&nbsp;';
-                for(var iFile = 0; iFile<parsedFiles.length; ++iFile) {
-                    var text = rowStrings[iRow][iFile+2].replace(/\\N/g, ' ↲ ');
-                    result += text+(iFile==0?'&nbsp;→&nbsp;':iFile<parsedFiles.length-1?'&nbsp;//&nbsp;':'');
-                }
-                result += '<br/>';
-            }
-            return '<div class="result_for_pad">'+result+'</div>';
-        }
-        
-        function evaluateResultForTimeline() {
-            if(parsedFiles.length<1)
-                return '';
-            var result = '';
-            var pixels_per_second = 20;
-            var label_width = 270;
-            var label_indent = 30;
-            var max_time = 0;
-            for(var iFile = 0; iFile<parsedFiles.length; ++iFile) {
-                result += formatString('\r\n    <div class="cl_sub" style="top:{0}px;left:{1}px;width:{2}px;height:{3}px;border:0px;font-weight:bold;" title="{4}"><div class="cl_sub_inner"><div class="cl_sub_inner2">{5}</div></div></div>', 0, 65+label_indent+iFile*(label_width+label_indent), label_width, 60, '', escapeHtml(parsedFiles[iFile].filename).replace(/(_|\[)/g, '<wbr>$1'));
-                var lines =  parsedFiles[iFile].lines.slice(0);
-                lines.sort(function(line1, line2) {
-                    return line1.msecStart<line2.msecStart?-1:line1.msecStart>line2.msecStart?1:line1.msecEnd<line2.msecEnd?-1:line1.msecEnd>line2.msecEnd?1:line1.alignment<line2.alignment?-1:line1.alignment>line2.alignment?1:0;
-                });
-                for(var iLine = 0; iLine<lines.length; ++iLine) {
-                    var parsedLine = lines[iLine];
-                    var text = removeAssDrawing(removeAssPositionedText(parsedLine.text)).replace(/\{[^{}]*\}/g, '').replace(/\\N/g, '<br/>').trim();
-                    while(iLine+1<lines.length && lines[iLine+1].msecStart==parsedLine.msecStart && lines[iLine+1].msecEnd==parsedLine.msecEnd && lines[iLine+1].alignment==parsedLine.alignment) {
-                        iLine += 1;
-                        var lineText = removeAssDrawing(removeAssPositionedText(lines[iLine].text)).replace(/\{[^{}]*\}/g, '').replace(/\\N/g, '<br/>').trim();
-                        if(text && lineText)
-                            text += '<br/>';
-                        text += lineText;
-                    }
-                    max_time = Math.max(max_time, parsedLine.msecEnd);
-                    var pos_top = Math.floor(parsedLine.msecStart*pixels_per_second/1000);
-                    var pos_bottom = Math.floor(parsedLine.msecEnd*pixels_per_second/1000);
-                    if(text) {
-                        var cssStyle = formatString('top:{0}px;left:{1}px;width:{2}px;height:{3}px;', pos_top+80, 65+label_indent+iFile*(label_width+label_indent), label_width, pos_bottom-pos_top-1);
-                        if(parsedLine.alignment!=2)
-                            cssStyle += 'z-index:-1;color:lightskyblue;';
-                        result += formatString('\r\n    <div class="cl_sub" style="{0}" title="{1}"><div class="cl_sub_inner"><div class="cl_sub_inner2">{2}</div></div></div>', cssStyle, parsedLine.style, text);
-                    }
-                }
-            }
-            var time_start = 0;
-            var time_step = 5;
-            var time_interval = 1;
-            while(time_start*1000<max_time) {
-                var pos_top = Math.floor(time_start*pixels_per_second);
-                var pos_height = Math.floor((time_start+time_interval)*pixels_per_second)-pos_top-1;
-                var pos_left = 63;
-                if(time_start%time_step==0) {
-                    result += formatString('\r\n    <div class="cl_time" style="top:{0}px;left:{1}px;width:{2}px;height:{3}px;line-height:{4}px">{5}</div>', pos_top+80-pos_height/2, 12, 30, pos_height, pos_height, getMinutesAndSecondsStringFromMsec(time_start*1000, false));
-                    pos_left = 58;
-                }
-                result += formatString('\r\n    <div class="cl_timeline" style="top:{0}px;left:{1}px;width:{2}px;height:{3}px"></div>', pos_top+80, pos_left, 65-pos_left, pos_height);
-                time_start += time_interval;
-            }
-            return '<div style="position: relative;">'+result+'</div>';
-        }
-        
-        function showError(message) {
-            document.getElementById('result').innerHTML = '<div style="color: #f00; font-size: 18px;">Error: '+escapeHtml(message)+'</div>';
-        }
-        
-        function updateResult() {
-            try {
-                var radio = document.querySelector('input[type="radio"][name="group_mode"]:checked');
-                optShowTags = document.getElementById('show_tags_checkbox').checked;
-                optShowAccurateTiming = document.getElementById('show_accurate_timing_checkbox').checked;
-                localStorage.setItem('viewmode', radio.value);
-                localStorage.setItem('optShowTags', optShowTags);
-                localStorage.setItem('optShowAccurateTiming', optShowAccurateTiming);
-                //document.getElementById('mode_specific').className = radio ? radio.value : '';
-                document.getElementById('show_tags_checkbox_div').className = radio && (radio.value=='mode_pad' || radio.value=='mode_comparison') ? '' : 'zero_height';
-                document.getElementById('show_accurate_timing_checkbox_div').className = radio && radio.value=='mode_pad' ? '' : 'zero_height';
-                document.getElementById('select_result_button_div').className = radio && radio.value=='mode_pad' && parsedFiles.length>0 ? '' : 'zero_height';
-                document.getElementById('download_button_div').className = radio && radio.value!='mode_pad' && parsedFiles.length>0 ? '' : 'zero_height';
-                if(parsedFiles.length<1)
-                    document.getElementById('result').innerHTML = ''/*'Результат появится здесь'*/;
-                else if(radio && radio.value=='mode_comparison')
-                    document.getElementById('result').innerHTML = evaluateResultForComparison();
-                else if(radio && radio.value=='mode_pad')
-                    document.getElementById('result').innerHTML = evaluateResultForPad();
-                else if(radio && radio.value=='mode_timeline')
-                    document.getElementById('result').innerHTML = evaluateResultForTimeline();
-                else
-                    document.getElementById('result').innerHTML = '';
-            }
-            catch(error) {
-                showError(error.message);
-            }
-        }
-        
-        function selectResult() {
-            var range = document.createRange();
-            range.selectNodeContents(document.getElementById('result'));
-            var selection = window.getSelection();            
-            selection.removeAllRanges();
-            selection.addRange(range);
-        }
-
-        function downloadResult() {
-            var contents = '<!DOCTYPE html>\n<html>\n<head>\n    <meta charset="utf-8">\n';
-            contents += '    <style>\n'+document.getElementsByTagName('style')[0].innerHTML+'\n    </style>\n';
-            contents += '    <body>\n    <div id="result">'+document.getElementById('result').innerHTML+'\n    </div>\n    </body>\n</html>';
-            var blob = new Blob([contents], {'type': 'application/octet-stream'});
-            var linkElement = document.createElement('a');
-            linkElement.href = window.URL.createObjectURL(blob);
-            linkElement.download = 'comparison.html';
-            var ckickEvent = document.createEvent('MouseEvents');
-            ckickEvent.initEvent('click', true, true);
-            linkElement.dispatchEvent(ckickEvent);
-        }
-
-        function onDragOver(evt) {
-            evt.stopPropagation();
-            evt.preventDefault();
-            evt.dataTransfer.dropEffect = 'copy';
-        }
-
-        function onFileDrop(evt) {
-            if(evt.currentTarget.id!='drop_zone')
-                return;
-            evt.stopPropagation();
-            evt.preventDefault();
-            var readerOnLoad = function(file) {return function(e) {
-                try {
-                    var parsedFile = file.name.slice(-4).toLowerCase()=='.srt' ? parseSrtFile(e.target.result) : parseAssFile(e.target.result);
-                    parsedFile.filename = file.name;
-                    parsedFile.fileSize = file.size;
-                    parsedFiles.push(parsedFile);
-                    if(debugPreserveFilesOnRefresh)
-                        debugPreservedFiles.push({text: e.target.result, filename: parsedFile.filename, fileSize: parsedFile.fileSize});
-                    if(parsedFiles.length==numDroppedFiles) {
-                        if(debugPreserveFilesOnRefresh)
-                            localStorage.setItem('debugPreservedFiles', JSON.stringify(debugPreservedFiles));
-                        updateResult();
-                    }
-                }
-                catch(error) {
-                    showError(error.message);
-                }
-            }};
-            try {
-                var files = evt.dataTransfer.files;
-                for(var iDroppedFile = 0; iDroppedFile<evt.dataTransfer.files.length; ++iDroppedFile) {
-                    var reader = new FileReader();
-                    ++numDroppedFiles;
-                    reader.onload = readerOnLoad(files[iDroppedFile]);
-                    reader.readAsText(files[iDroppedFile]);
-                }
-            }
-            catch(error) {
-                showError(error.message);
-            }
-        }
-        
-        function onDocumentLoad(evt) {
-            document.getElementById('drop_zone').addEventListener('dragover', onDragOver, false);
-            document.getElementById('drop_zone').addEventListener('drop', onFileDrop, false);
-            document.getElementById('select_result_button').addEventListener('click', selectResult, false);
-            document.getElementById('download_button').addEventListener('click', downloadResult, false);
-            var radios = document.querySelectorAll('input[type="radio"][name="group_mode"]');
-            var radioToSelect = document.querySelector('input[type="radio"][name="group_mode"][value="'+(localStorage.getItem('viewmode')||'mode_comparison')+'"]');
-            if(radioToSelect)
-                radioToSelect.checked = true;
-            for(var iRadio = 0; iRadio<radios.length; ++iRadio)
-                radios[iRadio].addEventListener('click', updateResult, false);
-            var checkboxShowTags = document.getElementById('show_tags_checkbox');
-            checkboxShowTags.addEventListener('click', updateResult, false);
-            checkboxShowTags.checked = localStorage.getItem('optShowTags')=='true';
-            var checkboxShowAccurateTiming = document.getElementById('show_accurate_timing_checkbox');
-            checkboxShowAccurateTiming.addEventListener('click', updateResult, false);
-            checkboxShowAccurateTiming.checked = localStorage.getItem('optShowAccurateTiming')=='true';
-            if(debugPreserveFilesOnRefresh) {
-                debugPreservedFiles = JSON.parse(localStorage.getItem('debugPreservedFiles')||'[]');
-                for(var iFile = 0; iFile<debugPreservedFiles.length; ++iFile) {
-                    ++numDroppedFiles;
-                    var parsedFile = debugPreservedFiles[iFile].filename.slice(-4).toLowerCase()=='.srt' ? parseSrtFile(debugPreservedFiles[iFile].text) : parseAssFile(debugPreservedFiles[iFile].text);
-                    parsedFile.filename = debugPreservedFiles[iFile].filename;
-                    parsedFile.fileSize = debugPreservedFiles[iFile].fileSize;
-                    parsedFiles.push(parsedFile);
-                }
-            }
-            updateResult();
-            document.body.classList.remove('incompatible_browser_body');
-        }
-
-        if(document.addEventListener && window.FileReader) {
-            document.addEventListener("DOMContentLoaded", onDocumentLoad, false);
-        }
-    </script>
-</head>
-<body class="">
-<div class="incompatible_browser">...</div>
-<div class="drop_zone" id="drop_zone">Перетащите файлы субтитров сюда</div>
-<div class="mode_selection" style="overflow:hidden;">
-    <div style="float: left; position: relative; left: 50%;">
-        <div style="float: left; position: relative; right: 50%;">
-            <form name="options_form" method="get" action="" onsubmit="return false;">
-                <label><input name="group_mode" value="mode_comparison" checked="checked" type="radio"> Сравнение</label><br>
-                <label><input name="group_mode" value="mode_pad" type="radio"> Перенос в пад</label><br>
-                <label><input name="group_mode" value="mode_timeline" type="radio"> Таймлайн</label><br>
-            </form>
-            <div id="mode_specific">
-                <div id="show_tags_checkbox_div" class="">
-                    <label><input id="show_tags_checkbox" checked="checked" type="checkbox">Показывать теги</label>
-                </div>
-                <div id="show_accurate_timing_checkbox_div" class="zero_height">
-                    <label><input id="show_accurate_timing_checkbox" checked="checked" type="checkbox">Точный тайминг</label>
-                </div>
-                <div id="select_result_button_div" class="zero_height">
-                    <a href="javascript:void(0)" id="select_result_button">Выделить всё</a>
-                </div>
-                <div id="download_button_div" class="">
-                    <a href="javascript:void(0)" id="download_button">Скачать</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="result">
+    <body>
+    <div id="result">
 <table class="comparison_table">
     <tbody><tr><td style="width: 4em;"></td><td style="width: 10%;"></td><td style="width: 30%;"><b>Sub<wbr>_MLPEqG<wbr>_Special04<wbr>_ForgotenFriendship<wbr>_English.ass</b></td><td style="width: 30%;"><b>Sub<wbr>_MLPEqG<wbr>_Special04<wbr>_ForgotenFriendship<wbr>_Russian.ass</b></td><td style="width: 30%;"><b>Forgotten<wbr>_Friendship<wbr>_RusSubtitles.ass</b></td></tr>
-    <tr><td style="width: 4em;">00:04</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">You are my || Equestria Girls.</td><td style="width: 30%;">Будем мы || Друзьями всегда.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Девчонки из Эквестрии мы!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:07</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">I met you when the light switched on. || It brightens up my day like the sun,</td><td style="width: 30%;">Вы пришли — зажёгся свет, || Он ярок, словно солнечный день,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Встретились тогда, и стал ярче день<span class="ass_tags"><wbr>\N<wbr></span>нам вместе веселей,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:11</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">When my friends come a-runnin'.</td><td style="width: 30%;">Коль друзья мои рядом.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>соберём друзей-эй!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:14</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">You were right all along</td><td style="width: 30%;">Правы вы, в мире нет</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Зажигать нам не лень,<span class="ass_tags"><wbr>\N<wbr></span>и мы вместе<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:16</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">That together we're always better.</td><td style="width: 30%;">Никаких преград, когда мы вместе.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>не сидим на месте!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:19</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">We could turn a sketch into a masterpiece. || When you're here, I feel like I'm complete.</td><td style="width: 30%;">Превратим в шедевр набросок мигом мы, || Вместе нам невзгоды не страшны.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Мы шедевры можем сотворить,<span class="ass_tags"><wbr>\N<wbr></span>друг без друга точно не прожить!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:27</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">You are my Equestria Girls!</td><td style="width: 30%;">Будем мы друзьями всегда!</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'. VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam<span class="ass_tags"><wbr>\N<wbr></span>При поддержке 'Креативного канала Томо': VK.com/TomoFacja | YouTube.com/user/TomoFacja || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Девчонки из Эквестрии мы!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:40</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Back in the day, || I used to walk these halls || Acting tough, || but all alone.</td><td style="width: 30%;">Раньше была || В школьных родных стенах || Зла ко всем, || Совсем одна.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Раньше была здесь я другой<span class="ass_tags"><wbr>\N<wbr></span>но мне пришлось быть одной.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:48</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I needed a friend || to lend me a helping hand. || I couldn't do it on my own.</td><td style="width: 30%;">Мне друг нужен был || Который бы подсобил. || Сама другой стать не могла.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Друг удержать, руку подать<span class="ass_tags"><wbr>\N<wbr></span>может, когда он с тобой.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">00:56</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">We've come so far together, || Got memories to treasure.</td><td style="width: 30%;">Много прошли мы вместе, || И всё запечатлели.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Столько прошли мы вместе,<span class="ass_tags"><wbr>\N<wbr></span>вспомнить так интересно<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:01</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">I look at you, stories come back to life</td><td style="width: 30%;">Увидеть вас — радость вновь испытать.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>снова каждый момент проживать!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:04</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">And if I need reminding || I know where I can find you</td><td style="width: 30%;">Буду я позитивна, || Лишь стоит мне найти вас</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Всем нам поможет память<span class="ass_tags"><wbr>\N<wbr></span>лучший момент оставить,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:09</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">In these pages, you'll last forever</td><td style="width: 30%;">На страницах нетленной книги.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>на страницах мы снова вместе!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Remember when I, || I lost the crown, || You didn't leave me || Out in the rain.</td><td style="width: 30%;">А помните, я || Лишилась всего. || Решили помочь || Вы мне тогда.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Когда мне пришлось, всё потерять<span class="ass_tags"><wbr>\N<wbr></span>не бросили в трудный час.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:29</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">We still had songs to sing, || Magic transforming.</td><td style="width: 30%;">Знали, что нужно спеть, || Как мрак одолеть,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Есть наши песни и превращения<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:38</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Special in every way,</td><td style="width: 30%;">Силы особые</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Разные каждый раз...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:41</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">The gems chose us by name.</td><td style="width: 30%;">Кристалл каждой смог дать.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Кристаллы есть у нас...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:46</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">We've come so far together, || Got memories to treasure.</td><td style="width: 30%;">Много прошли мы вместе, || И всё запечатлели.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Столько прошли мы вместе,<span class="ass_tags"><wbr>\N<wbr></span>вспомнить так интересно<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:50</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">I look at you, stories come back to life.</td><td style="width: 30%;">Увидеть вас — радость вновь испытать.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>снова каждый момент проживать!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:54</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">And if I need reminding, || I know where I can find you</td><td style="width: 30%;">Буду я позитивна, || Лишь стоит мне найти вас</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Всем нам поможет память<span class="ass_tags"><wbr>\N<wbr></span>лучший момент оставить,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">01:59</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">In these pages, you'll last forever.</td><td style="width: 30%;">На страницах нетленной книги.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>На страницах мы снова вместе!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">02:06</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">Forever,</td><td style="width: 30%;">Нетленной,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Вместе...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">02:10</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">Forever.</td><td style="width: 30%;">Нетленной.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Вместе...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">02:15</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">In these pages, you'll last forever.</td><td style="width: 30%;">На страницах нетленной книги.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>На страницах остались вместе.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">00:04</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">You are my || Equestria Girls.</td><td style="width: 30%;">Будем мы || Друзьями всегда.</td><td style="width: 30%;">Девчонки из Эквестрии мы!</td></tr>
+    <tr><td style="width: 4em;">00:07</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">I met you when the light switched on. || It brightens up my day like the sun,</td><td style="width: 30%;">Вы пришли — зажёгся свет, || Он ярок, словно солнечный день,</td><td style="width: 30%;">Встретились тогда, и стал ярче день<span class="ass_tags"><wbr>\N<wbr></span>нам вместе веселей,</td></tr>
+    <tr><td style="width: 4em;">00:11</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">When my friends come a-runnin'.</td><td style="width: 30%;">Коль друзья мои рядом.</td><td style="width: 30%;">соберём друзей-эй!</td></tr>
+    <tr><td style="width: 4em;">00:14</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">You were right all along</td><td style="width: 30%;">Правы вы, в мире нет</td><td style="width: 30%;">Зажигать нам не лень,<span class="ass_tags"><wbr>\N<wbr></span>и мы вместе</td></tr>
+    <tr><td style="width: 4em;">00:16</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">That together we're always better.</td><td style="width: 30%;">Никаких преград, когда мы вместе.</td><td style="width: 30%;">не сидим на месте!</td></tr>
+    <tr><td style="width: 4em;">00:19</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">We could turn a sketch into a masterpiece. || When you're here, I feel like I'm complete.</td><td style="width: 30%;">Превратим в шедевр набросок мигом мы, || Вместе нам невзгоды не страшны.</td><td style="width: 30%;">Мы шедевры можем сотворить,<span class="ass_tags"><wbr>\N<wbr></span>друг без друга точно не прожить!</td></tr>
+    <tr><td style="width: 4em;">00:27</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">You are my Equestria Girls!</td><td style="width: 30%;">Будем мы друзьями всегда!</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'. VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam<span class="ass_tags"><wbr>\N<wbr></span>При поддержке 'Креативного канала Томо': VK.com/TomoFacja | YouTube.com/user/TomoFacja || Девчонки из Эквестрии мы!</td></tr>
+    <tr><td style="width: 4em;">00:40</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Back in the day, || I used to walk these halls || Acting tough, || but all alone.</td><td style="width: 30%;">Раньше была || В школьных родных стенах || Зла ко всем, || Совсем одна.</td><td style="width: 30%;">Раньше была здесь я другой<span class="ass_tags"><wbr>\N<wbr></span>но мне пришлось быть одной.</td></tr>
+    <tr><td style="width: 4em;">00:48</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I needed a friend || to lend me a helping hand. || I couldn't do it on my own.</td><td style="width: 30%;">Мне друг нужен был || Который бы подсобил. || Сама другой стать не могла.</td><td style="width: 30%;">Друг удержать, руку подать<span class="ass_tags"><wbr>\N<wbr></span>может, когда он с тобой.</td></tr>
+    <tr><td style="width: 4em;">00:56</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">We've come so far together, || Got memories to treasure.</td><td style="width: 30%;">Много прошли мы вместе, || И всё запечатлели.</td><td style="width: 30%;">Столько прошли мы вместе,<span class="ass_tags"><wbr>\N<wbr></span>вспомнить так интересно</td></tr>
+    <tr><td style="width: 4em;">01:01</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">I look at you, stories come back to life</td><td style="width: 30%;">Увидеть вас — радость вновь испытать.</td><td style="width: 30%;">снова каждый момент проживать!</td></tr>
+    <tr><td style="width: 4em;">01:04</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">And if I need reminding || I know where I can find you</td><td style="width: 30%;">Буду я позитивна, || Лишь стоит мне найти вас</td><td style="width: 30%;">Всем нам поможет память<span class="ass_tags"><wbr>\N<wbr></span>лучший момент оставить,</td></tr>
+    <tr><td style="width: 4em;">01:09</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">In these pages, you'll last forever</td><td style="width: 30%;">На страницах нетленной книги.</td><td style="width: 30%;">на страницах мы снова вместе!</td></tr>
+    <tr><td style="width: 4em;">01:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Remember when I, || I lost the crown, || You didn't leave me || Out in the rain.</td><td style="width: 30%;">А помните, я || Лишилась всего. || Решили помочь || Вы мне тогда.</td><td style="width: 30%;">Когда мне пришлось, всё потерять<span class="ass_tags"><wbr>\N<wbr></span>не бросили в трудный час.</td></tr>
+    <tr><td style="width: 4em;">01:29</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">We still had songs to sing, || Magic transforming.</td><td style="width: 30%;">Знали, что нужно спеть, || Как мрак одолеть,</td><td style="width: 30%;">Есть наши песни и превращения</td></tr>
+    <tr><td style="width: 4em;">01:38</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Special in every way,</td><td style="width: 30%;">Силы особые</td><td style="width: 30%;">Разные каждый раз...</td></tr>
+    <tr><td style="width: 4em;">01:41</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">The gems chose us by name.</td><td style="width: 30%;">Кристалл каждой смог дать.</td><td style="width: 30%;">Кристаллы есть у нас...</td></tr>
+    <tr><td style="width: 4em;">01:46</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">We've come so far together, || Got memories to treasure.</td><td style="width: 30%;">Много прошли мы вместе, || И всё запечатлели.</td><td style="width: 30%;">Столько прошли мы вместе,<span class="ass_tags"><wbr>\N<wbr></span>вспомнить так интересно</td></tr>
+    <tr><td style="width: 4em;">01:50</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">I look at you, stories come back to life.</td><td style="width: 30%;">Увидеть вас — радость вновь испытать.</td><td style="width: 30%;">снова каждый момент проживать!</td></tr>
+    <tr><td style="width: 4em;">01:54</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">And if I need reminding, || I know where I can find you</td><td style="width: 30%;">Буду я позитивна, || Лишь стоит мне найти вас</td><td style="width: 30%;">Всем нам поможет память<span class="ass_tags"><wbr>\N<wbr></span>лучший момент оставить,</td></tr>
+    <tr><td style="width: 4em;">01:59</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">In these pages, you'll last forever.</td><td style="width: 30%;">На страницах нетленной книги.</td><td style="width: 30%;">На страницах мы снова вместе!</td></tr>
+    <tr><td style="width: 4em;">02:06</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">Forever,</td><td style="width: 30%;">Нетленной,</td><td style="width: 30%;">Вместе...</td></tr>
+    <tr><td style="width: 4em;">02:10</td><td style="width: 10%;"><b>Somepony:</b></td><td style="width: 30%;">Forever.</td><td style="width: 30%;">Нетленной.</td><td style="width: 30%;">Вместе...</td></tr>
+    <tr><td style="width: 4em;">02:15</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">In these pages, you'll last forever.</td><td style="width: 30%;">На страницах нетленной книги.</td><td style="width: 30%;">На страницах остались вместе.</td></tr>
     <tr><td style="width: 4em;">02:23</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Excuse me.</td><td style="width: 30%;">Извини меня.</td><td style="width: 30%;">Прошу прощения.</td></tr>
     <tr><td style="width: 4em;">02:25</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I'm sorry. I didn't see you come in.</td><td style="width: 30%;">Прости. Не заметила, как ты вошла.</td><td style="width: 30%;">Извини, я не видела, как ты вошла.</td></tr>
     <tr><td style="width: 4em;">02:27</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I've been here for a while.</td><td style="width: 30%;">Я была здесь всё время.</td><td style="width: 30%;">Я уже давно здесь.</td></tr>
@@ -624,14 +80,14 @@
     <tr><td style="width: 4em;">03:00</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">We met in ninth-grade English.</td><td style="width: 30%;">Мы в девятом классе познакомились, на английском.</td><td style="width: 30%;">Мы вместе ходим на английский с девятого класса.</td></tr>
     <tr><td style="width: 4em;">03:02</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">And… I was… saying it was nice to meet you then. || You didn't let me finish.</td><td style="width: 30%;">Хотела… сказать… рада знакомству с тех пор. || Ты меня перебила.</td><td style="width: 30%;">Я... имела в виду... что рада знакомству с тех пор. || Ты не дала мне закончить.</td></tr>
     <tr><td style="width: 4em;">03:10</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Anyway, I counted up all the votes for the yearbook Superlatives.</td><td style="width: 30%;">В общем, я подсчитала все голоса для номинаций ежегодника.</td><td style="width: 30%;">В общем, я подвела итоги голосования для ежегодника.</td></tr>
-    <tr><td style="width: 4em;">03:17</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Most Likely to Succeed, Best Smile, Class Clown.</td><td style="width: 30%;">"Идущий к успеху", "Лучшая улыбка", "Заводила класса".</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Самый Успешный,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span> || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Лучшая Улыбка,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span> || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Затейщик Класса."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">03:17</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Most Likely to Succeed, Best Smile, Class Clown.</td><td style="width: 30%;">"Идущий к успеху", "Лучшая улыбка", "Заводила класса".</td><td style="width: 30%;">"Самый Успешный, || Лучшая Улыбка, || Затейщик Класса."</td></tr>
     <tr><td style="width: 4em;">03:22</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">We won Best Friends!</td><td style="width: 30%;">Мы взяли "Лучших друзей"!</td><td style="width: 30%;">О! Мы взяли награду "Лучшие Друзья"!</td></tr>
     <tr><td style="width: 4em;">03:23</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Applejack, Fluttershy, Rainbow Dash, Rarity, Pinkie Pie, Twilight Sparkle and me!</td><td style="width: 30%;">Эпплджек, Флаттершай, Рэйнбоу Дэш, Рэрити, Пинки Пай, Твайлайт Спаркл и я!</td><td style="width: 30%;">Эпплджек, Флаттершай, Рэйнбоу Дэш, Рэрити, Пинки Пай, Твайлайт Спаркл и я!</td></tr>
     <tr><td style="width: 4em;">03:27</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">I always knew I liked you all, but now it's official!</td><td style="width: 30%;">Вы мне всегда нравились, но теперь — официально!</td><td style="width: 30%;">Я всегда знала, что вы все мне нравились, но теперь это официально!</td></tr>
     <tr><td style="width: 4em;">03:30</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">In yearbook form!</td><td style="width: 30%;">В ежегоднике!</td><td style="width: 30%;">В ежегоднике!</td></tr>
     <tr><td style="width: 4em;">03:32</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">The people have spoken!</td><td style="width: 30%;">Народ решил так!</td><td style="width: 30%;">Народ сказал своё слово!</td></tr>
     <tr><td style="width: 4em;">03:34</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Oh, good for Micro Chips.</td><td style="width: 30%;">А Микро Чипс молодец.</td><td style="width: 30%;">О, а Микро Чипс хорош.</td></tr>
-    <tr><td style="width: 4em;">03:36</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"Most Likely to Invent Cold Fusion."</td><td style="width: 30%;">"Вероятный будущий изобретатель холодного синтеза".</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Вероятно будущий изобретатель Холодного Синтеза".<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">03:36</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"Most Likely to Invent Cold Fusion."</td><td style="width: 30%;">"Вероятный будущий изобретатель холодного синтеза".</td><td style="width: 30%;">"Вероятно будущий изобретатель Холодного Синтеза".</td></tr>
     <tr><td style="width: 4em;">03:39</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Not a reason to be jealous. Pfft! I'm not!</td><td style="width: 30%;">Не повод для зависти. Пфф! Не завидую!</td><td style="width: 30%;">Нет причин для зависти. || Не моё!</td></tr>
     <tr><td style="width: 4em;">03:42</td><td style="width: 10%;"><b>FlutterShy:</b></td><td style="width: 30%;">Don't worry, Twilight.</td><td style="width: 30%;">Не волнуйся, Твайлайт.</td><td style="width: 30%;">Не переживай, Твайлайт.</td></tr>
     <tr><td style="width: 4em;">03:44</td><td style="width: 10%;"><b>FlutterShy:</b></td><td style="width: 30%;">We know you're a genius.</td><td style="width: 30%;">Мы и так знаем, что ты гений.</td><td style="width: 30%;">Мы-то знаем, что ты гений.</td></tr>
@@ -666,12 +122,12 @@
     <tr><td style="width: 4em;">05:54</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I'll just finish up.</td><td style="width: 30%;">Я всё досчитаю.</td><td style="width: 30%;">Я всё досчитаю.</td></tr>
     <tr><td style="width: 4em;">05:56</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Forgot to turn off the lights.</td><td style="width: 30%;">Забыла выключить свет.</td><td style="width: 30%;">Забыла выключить свет.</td></tr>
     <tr><td style="width: 4em;">05:58</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">…in the dark.</td><td style="width: 30%;">В темноте.</td><td style="width: 30%;">...в темноте.</td></tr>
-    <tr><td style="width: 4em;">06:01</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Dear Princess Twilight,</td><td style="width: 30%;">Дорогая принцесса Твайлайт,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Дорогая Принцесса Твайлайт, <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">06:03</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I thought you'd be happy to hear that the girls and I were voted Best Friends in the yearbook today.</td><td style="width: 30%;">думаю, ты будешь рада узнать, что нас с девочками сегодня выбрали "Лучшими друзьями" для ежегодника.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>думаю, ты будешь рада узнать, что сегодня мы с девочками были признаны "Лучшими Друзьями" для ежегодника. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">06:09</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">After all, if you hadn't forgiven me,</td><td style="width: 30%;">В конце концов, не прости ты меня тогда,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>В конце концов, если бы тогда ты не простила меня, <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">06:12</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I'd still be the arrogant student I was when I left Equestria.</td><td style="width: 30%;">я бы так и осталась высокомерной ученицей, которой была, когда покидала Эквестрию.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>я бы так и осталась той высокомерной ученицей, которой покидала Эквестрию. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">06:16</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">You gave me the second chance I didn't deserve, and I'll never forget it.</td><td style="width: 30%;">Ты дала мне второй шанс, которого я не заслужила, и мне не забыть этого.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Ты дала мне второй шанс, которого я не заслужила, <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span> || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>и я этого не забуду. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">06:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Your friend, Sunset Shimmer.</td><td style="width: 30%;">Твоя подруга, Сансет Шиммер</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Твоя подруга, Сансет Шиммер."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">06:01</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Dear Princess Twilight,</td><td style="width: 30%;">Дорогая принцесса Твайлайт,</td><td style="width: 30%;">"Дорогая Принцесса Твайлайт, </td></tr>
+    <tr><td style="width: 4em;">06:03</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I thought you'd be happy to hear that the girls and I were voted Best Friends in the yearbook today.</td><td style="width: 30%;">думаю, ты будешь рада узнать, что нас с девочками сегодня выбрали "Лучшими друзьями" для ежегодника.</td><td style="width: 30%;">думаю, ты будешь рада узнать, что сегодня мы с девочками были признаны "Лучшими Друзьями" для ежегодника. </td></tr>
+    <tr><td style="width: 4em;">06:09</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">After all, if you hadn't forgiven me,</td><td style="width: 30%;">В конце концов, не прости ты меня тогда,</td><td style="width: 30%;">В конце концов, если бы тогда ты не простила меня, </td></tr>
+    <tr><td style="width: 4em;">06:12</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I'd still be the arrogant student I was when I left Equestria.</td><td style="width: 30%;">я бы так и осталась высокомерной ученицей, которой была, когда покидала Эквестрию.</td><td style="width: 30%;">я бы так и осталась той высокомерной ученицей, которой покидала Эквестрию. </td></tr>
+    <tr><td style="width: 4em;">06:16</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">You gave me the second chance I didn't deserve, and I'll never forget it.</td><td style="width: 30%;">Ты дала мне второй шанс, которого я не заслужила, и мне не забыть этого.</td><td style="width: 30%;">Ты дала мне второй шанс, которого я не заслужила,  || и я этого не забуду. </td></tr>
+    <tr><td style="width: 4em;">06:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Your friend, Sunset Shimmer.</td><td style="width: 30%;">Твоя подруга, Сансет Шиммер</td><td style="width: 30%;">Твоя подруга, Сансет Шиммер."</td></tr>
     <tr><td style="width: 4em;">06:47</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Group picture, practice run number 36A, attempt 7, success! || Oh no!</td><td style="width: 30%;">Совместное фото, испытание номер 36А, седьмая попытка, успех! || О нет!</td><td style="width: 30%;">Совместное фото, || испытание #36А, попытка #7, успех!</td></tr>
     <tr><td style="width: 4em;">06:54</td><td style="width: 10%;"><b>(Twilight&nbsp;Sparkle):</b></td><td style="width: 30%;"></td><td style="width: 30%;"></td><td style="width: 30%;">О нет!</td></tr>
     <tr><td style="width: 4em;">06:57</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Your eyes do not deceive you. I finally invented a Selfie Sensing camera.</td><td style="width: 30%;">Ваши глаза вас не обманывают! Я наконец-то изобрела селфи-чувствительную камеру!</td><td style="width: 30%;">Ваши глаза не обманывают вас! || Я наконец-то изобрела селфи-чувствительную камеру.</td></tr>
@@ -700,9 +156,7 @@
     <tr><td style="width: 4em;">08:42</td><td style="width: 10%;"><b>AppleJack:</b></td><td style="width: 30%;">Askin' to be in our Best Friends picture?</td><td style="width: 30%;">Хочет оказаться на нашей фотографии лучших друзей?</td><td style="width: 30%;">Хочет быть на нашем фото "Лучших Друзей"?</td></tr>
     <tr><td style="width: 4em;">08:45</td><td style="width: 10%;"><b>AppleJack:</b></td><td style="width: 30%;">Now I've heard it all.</td><td style="width: 30%;">Теперь я слышала всё.</td><td style="width: 30%;">Хех. || Теперь я слышала всё.</td></tr>
     <tr><td style="width: 4em;">08:47</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Am I missing the joke here?</td><td style="width: 30%;">Я пропустила какую-то шутку?</td><td style="width: 30%;">Я пропустила какую-то шутку?</td></tr>
-    <tr><td style="width: 4em;">08:49</td><td style="width: 10%;"><b>Rarity:</b></td><td style="width: 30%;">The only joke is whatever this is you're playing on us, || acting all nice like you're our friend.</td><td style="width: 30%;">Единственная шутка тут — что ты строишь из себя милашку, || пытаясь притвориться нашей подругой.</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam
- | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru || Единственная 
-шутка - твоя игра в нашего друга и вообще хорошего человека.</td></tr>
+    <tr><td style="width: 4em;">08:49</td><td style="width: 10%;"><b>Rarity:</b></td><td style="width: 30%;">The only joke is whatever this is you're playing on us, || acting all nice like you're our friend.</td><td style="width: 30%;">Единственная шутка тут — что ты строишь из себя милашку, || пытаясь притвориться нашей подругой.</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru || Единственная шутка - твоя игра в нашего друга и вообще хорошего человека.</td></tr>
     <tr><td style="width: 4em;">08:54</td><td style="width: 10%;"><b>FlutterShy:</b></td><td style="width: 30%;">And it's not funny.</td><td style="width: 30%;">Это совсем не смешно.</td><td style="width: 30%;">И она не смешная!</td></tr>
     <tr><td style="width: 4em;">08:56</td><td style="width: 10%;"><b>RainbowDash:</b></td><td style="width: 30%;">Because you aren't nice.</td><td style="width: 30%;">Потому что ты не милая.</td><td style="width: 30%;">Потому что ты не хорошая.</td></tr>
     <tr><td style="width: 4em;">08:58</td><td style="width: 10%;"><b>AppleJack:</b></td><td style="width: 30%;">And we ain't friends.</td><td style="width: 30%;">А мы тебе не подруги.</td><td style="width: 30%;">И мы вовсе не друзья.</td></tr>
@@ -711,7 +165,7 @@
     <tr><td style="width: 4em;">09:04</td><td style="width: 10%;"><b>AppleJack:</b></td><td style="width: 30%;">I said, we ain't fr…</td><td style="width: 30%;">Я сказала: мы тебе не…</td><td style="width: 30%;">Я сказала: мы вовсе не...</td></tr>
     <tr><td style="width: 4em;">09:11</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">You sure can.</td><td style="width: 30%;">Положитесь на нас.</td><td style="width: 30%;">Можете быть уверены.</td></tr>
     <tr><td style="width: 4em;">09:19</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">I'm so sorry.</td><td style="width: 30%;">Мне так жаль.</td><td style="width: 30%;">Мне так жаль.</td></tr>
-    <tr><td style="width: 4em;">09:22</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">My friends are here to bring me round…</td><td style="width: 30%;">С друзьями суждено мне быть…</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Со мной всегда мои друзья...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">09:22</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">My friends are here to bring me round…</td><td style="width: 30%;">С друзьями суждено мне быть…</td><td style="width: 30%;">Со мной всегда мои друзья...</td></tr>
     <tr><td style="width: 4em;">09:35</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">It's like I've been… erased.</td><td style="width: 30%;">Меня будто… стёрли.</td><td style="width: 30%;">Меня будто... || ...стёрли!</td></tr>
     <tr><td style="width: 4em;">09:41</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">This has to be a bad dream.</td><td style="width: 30%;">Должно быть, это плохой сон.</td><td style="width: 30%;">Это, должно быть, дурной сон.</td></tr>
     <tr><td style="width: 4em;">09:43</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Wake up, Sunset. Wake up!</td><td style="width: 30%;">Проснись, Сансет. Проснись!</td><td style="width: 30%;">Проснись, Сансет. || Проснись!</td></tr>
@@ -727,7 +181,7 @@
     <tr><td style="width: 4em;">10:12</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Pinkie Pie, what about || when I came to your sleepover before the Battle of the Bands?</td><td style="width: 30%;">Пинки Пай, помнишь, || я пришла к тебе на ночёвку перед Битвой школьных групп?</td><td style="width: 30%;">Пинки Пай, помнишь, как я была у тебя на ночёвке незадолго до Битвы школьных Групп?</td></tr>
     <tr><td style="width: 4em;">10:17</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">The closest you've ever come to a party of mine is freshman year,</td><td style="width: 30%;">Последний раз ты была у меня на вечеринке в первый год учёбы,</td><td style="width: 30%;">Если ты когда и приходила ко мне на тусовку, то только в первом году учёбы,</td></tr>
     <tr><td style="width: 4em;">10:19</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">when you pretended to be Applejack and texted me:</td><td style="width: 30%;">когда ты прикинулась Эпплджек и написала мне:</td><td style="width: 30%;">когда ты написала мне от имени Эпплджек:</td></tr>
-    <tr><td style="width: 4em;">10:23</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">"Your party is lamer than a hungry duck in snow boots."</td><td style="width: 30%;">"Твоя вечеринка смехотворнее голодной утки в снегоступах."</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Твоя тусовка отстойнее, чем голодная утка в зимних ботинках."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">10:23</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">"Your party is lamer than a hungry duck in snow boots."</td><td style="width: 30%;">"Твоя вечеринка смехотворнее голодной утки в снегоступах."</td><td style="width: 30%;">"Твоя тусовка отстойнее, чем голодная утка в зимних ботинках."</td></tr>
     <tr><td style="width: 4em;">10:26</td><td style="width: 10%;"><b>AppleJack:</b></td><td style="width: 30%;">Like I'd ever say that.</td><td style="width: 30%;">Будто бы у меня ума хватило такое ляпнуть.</td><td style="width: 30%;">Как будто бы я могла сказать такое.</td></tr>
     <tr><td style="width: 4em;">10:28</td><td style="width: 10%;"><b>PinkiePie:</b></td><td style="width: 30%;">It really hurt my feelings.</td><td style="width: 30%;">Обидно было, знаешь ли.</td><td style="width: 30%;">Это сильно задело мои чувства.</td></tr>
     <tr><td style="width: 4em;">10:31</td><td style="width: 10%;"><b>FlutterShy:</b></td><td style="width: 30%;">And it wasn't very nice to the ducks, either.</td><td style="width: 30%;">Да и по отношению к уткам это было невежливо.</td><td style="width: 30%;">И, к тому же, это было грубо по отношению к уткам.</td></tr>
@@ -741,17 +195,17 @@
     <tr><td style="width: 4em;">10:55</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Maybe not anyone.</td><td style="width: 30%;">Может, лишь в этом…</td><td style="width: 30%;">Надеюсь, что только здесь.</td></tr>
     <tr><td style="width: 4em;">10:57</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I'll be right back.</td><td style="width: 30%;">Я скоро вернусь.</td><td style="width: 30%;">Скоро вернусь.</td></tr>
     <tr><td style="width: 4em;">10:59</td><td style="width: 10%;"><b>Rarity:</b></td><td style="width: 30%;">Don't hurry back, darling!</td><td style="width: 30%;">Можешь не спешить, дорогуша!</td><td style="width: 30%;">Можешь не торопиться, дорогуша!</td></tr>
-    <tr><td style="width: 4em;">11:10</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Dear Princess Twilight,</td><td style="width: 30%;">Дорогая принцесса Твайлайт,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Дорогая Принцесса Твайлайт,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:12</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">this is gonna sound crazy, but…</td><td style="width: 30%;">это прозвучит безумно, но…</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>это прозвучит безумно, но...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:14</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">are we friends?</td><td style="width: 30%;">мы точно подруги?</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>...мы друзья?<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:16</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Am I nice?</td><td style="width: 30%;">Я ведь хорошая?</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Я хорошая?<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Please answer…</td><td style="width: 30%;">Пожалуйста, ответь…</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Пожалуйста, ответь мне..."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:26</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Of course we're friends!</td><td style="width: 30%;">Конечно, мы подруги!</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Конечно же мы друзья!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:30</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Are you okay?</td><td style="width: 30%;">Ты в порядке?</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Ты в порядке? <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:32</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">What's going on?</td><td style="width: 30%;">Что-то случилось?</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Что-то случилось?"<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:33</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Kinda hard to explain.</td><td style="width: 30%;">Встретимся — я всё расскажу.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Сложно объяснить. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:37</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Might be easier in person.</td><td style="width: 30%;">На пальцах это не объяснить.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Думаю, лучше будет сделать это лицом к лицу. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">11:39</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Well, not "person", so to speak…</td><td style="width: 30%;">Или на копытах, так сказать.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Ну, не совсем "лицом", так сказать..."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">11:10</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Dear Princess Twilight,</td><td style="width: 30%;">Дорогая принцесса Твайлайт,</td><td style="width: 30%;">"Дорогая Принцесса Твайлайт,</td></tr>
+    <tr><td style="width: 4em;">11:12</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">this is gonna sound crazy, but…</td><td style="width: 30%;">это прозвучит безумно, но…</td><td style="width: 30%;">это прозвучит безумно, но...</td></tr>
+    <tr><td style="width: 4em;">11:14</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">are we friends?</td><td style="width: 30%;">мы точно подруги?</td><td style="width: 30%;">...мы друзья?</td></tr>
+    <tr><td style="width: 4em;">11:16</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Am I nice?</td><td style="width: 30%;">Я ведь хорошая?</td><td style="width: 30%;">Я хорошая?</td></tr>
+    <tr><td style="width: 4em;">11:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Please answer…</td><td style="width: 30%;">Пожалуйста, ответь…</td><td style="width: 30%;">Пожалуйста, ответь мне..."</td></tr>
+    <tr><td style="width: 4em;">11:26</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Of course we're friends!</td><td style="width: 30%;">Конечно, мы подруги!</td><td style="width: 30%;">"Конечно же мы друзья!</td></tr>
+    <tr><td style="width: 4em;">11:30</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Are you okay?</td><td style="width: 30%;">Ты в порядке?</td><td style="width: 30%;">Ты в порядке? </td></tr>
+    <tr><td style="width: 4em;">11:32</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">What's going on?</td><td style="width: 30%;">Что-то случилось?</td><td style="width: 30%;">Что-то случилось?"</td></tr>
+    <tr><td style="width: 4em;">11:33</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Kinda hard to explain.</td><td style="width: 30%;">Встретимся — я всё расскажу.</td><td style="width: 30%;">"Сложно объяснить. </td></tr>
+    <tr><td style="width: 4em;">11:37</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Might be easier in person.</td><td style="width: 30%;">На пальцах это не объяснить.</td><td style="width: 30%;">Думаю, лучше будет сделать это лицом к лицу. </td></tr>
+    <tr><td style="width: 4em;">11:39</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Well, not "person", so to speak…</td><td style="width: 30%;">Или на копытах, так сказать.</td><td style="width: 30%;">Ну, не совсем "лицом", так сказать..."</td></tr>
     <tr><td style="width: 4em;">11:56</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Twilight!</td><td style="width: 30%;">Твайлайт!</td><td style="width: 30%;">Твайлайт!</td></tr>
     <tr><td style="width: 4em;">11:58</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Sunset?</td><td style="width: 30%;">Сансет?</td><td style="width: 30%;">Сансет?</td></tr>
     <tr><td style="width: 4em;">12:01</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I was trying to hug you.</td><td style="width: 30%;">Пыталась тебя обнять.</td><td style="width: 30%;">Я просто пыталась обняться.</td></tr>
@@ -796,13 +250,7 @@
     <tr><td style="width: 4em;">15:43</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Sunset, that's when it gets goooooooood!</td><td style="width: 30%;">Сансет, а ведь это только нача-а-ало!</td><td style="width: 30%;">Сансет, с него начинается всё самое интере-ее-есное!</td></tr>
     <tr><td style="width: 4em;">15:47</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Over here! An original Windigo Weather Warning from the pre-Equestrian era!</td><td style="width: 30%;">А вон там! Оригинал "Видения о вьюге Виндиго", прямиком из доэквестрийской эры!</td><td style="width: 30%;">А тут - || оригинал "Признаки Погодных Виндиго" доэквестрийской эпохи!</td></tr>
     <tr><td style="width: 4em;">15:52</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Omigosh! I just can't!</td><td style="width: 30%;">Вот это да! Держите меня семеро!</td><td style="width: 30%;">Ну и ну, вот это да!</td></tr>
-    <tr><td style="width: 4em;">16:05</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Did
- you know Chancellor Puddinghead tried to pass a law mandating Earth 
-ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="width: 30%;">Ты
- знала, что канцлер Пудингхед пытался продвинуть закон, обязывавший 
-земных пони пить морковный сок перед едой? || Я вот… || Знаю.</td><td style="width: 30%;">Знала
- ли ты, что Канцлер Пуддингхэд пытался принять закон, || обязывающий 
-земных пони пить морковный сок при каждом приёме пищи? || Я - да.</td></tr>
+    <tr><td style="width: 4em;">16:05</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Did you know Chancellor Puddinghead tried to pass a law mandating Earth ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="width: 30%;">Ты знала, что канцлер Пудингхед пытался продвинуть закон, обязывавший земных пони пить морковный сок перед едой? || Я вот… || Знаю.</td><td style="width: 30%;">Знала ли ты, что Канцлер Пуддингхэд пытался принять закон, || обязывающий земных пони пить морковный сок при каждом приёме пищи? || Я - да.</td></tr>
     <tr><td style="width: 4em;">16:13</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Now.</td><td style="width: 30%;">Теперь.</td><td style="width: 30%;">Знаю это. || Теперь.</td></tr>
     <tr><td style="width: 4em;">16:16</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Sounds like you got to read all the fun books.</td><td style="width: 30%;">Похоже, все интересные книжки достались тебе.</td><td style="width: 30%;">Похоже, ты перечитала все интересные книги.</td></tr>
     <tr><td style="width: 4em;">16:20</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">We should probably take a break from looking…</td><td style="width: 30%;">Пожалуй, мы можем отдохнуть от поисков…</td><td style="width: 30%;">Возможно, нам надо сделать перерыв...</td></tr>
@@ -812,7 +260,7 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">16:32</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Well, first of all,</td><td style="width: 30%;">Прежде всего,</td><td style="width: 30%;">А что? || Ну, во-первых,</td></tr>
     <tr><td style="width: 4em;">16:34</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">these date back to before the founding of Equestria.</td><td style="width: 30%;">это было во времена до основания Эквестрии.</td><td style="width: 30%;">речь идёт о временах до основания Эквестрии.</td></tr>
     <tr><td style="width: 4em;">16:38</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Look at this</td><td style="width: 30%;">Посмотри сюда.</td><td style="width: 30%;">Взгляни.</td></tr>
-    <tr><td style="width: 4em;">16:39</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">"The Memory Stone". That sounds promising.</td><td style="width: 30%;">Камень воспоминаний. Звучит обнадёживающе.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Камень Воспоминаний".<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span> || Звучит многообещающе.</td></tr>
+    <tr><td style="width: 4em;">16:39</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">"The Memory Stone". That sounds promising.</td><td style="width: 30%;">Камень воспоминаний. Звучит обнадёживающе.</td><td style="width: 30%;">"Камень Воспоминаний". || Звучит многообещающе.</td></tr>
     <tr><td style="width: 4em;">16:43</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">It belonged to an evil sorceress who was practically invincible.</td><td style="width: 30%;">Он принадлежал злой колдунье, одолеть которую было невероятно сложно.</td><td style="width: 30%;">Он принадлежал одной злобной колдунье, практически непобедимой.</td></tr>
     <tr><td style="width: 4em;">16:46</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">With the Memory Stone, she could erase any memory from anypony.</td><td style="width: 30%;">С помощью Камня воспоминаний она могла стереть чьи угодно воспоминания о чём угодно.</td><td style="width: 30%;">С этим камнем она могла стереть воспоминания любому пони.</td></tr>
     <tr><td style="width: 4em;">16:50</td><td style="width: 10%;"><b>Twilight, SunsetShimmer:</b></td><td style="width: 30%;">Even fragments of memories. || Fragments like…</td><td style="width: 30%;">Или же какую-то часть воспоминаний. || Часть вроде…</td><td style="width: 30%;">И даже часть воспоминаний. || Часть, вроде...</td></tr>
@@ -822,9 +270,7 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">17:02</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">But every time he got close, the sorceress would erase his memory and escape.</td><td style="width: 30%;">Но всякий раз, когда он её настигал, колдунья стирала ему память и сбегала.</td><td style="width: 30%;">Но каждый раз, когда он приближался к ней, || колдунья стирала ему память и исчезала.</td></tr>
     <tr><td style="width: 4em;">17:07</td><td style="width: 10%;"><b>Twilight, SunsetShimmer:</b></td><td style="width: 30%;">But he kept finding her. || How?</td><td style="width: 30%;">Но он всё равно находил её. || Как?</td><td style="width: 30%;">Но он продолжал её поиски.</td></tr>
     <tr><td style="width: 4em;">17:09</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">These scraps of parchment.</td><td style="width: 30%;">Обрывки пергамента.</td><td style="width: 30%;">Как? || Куски пергамента.</td></tr>
-    <tr><td style="width: 4em;">17:10</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">He secretly wrote everything down so he'd know what had happened and where to go next</td><td style="width: 30%;">Он втайне всё записывал, поэтому знал, что с ним случилось и куда идти дальше,</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam
- | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru || Он тайно всё 
-записывал, поэтому знал, что случилось и куда ему надо следовать,</td></tr>
+    <tr><td style="width: 4em;">17:10</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">He secretly wrote everything down so he'd know what had happened and where to go next</td><td style="width: 30%;">Он втайне всё записывал, поэтому знал, что с ним случилось и куда идти дальше,</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru || Он тайно всё записывал, поэтому знал, что случилось и куда ему надо следовать,</td></tr>
     <tr><td style="width: 4em;">17:14</td><td style="width: 10%;"><b>Twilight, SunsetShimmer:</b></td><td style="width: 30%;">like a trail of bread crumbs. || Clever!</td><td style="width: 30%;">как по следу из хлебных крошек. || Умно!</td><td style="width: 30%;">будто бы путь был выложен хлебными крошками. || Мудро!</td></tr>
     <tr><td style="width: 4em;">17:19</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Clover the— yeah, got it.</td><td style="width: 30%;">А Кловер… Хм, дошло.</td><td style="width: 30%;">Да, ясно - Мудрый.</td></tr>
     <tr><td style="width: 4em;">17:21</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">What happened on the other side of this portal?</td><td style="width: 30%;">И что случилось на другой стороне этого портала?</td><td style="width: 30%;">И что произошло на другой стороне этого портала?</td></tr>
@@ -945,10 +391,10 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">25:18</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Clover the Clever buried the Stone.</td><td style="width: 30%;">Кловер Умный захоронил Камень.</td><td style="width: 30%;">Кловер Мудрый закопал Камень.</td></tr>
     <tr><td style="width: 4em;">25:22</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">This rock formation must be somewhere in the other world.</td><td style="width: 30%;">Такие скальные образования должны быть где-то в том мире.</td><td style="width: 30%;">Эта каменная конструкция должна быть где-то в другом мире.</td></tr>
     <tr><td style="width: 4em;">25:25</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">But it doesn't say how to get your memories back.</td><td style="width: 30%;">Но тут не сказано, как вернуть утраченную память.</td><td style="width: 30%;">Но здесь не сказано, как вернуть воспоминания назад.</td></tr>
-    <tr><td style="width: 4em;">25:31</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"Perhaps if I had destroyed the Stone right away,"</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Возможно, если бы я уничтожил Камень сразу,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Возможно, если я уничтожу Камень прямо сейчас,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">25:33</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"some of my memories could have returned,"</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>часть моих воспоминаний вернулась бы,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>то некоторые воспоминания вернутся ко мне,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">25:36</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"but when the sun sets by the third day after a memory has been taken,"</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>но на третий день после утраты воспоминаний с заходом солнца<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>но при заходе солнца в третий день с момента утраты воспоминаний...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">25:40</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"it is erased forever."</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>они уничтожаются навсегда.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>...они будут утрачены навсегда."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">25:31</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"Perhaps if I had destroyed the Stone right away,"</td><td style="width: 30%;">Возможно, если бы я уничтожил Камень сразу,</td><td style="width: 30%;">"Возможно, если я уничтожу Камень прямо сейчас,</td></tr>
+    <tr><td style="width: 4em;">25:33</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"some of my memories could have returned,"</td><td style="width: 30%;">часть моих воспоминаний вернулась бы,</td><td style="width: 30%;">то некоторые воспоминания вернутся ко мне,</td></tr>
+    <tr><td style="width: 4em;">25:36</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"but when the sun sets by the third day after a memory has been taken,"</td><td style="width: 30%;">но на третий день после утраты воспоминаний с заходом солнца</td><td style="width: 30%;">но при заходе солнца в третий день с момента утраты воспоминаний...</td></tr>
+    <tr><td style="width: 4em;">25:40</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">"it is erased forever."</td><td style="width: 30%;">они уничтожаются навсегда.</td><td style="width: 30%;">...они будут утрачены навсегда."</td></tr>
     <tr><td style="width: 4em;">25:43</td><td style="width: 10%;"><b>Celestia:</b></td><td style="width: 30%;">You must warn Sunset Shimmer at once.</td><td style="width: 30%;">Ты должна незамедлительно предупредить Сансет.</td><td style="width: 30%;">Ты должна немедленно предупредить Сансет Шиммер.</td></tr>
     <tr><td style="width: 4em;">25:47</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">So, where should we start… partner?</td><td style="width: 30%;">Итак, с чего мы начнём… напарница?</td><td style="width: 30%;">Так... || ...с чего мы начнём...</td></tr>
     <tr><td style="width: 4em;">25:50</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">How about with what I call you?</td><td style="width: 30%;">Может, с того, что отныне я буду называть тебя…</td><td style="width: 30%;">...партнёр? || Почему бы нам не начать с того, как я буду тебя называть?</td></tr>
@@ -961,7 +407,7 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">26:25</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Who here hates you enough to erase everyone's good memories of you?</td><td style="width: 30%;">Кто тут ненавидит тебя настолько, чтобы стереть всем хорошие воспоминания о тебе?</td><td style="width: 30%;">Кто здесь ненавидит тебя настолько, чтобы стереть все хорошие воспоминания о тебе?</td></tr>
     <tr><td style="width: 4em;">26:29</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">If you go back far enough…</td><td style="width: 30%;">Если заглянуть в прошлое…</td><td style="width: 30%;">Если вспомнить прошлое...</td></tr>
     <tr><td style="width: 4em;">26:32</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">…everyone.</td><td style="width: 30%;">…кто угодно.</td><td style="width: 30%;">...то все.</td></tr>
-    <tr><td style="width: 4em;">26:35</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">"Known enemies: || all."</td><td style="width: 30%;">Известные враги: || все.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Возможные враги: все."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">26:35</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">"Known enemies: || all."</td><td style="width: 30%;">Известные враги: || все.</td><td style="width: 30%;">"Возможные враги: все."</td></tr>
     <tr><td style="width: 4em;">26:41</td><td style="width: 10%;"><b>Redheart:</b></td><td style="width: 30%;">Good afternoon, ladies. || You feeling okay?</td><td style="width: 30%;">Добрый день, девушки. || У вас всё хорошо?</td><td style="width: 30%;">Д-добрый день, девочки.</td></tr>
     <tr><td style="width: 4em;">26:43</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">That depends on how well you answer my questions.</td><td style="width: 30%;">А это смотря как вы ответите на мои вопросы.</td><td style="width: 30%;">Вы хорошо себя чувствуете? || Это будет зависеть от того, как Вы ответите на мои вопросы.</td></tr>
     <tr><td style="width: 4em;">26:47</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Has anyone come in complaining of memory problems in the last few weeks?</td><td style="width: 30%;">За последние пару недель кто-нибудь жаловался на проблемы с памятью?</td><td style="width: 30%;">Кто-нибудь жаловался на проблемы с памятью в последние несколько недель?</td></tr>
@@ -988,7 +434,7 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">28:05</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Oh, think, Trixie!</td><td style="width: 30%;">Думай, Трикси!</td><td style="width: 30%;">Ох, думай, Трикси!</td></tr>
     <tr><td style="width: 4em;">28:07</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I wanted to come in here and see who we are missing.</td><td style="width: 30%;">Я собиралась зайти сюда и посмотреть, кого мы пропустили.</td><td style="width: 30%;">Я планировала зайти сюда и посмотреть, кого мы упустили.</td></tr>
     <tr><td style="width: 4em;">28:10</td><td style="width: 10%;"><b>SunsetShimmer, Trixie:</b></td><td style="width: 30%;">But we've talking to everyone, from A to Z. || Wait.</td><td style="width: 30%;">Но мы поговорили со всеми, от А до Я. || Подожди.</td><td style="width: 30%;">Но мы перебрали всех, от А до Я. || Погодите-ка.</td></tr>
-    <tr><td style="width: 4em;">28:14</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Not pictured: Wallflower Blush.</td><td style="width: 30%;">Нет фотографии: Уоллфлауэр Блаш.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Отсутствует изображение: Уоллфлауэр Блаш".<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">28:14</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Not pictured: Wallflower Blush.</td><td style="width: 30%;">Нет фотографии: Уоллфлауэр Блаш.</td><td style="width: 30%;">"Отсутствует изображение: Уоллфлауэр Блаш".</td></tr>
     <tr><td style="width: 4em;">28:17</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Who's Wallflower?</td><td style="width: 30%;">Кто эта Уоллфлауэр?</td><td style="width: 30%;">Кто это?</td></tr>
     <tr><td style="width: 4em;">28:19</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I'm right here, you know.</td><td style="width: 30%;">Я, между прочим, тут сижу.</td><td style="width: 30%;">Я прямо тут, если что.</td></tr>
     <tr><td style="width: 4em;">28:22</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Who are you?</td><td style="width: 30%;">Ты кто?</td><td style="width: 30%;">Эм, ты кто?</td></tr>
@@ -997,9 +443,9 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">28:31</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Not you specifically, but what a grade it was.</td><td style="width: 30%;">Не тебя конкретно, но вот это был класс так класс.</td><td style="width: 30%;">Не тебя в особенности, но что же за класс это был!</td></tr>
     <tr><td style="width: 4em;">28:35</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">The Great and Powerful Trixie debuted her disappearing frog trick!</td><td style="width: 30%;">Великая и Могущественная Трикси впервые показала тогда трюк с исчезающей лягушкой.</td><td style="width: 30%;">Великая и Могущественная Трикси впервые показала там трюк с исчезновением лягушки!</td></tr>
     <tr><td style="width: 4em;">28:40</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">You know, a lot of people don't realize how much work goes into raising tadpoles. You really have to…</td><td style="width: 30%;">Понимаешь, большинство людей не осознаёт, как сложно вырастить головастиков. Нужно приложить…</td><td style="width: 30%;">Знаешь, многие люди даже не подозревают, как сложно выращивать головастиков.</td></tr>
-    <tr><td style="width: 4em;">28:44</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Sunset, we think the Memory Stone was buried under this rock formation.</td><td style="width: 30%;">Сансет, мы думаем, Камень воспоминаний был захоронен под такими скальными образованиями.</td><td style="width: 30%;">Тебе приходится... || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Сансет, мы думаем, что Камень зарыт под этой каменной конструкцией.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">28:49</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">And if you don't destroy the Memory Stone by the time the sun sets today,</td><td style="width: 30%;">И если ты не уничтожишь Камень до сегодняшнего заката,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>И если ты не уничтожишь его до сегодняшнего захода солнца,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">28:53</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">all those memories will be erased forever.</td><td style="width: 30%;">все те воспоминания исчезнут навсегда.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>все воспоминания исчезнут навсегда."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">28:44</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">Sunset, we think the Memory Stone was buried under this rock formation.</td><td style="width: 30%;">Сансет, мы думаем, Камень воспоминаний был захоронен под такими скальными образованиями.</td><td style="width: 30%;">Тебе приходится... || "Сансет, мы думаем, что Камень зарыт под этой каменной конструкцией.</td></tr>
+    <tr><td style="width: 4em;">28:49</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">And if you don't destroy the Memory Stone by the time the sun sets today,</td><td style="width: 30%;">И если ты не уничтожишь Камень до сегодняшнего заката,</td><td style="width: 30%;">И если ты не уничтожишь его до сегодняшнего захода солнца,</td></tr>
+    <tr><td style="width: 4em;">28:53</td><td style="width: 10%;"><b>Twilight:</b></td><td style="width: 30%;">all those memories will be erased forever.</td><td style="width: 30%;">все те воспоминания исчезнут навсегда.</td><td style="width: 30%;">все воспоминания исчезнут навсегда."</td></tr>
     <tr><td style="width: 4em;">28:56</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">How am I supposed to find a rock formation that looks…</td><td style="width: 30%;">И как, по-вашему, я должна найти скальные образования,</td><td style="width: 30%;">И как же мне найти эту каменную конструкцию,</td></tr>
     <tr><td style="width: 4em;">28:59</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">like… that rock formation?!</td><td style="width: 30%;">которые выглядят… как те скальные образования?!</td><td style="width: 30%;">которая выглядит... как... эта каменная конструкция?!</td></tr>
     <tr><td style="width: 4em;">29:03</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">That'll work.</td><td style="width: 30%;">Зацепка есть.</td><td style="width: 30%;">Подойдёт.</td></tr>
@@ -1032,16 +478,16 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">31:49</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">You erased everyone's memories?</td><td style="width: 30%;">Ты стёрла всем память?</td><td style="width: 30%;">Так это ты стёрла всем память?</td></tr>
     <tr><td style="width: 4em;">31:53</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Yes.</td><td style="width: 30%;">Да.</td><td style="width: 30%;">Да.</td></tr>
     <tr><td style="width: 4em;">31:55</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Wait, who are you again?</td><td style="width: 30%;">Секунду, напомни, ты кто?</td><td style="width: 30%;">Погоди. || Напомни, кто ты?</td></tr>
-    <tr><td style="width: 4em;">32:04</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">You don't see me fitting in, || I'm sitting here alone</td><td style="width: 30%;">Я чужая всем вокруг, || Сижу я здесь одна.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Не замечал меня никто,<span class="ass_tags"><wbr>\N<wbr></span>а я сижу одна.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">32:12</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Right beside my shadow, || Always on my own.</td><td style="width: 30%;">Тень моя лишь рядом. || Очень жизнь трудна.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>И на общем фоне,<span class="ass_tags"><wbr>\N<wbr></span>вовсе не видна.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">32:20</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">If I could share my wildest dreams, || Maybe they would see:</td><td style="width: 30%;">Открыть бы мне всем свой мир грёз, || Чтобы показать:</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Ах, если бы сбылась мечта,<span class="ass_tags"><wbr>\N<wbr></span>все смогли б понять,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">32:28</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I'm more than just a wallflower, || There's so much more to me.</td><td style="width: 30%;">Я вовсе не посредственность, || Мне есть, о чём мечтать.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>что я намного ярче,<span class="ass_tags"><wbr>\N<wbr></span>я должна сиять!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">32:36</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I'm invisible, invisible, || A droplet in the mist,</td><td style="width: 30%;">Я невидима, невидима. || В тумане капли след.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Я невидима, невидима,<span class="ass_tags"><wbr>\N<wbr></span>капля в море я!<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">32:44</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Invisible, invisible || It's like I don't exist.</td><td style="width: 30%;">Невидима, невидима — || Меня как будто нет.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Невидима, невидима,<span class="ass_tags"><wbr>\N<wbr></span>как будто нет меня.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">32:53</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Right beneath my picture || This is what you'll read:</td><td style="width: 30%;">Под моею фоткой || Можешь прочитать:</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Имя вмиг сотрётся<span class="ass_tags"><wbr>\N<wbr></span>лишь его прочтут,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">33:01</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">"A laundry list of nothings, || Not likely to succeed"</td><td style="width: 30%;">"Нет в жизни достижений, || Успешной ей не стать".</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>я исчезну сразу,<span class="ass_tags"><wbr>\N<wbr></span>другие не найдут.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">33:09</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">A yearbook with blank pages || That no one wants to sign</td><td style="width: 30%;">Пусты листы альбома. || Не пишут люди в нём,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Судьба моя как книга,<span class="ass_tags"><wbr>\N<wbr></span>где слов не написать,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">33:18</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">A memory forgotten || Until the end of time.</td><td style="width: 30%;">Как будто позабыта || Я до конца времён.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>навеки позабыта,<span class="ass_tags"><wbr>\N<wbr></span>заброшена опять...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">32:04</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">You don't see me fitting in, || I'm sitting here alone</td><td style="width: 30%;">Я чужая всем вокруг, || Сижу я здесь одна.</td><td style="width: 30%;">Не замечал меня никто,<span class="ass_tags"><wbr>\N<wbr></span>а я сижу одна.</td></tr>
+    <tr><td style="width: 4em;">32:12</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Right beside my shadow, || Always on my own.</td><td style="width: 30%;">Тень моя лишь рядом. || Очень жизнь трудна.</td><td style="width: 30%;">И на общем фоне,<span class="ass_tags"><wbr>\N<wbr></span>вовсе не видна.</td></tr>
+    <tr><td style="width: 4em;">32:20</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">If I could share my wildest dreams, || Maybe they would see:</td><td style="width: 30%;">Открыть бы мне всем свой мир грёз, || Чтобы показать:</td><td style="width: 30%;">Ах, если бы сбылась мечта,<span class="ass_tags"><wbr>\N<wbr></span>все смогли б понять,</td></tr>
+    <tr><td style="width: 4em;">32:28</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I'm more than just a wallflower, || There's so much more to me.</td><td style="width: 30%;">Я вовсе не посредственность, || Мне есть, о чём мечтать.</td><td style="width: 30%;">что я намного ярче,<span class="ass_tags"><wbr>\N<wbr></span>я должна сиять!</td></tr>
+    <tr><td style="width: 4em;">32:36</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">I'm invisible, invisible, || A droplet in the mist,</td><td style="width: 30%;">Я невидима, невидима. || В тумане капли след.</td><td style="width: 30%;">Я невидима, невидима,<span class="ass_tags"><wbr>\N<wbr></span>капля в море я!</td></tr>
+    <tr><td style="width: 4em;">32:44</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Invisible, invisible || It's like I don't exist.</td><td style="width: 30%;">Невидима, невидима — || Меня как будто нет.</td><td style="width: 30%;">Невидима, невидима,<span class="ass_tags"><wbr>\N<wbr></span>как будто нет меня.</td></tr>
+    <tr><td style="width: 4em;">32:53</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Right beneath my picture || This is what you'll read:</td><td style="width: 30%;">Под моею фоткой || Можешь прочитать:</td><td style="width: 30%;">Имя вмиг сотрётся<span class="ass_tags"><wbr>\N<wbr></span>лишь его прочтут,</td></tr>
+    <tr><td style="width: 4em;">33:01</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">"A laundry list of nothings, || Not likely to succeed"</td><td style="width: 30%;">"Нет в жизни достижений, || Успешной ей не стать".</td><td style="width: 30%;">я исчезну сразу,<span class="ass_tags"><wbr>\N<wbr></span>другие не найдут.</td></tr>
+    <tr><td style="width: 4em;">33:09</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">A yearbook with blank pages || That no one wants to sign</td><td style="width: 30%;">Пусты листы альбома. || Не пишут люди в нём,</td><td style="width: 30%;">Судьба моя как книга,<span class="ass_tags"><wbr>\N<wbr></span>где слов не написать,</td></tr>
+    <tr><td style="width: 4em;">33:18</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">A memory forgotten || Until the end of time.</td><td style="width: 30%;">Как будто позабыта || Я до конца времён.</td><td style="width: 30%;">навеки позабыта,<span class="ass_tags"><wbr>\N<wbr></span>заброшена опять...</td></tr>
     <tr><td style="width: 4em;">33:26</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Hey! What are you doing?!</td><td style="width: 30%;">Эй, что ты делаешь?</td><td style="width: 30%;">Эй, что ты делаешь?</td></tr>
     <tr><td style="width: 4em;">33:31</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">What did I do to you?</td><td style="width: 30%;">Да что я тебе сделала?!</td><td style="width: 30%;">Что я тебе сделала?</td></tr>
     <tr><td style="width: 4em;">33:32</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Honestly, I don't even know you!</td><td style="width: 30%;">Честное слово, я даже не знаю тебя!</td><td style="width: 30%;">Серьёзно! Я тебя даже не знаю!</td></tr>
@@ -1066,7 +512,7 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">34:35</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">How are we supposed to catch someone who can erase our memory || every time we get close to catching them?</td><td style="width: 30%;">Но как мы сможем поймать кого-то, кто может стереть нашу память || всякий раз, когда мы его настигаем?</td><td style="width: 30%;">Как же нам ловить того, кто стирает нашу память каждый раз, когда мы дышим ему в спину?</td></tr>
     <tr><td style="width: 4em;">34:45</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">By being clever!</td><td style="width: 30%;">Как Кловер Умный!</td><td style="width: 30%;">Быть мудрее!</td></tr>
     <tr><td style="width: 4em;">34:49</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I wrote myself a note.</td><td style="width: 30%;">Я оставила себе записку.</td><td style="width: 30%;">Я написала записку.</td></tr>
-    <tr><td style="width: 4em;">34:50</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">"Check the video."</td><td style="width: 30%;">"Проверь камеру".</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Проверить запись видео".<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">34:50</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">"Check the video."</td><td style="width: 30%;">"Проверь камеру".</td><td style="width: 30%;">"Проверить запись видео".</td></tr>
     <tr><td style="width: 4em;">34:54</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Yes!</td><td style="width: 30%;">Да!</td><td style="width: 30%;">Да!</td></tr>
     <tr><td style="width: 4em;">34:56</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">It's been recording this whole time!</td><td style="width: 30%;">Она всё это время записывала!</td><td style="width: 30%;">Камера снимала всё это время!</td></tr>
     <tr><td style="width: 4em;">34:58</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Twilight's camera? What are you talking about?</td><td style="width: 30%;">Камера Твайлайт? Она тут при чём?</td><td style="width: 30%;">Камера Твайлайт? || Что ты имеешь в виду?</td></tr>
@@ -1076,7 +522,7 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">35:12</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Who's that?</td><td style="width: 30%;">Кто это?</td><td style="width: 30%;">Кто это?</td></tr>
     <tr><td style="width: 4em;">35:14</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Wallflower Blush.</td><td style="width: 30%;">Уоллфлауэр Блаш.</td><td style="width: 30%;">Уоллфлауэр Блаш.</td></tr>
     <tr><td style="width: 4em;">35:15</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Name's not ringing a bell.</td><td style="width: 30%;">Первый раз слышу.</td><td style="width: 30%;">Мне это ни о чём не говорит.</td></tr>
-    <tr><td style="width: 4em;">35:18</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">You don't see me fitting in…</td><td style="width: 30%;">Я чужая всем вокруг…</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Не замечал меня никто...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">35:18</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">You don't see me fitting in…</td><td style="width: 30%;">Я чужая всем вокруг…</td><td style="width: 30%;">Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru || Не замечал меня никто...</td></tr>
     <tr><td style="width: 4em;">35:26</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">Long song, huh?</td><td style="width: 30%;">Во затянула, а?</td><td style="width: 30%;">Длинная песенка, да?</td></tr>
     <tr><td style="width: 4em;">35:28</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">What did I do to you? Honestly, I don't even know you!</td><td style="width: 30%;">Да что я тебе сделала?! Честное слово, я даже не знаю тебя!</td><td style="width: 30%;">Что я тебе сделала? || Серьёзно! Я тебя даже не знаю!</td></tr>
     <tr><td style="width: 4em;">35:33</td><td style="width: 10%;"><b>Wallflower:</b></td><td style="width: 30%;">Exactly! You had everyone fooled,</td><td style="width: 30%;">Вот именно! Тебе удалось всех одурачить,</td><td style="width: 30%;">Вот именно! || Ты всех обманула,</td></tr>
@@ -1177,26 +623,26 @@ ponies drink carrot juice at every meal? || I do. || Know that.</td><td style="w
     <tr><td style="width: 4em;">42:08</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I still wasn't very nice to you.</td><td style="width: 30%;">я была не очень-то добра к тебе.</td><td style="width: 30%;">...помог мне осознать, что я не очень хорошо с тобой поступала.</td></tr>
     <tr><td style="width: 4em;">42:11</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Everyone matters, Wallflower.</td><td style="width: 30%;">Каждый из нас важен, Уоллфлауэр.</td><td style="width: 30%;">Каждый из нас важен, Уоллфлауэр.</td></tr>
     <tr><td style="width: 4em;">42:13</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">No matter how insignificant or invisible they feel.</td><td style="width: 30%;">Какими бы незначительными или невидимыми мы себя не чувствовали.</td><td style="width: 30%;">И неважно, насколько незначительными или невидимыми мы себя чувствуем.</td></tr>
-    <tr><td style="width: 4em;">42:22</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Dear Princess Twilight,</td><td style="width: 30%;">Дорогая принцесса Твайлайт,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>"Дорогая Принцесса Твайлайт, <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">42:24</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">you can add a new ending to the archives.</td><td style="width: 30%;">ты можешь дописать окончание той истории для архива.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>теперь ты можешь вписать в историю новый финал. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">42:26</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">The Memory Stone is no more.</td><td style="width: 30%;">Камня воспоминаний больше нет.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Камня Воспоминаний больше нет...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">42:22</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Dear Princess Twilight,</td><td style="width: 30%;">Дорогая принцесса Твайлайт,</td><td style="width: 30%;">"Дорогая Принцесса Твайлайт, </td></tr>
+    <tr><td style="width: 4em;">42:24</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">you can add a new ending to the archives.</td><td style="width: 30%;">ты можешь дописать окончание той истории для архива.</td><td style="width: 30%;">теперь ты можешь вписать в историю новый финал. </td></tr>
+    <tr><td style="width: 4em;">42:26</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">The Memory Stone is no more.</td><td style="width: 30%;">Камня воспоминаний больше нет.</td><td style="width: 30%;">Камня Воспоминаний больше нет...</td></tr>
     <tr><td style="width: 4em;">42:29</td><td style="width: 10%;"><b>Luna:</b></td><td style="width: 30%;">No student parking in the faculty lot.</td><td style="width: 30%;">Служебная парковка не для учеников!</td><td style="width: 30%;">Преподавательская парковка не для учеников!</td></tr>
-    <tr><td style="width: 4em;">42:36</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Thank you for your help.</td><td style="width: 30%;">Спасибо тебе за помощь.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Спасибо тебе за помощь. <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">42:37</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Give my best to Princess Luna and, of course,</td><td style="width: 30%;">Передай привет принцессе Луне и, конечно,</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Передавай привет Принцессе Луне, <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">42:40</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">thank my second best teacher, Princess Celestia.</td><td style="width: 30%;">спасибо моему не самому лучшему учителю, принцессе Селестии.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>и, конечно же, <span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span> || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>благодарность моему второму-лучшему учителю, Принцессе Селестии.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">42:44</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Make sure she knows you're kidding when you say that, though.</td><td style="width: 30%;">Не забудь только уточнить, что это шутка.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Только убедись, что она поняла, что это шутка.<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
-    <tr><td style="width: 4em;">42:47</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I'm happy to say everything is back to how it used to be.</td><td style="width: 30%;">Рада сообщить, что всё осталось как прежде.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>Я рада сообщить,<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span> || <span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>что всё вернулось на круги своя...<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">42:36</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Thank you for your help.</td><td style="width: 30%;">Спасибо тебе за помощь.</td><td style="width: 30%;">Спасибо тебе за помощь. </td></tr>
+    <tr><td style="width: 4em;">42:37</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Give my best to Princess Luna and, of course,</td><td style="width: 30%;">Передай привет принцессе Луне и, конечно,</td><td style="width: 30%;">Передавай привет Принцессе Луне, </td></tr>
+    <tr><td style="width: 4em;">42:40</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">thank my second best teacher, Princess Celestia.</td><td style="width: 30%;">спасибо моему не самому лучшему учителю, принцессе Селестии.</td><td style="width: 30%;">и, конечно же,  || благодарность моему второму-лучшему учителю, Принцессе Селестии.</td></tr>
+    <tr><td style="width: 4em;">42:44</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Make sure she knows you're kidding when you say that, though.</td><td style="width: 30%;">Не забудь только уточнить, что это шутка.</td><td style="width: 30%;">Только убедись, что она поняла, что это шутка.</td></tr>
+    <tr><td style="width: 4em;">42:47</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I'm happy to say everything is back to how it used to be.</td><td style="width: 30%;">Рада сообщить, что всё осталось как прежде.</td><td style="width: 30%;">Я рада сообщить, || что всё вернулось на круги своя...</td></tr>
     <tr><td style="width: 4em;">42:52</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">I demand to speak to the yearbook president!</td><td style="width: 30%;">Подать мне сюда редактора ежегодника!</td><td style="width: 30%;">Я желаю говорить с Главой по составлению ежегодника!</td></tr>
     <tr><td style="width: 4em;">42:55</td><td style="width: 10%;"><b>Trixie:</b></td><td style="width: 30%;">How did this get in here?</td><td style="width: 30%;">Как это попало сюда?!</td><td style="width: 30%;">Как это сюда попало?</td></tr>
     <tr><td style="width: 4em;">43:00</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">A yearbook president never reveals her secrets!</td><td style="width: 30%;">Редактор ежегодника никогда не раскрывает своих секретов!</td><td style="width: 30%;">Глава комиссии по составлению ежегодника не выдаёт своих секретов!</td></tr>
-    <tr><td style="width: 4em;">43:06</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Well, not exactly how it used to be.</td><td style="width: 30%;">Впрочем, не совсем как прежде.</td><td style="width: 30%;"><span class="ass_tags"><wbr>{<wbr>\i1}<wbr></span>...Правда, с некоторыми изменениями."<span class="ass_tags"><wbr>{<wbr>\i0}<wbr></span></td></tr>
+    <tr><td style="width: 4em;">43:06</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">Well, not exactly how it used to be.</td><td style="width: 30%;">Впрочем, не совсем как прежде.</td><td style="width: 30%;">...Правда, с некоторыми изменениями."</td></tr>
     <tr><td style="width: 4em;">43:11</td><td style="width: 10%;"><b>SunsetShimmer:</b></td><td style="width: 30%;">I've got a yearbook delivery for Best Gardener!</td><td style="width: 30%;">Экземпляр ежегодника нашему лучшему садоводу!</td><td style="width: 30%;">У меня посылка для лучшей садовницы!</td></tr>
     <tr><td style="width: 4em;">43:26</td><td style="width: 10%;"><b>RainbowDash:</b></td><td style="width: 30%;">Oh, come on,</td><td style="width: 30%;">Да ладно,</td><td style="width: 30%;">Да ладно?!</td></tr>
     <tr><td style="width: 4em;">43:28</td><td style="width: 10%;"><b>RainbowDash:</b></td><td style="width: 30%;">seriously?</td><td style="width: 30%;">серьёзно?</td><td style="width: 30%;">Серьёзно?! || Переведено командой 'TheDoctor Team'.<span class="ass_tags"><wbr>\N<wbr></span>VK.com/TheDoctorTeam | YouTube.com/user/WeTheDoctorTeam | TheDoctorTeam.Ru</td></tr>
     <tr><td style="width: 4em;">43:32</td><td style="width: 10%;"><b>Default:</b></td><td style="width: 30%;">SCHASTLIVY PONEC</td><td style="width: 30%;">СЧАСТЛИВЫЙ ПОНЕЦ</td><td style="width: 30%;"></td></tr>
     <tr><td style="width: 4em;">43:35</td><td style="width: 10%;"><b>Default:</b></td><td style="width: 30%;">anon2anon<span class="ass_tags"><wbr>\N<wbr></span>sunnysubs.com</td><td style="width: 30%;">anon2anon<span class="ass_tags"><wbr>\N<wbr></span>sunnysubs.com</td><td style="width: 30%;"></td></tr>
 </tbody></table>
-</div>
 
-
-</body></html>
+    </div>
+    </body>
+</html>
