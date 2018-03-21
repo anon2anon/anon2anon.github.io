@@ -1,0 +1,4 @@
+[submodule "subs/sunnysubs"]
+	path = sunnysubs
+	url = https://github.com/WoIfram/sunnysubs/
+	branch = master
