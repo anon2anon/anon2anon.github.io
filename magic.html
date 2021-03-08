@@ -9,12 +9,11 @@
         .drop_zone {font-size: 18px; text-align: center; line-height: 75px; border: 3px dashed #ccc;}
         .drop_zone, div#result {width: 80%; margin: 25px auto;}
         #show_tags_checkbox_div {margin: 12px auto;}
-        #show_accurate_timing_checkbox_div {margin: 12px auto;}
         #select_result_button_div {font-size: 18px; text-align: center; width: 100%; margin: 20px auto 10px auto;}
         #select_result_button {text-decoration: none; border-bottom: 1px dashed;}
         #download_button_div {font-size: 18px; text-align: center; width: 100%; margin: 20px auto 10px auto;}
         #download_button {text-decoration: none; border-bottom: 1px dashed;}
-        #show_tags_checkbox_div.zero_height, #show_accurate_timing_checkbox_div.zero_height, #select_result_button_div.zero_height, #download_button_div.zero_height {visibility: hidden; height: 0px; margin: 0px;}
+        #show_tags_checkbox_div.zero_height, #select_result_button_div.zero_height, #download_button_div.zero_height {visibility: hidden; height: 0px; margin: 0px;}
         .result_for_pad {vertical-align: top; padding: 7px 5px;}
         .comparison_table {width:100%; table-layout:fixed; word-wrap: break-word;}
         .comparison_table td {vertical-align: top; padding: 7px 5px;}
@@ -38,7 +37,6 @@
         var numDroppedFiles = 0;
         var parsedFiles = [];
         var optShowTags = false;
-        var optShowAccurateTiming = false;
         var debugPreserveFilesOnRefresh = false;
         var debugPreservedFiles = [];
 
@@ -144,7 +142,7 @@
         function parseAssFile(str) {
             var lines = str.replace(/\r/g, '').split('\n');
             var parsedFile = {lines: [], styles: {}};
-            var format = {};
+            var format = [];
             for(var i=0; i<lines.length; ++i) {
                 var matchFormat = lines[i].match(/^Format: (.*)$/i);
                 if(matchFormat)
@@ -156,9 +154,9 @@
                     if(style['Name'])
                         parsedFile.styles[style['Name']] = style;
                 }
-                var match = lines[i].match(/^Dialogue: ?\d+,(\d+:\d+:\d+\.\d+),(\d+:\d+:\d+\.\d+),([^,]*),[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,(.*)$/i);
+                var match = lines[i].match(/^Dialogue: ?\d+,(\d+:\d+:\d+\.\d+),(\d+:\d+:\d+\.\d+),([^,]*),([^,]*),[^,]*,[^,]*,[^,]*,[^,]*,(.*)$/i);
                 if(match) {
-                    var line = {source: str, timeStart: match[1], timeEnd: match[2], style: match[3], text: match[4], msecStart: getMsecFromAssTimeString(match[1]), msecEnd: getMsecFromAssTimeString(match[2]), styleFields: parsedFile.styles[match[3]]};
+                    var line = {source: str, style: match[3], actor: match[4], text: match[5], msecStart: getMsecFromAssTimeString(match[1]), msecEnd: getMsecFromAssTimeString(match[2]), styleFields: parsedFile.styles[match[3]]};
                     line.alignment = getLineAlignment(line);
                     parsedFile.lines.push(line);
                 }
@@ -176,7 +174,7 @@
                     var matchTime = lineGroup[1].match(/^(\d+:\d+:\d+,\d+) +--> +(\d+:\d+:\d+,\d+)/);
                     if(matchNumber && matchTime) {
                         var text = lineGroup.slice(2).join('\\N');
-                        var line = {source: lineGroup.join('\n'), timeStart: matchTime[1], timeEnd: matchTime[2], style: '', text: text, msecStart: getMsecFromSrtTimeString(matchTime[1]), msecEnd: getMsecFromSrtTimeString(matchTime[2]), styleFields: null};
+                        var line = {source: lineGroup.join('\n'), style: 'Default', text: text, msecStart: getMsecFromSrtTimeString(matchTime[1]), msecEnd: getMsecFromSrtTimeString(matchTime[2]), styleFields: null};
                         line.alignment = 2;
                         parsedFile.lines.push(line);
                     }
@@ -275,7 +273,7 @@
             return result;
         }
 
-        function evaluateRowStrings(ignoreIntersections, accurateTiming) {
+        function evaluateRowStrings(ignoreIntersections, forPad) {
             if(parsedFiles.length<1)
                 return [];
             var result = [];
@@ -316,7 +314,9 @@
                         if(parsedLine.alignment!=2)
                             text = '<span class="non_bottom_center_text">'+text+'</span>';
                         lines[iFile].push(text);
-                        var style = parsedLine.style.replace(/ /g, '&nbsp;');
+                        var style = parsedLine.style;
+                        if (!forPad)
+                            style = style.replace(/ /g, '&nbsp;');
                         if(names[iFile].indexOf(style)==-1)
                             names[iFile].push(style);
                         if(msecStart==null)
@@ -326,12 +326,12 @@
                     }
                     if(names[iFile].length>0 && namesStr.length==0) {
                         namesStr = names[iFile].join(', ');
-                        if(iFile>0)
+                        if(iFile>0 && !forPad)
                             namesStr = '('+namesStr+')';
                     }
                 }
                 rowString = [];
-                if (accurateTiming)
+                if (forPad)
                     rowString.push(getCentisecondIntervalStringFromMsec(msecStart, msecEnd, true));
                 else
                     rowString.push(getMinutesAndSecondsStringFromMsec(msecStart, true));
@@ -364,14 +364,13 @@
         }
         
         function evaluateResultForPad() {
-            var rowStrings = evaluateRowStrings(parsedFiles.length==1, optShowAccurateTiming);
+            var rowStrings = evaluateRowStrings(parsedFiles.length==1, true);
             if(parsedFiles.length<1)
                 return '';
             var result = '';
             for(var iRow = 0; iRow<rowStrings.length; ++iRow) {
-                result += '\r\n';
-                if (!optShowAccurateTiming) {
-                    result += '&nbsp;&nbsp;&nbsp;&nbsp;';
+                if(iRow) {
+                    result += '\r\n';
                 }
                 result += rowStrings[iRow][0]+'&nbsp;<b>'+rowStrings[iRow][1]+':</b>&nbsp;';
                 for(var iFile = 0; iFile<parsedFiles.length; ++iFile) {
@@ -443,13 +442,10 @@
             try {
                 var radio = document.querySelector('input[type="radio"][name="group_mode"]:checked');
                 optShowTags = document.getElementById('show_tags_checkbox').checked;
-                optShowAccurateTiming = document.getElementById('show_accurate_timing_checkbox').checked;
                 localStorage.setItem('viewmode', radio.value);
                 localStorage.setItem('optShowTags', optShowTags);
-                localStorage.setItem('optShowAccurateTiming', optShowAccurateTiming);
                 //document.getElementById('mode_specific').className = radio ? radio.value : '';
                 document.getElementById('show_tags_checkbox_div').className = radio && (radio.value=='mode_pad' || radio.value=='mode_comparison') ? '' : 'zero_height';
-                document.getElementById('show_accurate_timing_checkbox_div').className = radio && radio.value=='mode_pad' ? '' : 'zero_height';
                 document.getElementById('select_result_button_div').className = radio && radio.value=='mode_pad' && parsedFiles.length>0 ? '' : 'zero_height';
                 document.getElementById('download_button_div').className = radio && radio.value!='mode_pad' && parsedFiles.length>0 ? '' : 'zero_height';
                 if(parsedFiles.length<1)
@@ -484,9 +480,9 @@
             var linkElement = document.createElement('a');
             linkElement.href = window.URL.createObjectURL(blob);
             linkElement.download = 'comparison.html';
-            var ckickEvent = document.createEvent('MouseEvents');
-            ckickEvent.initEvent('click', true, true);
-            linkElement.dispatchEvent(ckickEvent);
+            var clickEvent = document.createEvent('MouseEvents');
+            clickEvent.initEvent('click', true, true);
+            linkElement.dispatchEvent(clickEvent);
         }
 
         function onDragOver(evt) {
@@ -538,7 +534,7 @@
             document.getElementById('select_result_button').addEventListener('click', selectResult, false);
             document.getElementById('download_button').addEventListener('click', downloadResult, false);
             var radios = document.querySelectorAll('input[type="radio"][name="group_mode"]');
-            var radioToSelect = document.querySelector('input[type="radio"][name="group_mode"][value="'+(localStorage.getItem('viewmode')||'mode_comparison')+'"]');
+            var radioToSelect = document.querySelector('input[type="radio"][name="group_mode"][value="'+(localStorage.getItem('viewmode')||'mode_pad')+'"]');
             if(radioToSelect)
                 radioToSelect.checked = true;
             for(var iRadio = 0; iRadio<radios.length; ++iRadio)
@@ -546,9 +542,6 @@
             var checkboxShowTags = document.getElementById('show_tags_checkbox');
             checkboxShowTags.addEventListener('click', updateResult, false);
             checkboxShowTags.checked = localStorage.getItem('optShowTags')=='true';
-            var checkboxShowAccurateTiming = document.getElementById('show_accurate_timing_checkbox');
-            checkboxShowAccurateTiming.addEventListener('click', updateResult, false);
-            checkboxShowAccurateTiming.checked = localStorage.getItem('optShowAccurateTiming')=='true';
             if(debugPreserveFilesOnRefresh) {
                 debugPreservedFiles = JSON.parse(localStorage.getItem('debugPreservedFiles')||'[]');
                 for(var iFile = 0; iFile<debugPreservedFiles.length; ++iFile) {
@@ -575,16 +568,13 @@
     <div style="float: left; position: relative; left: 50%;">
         <div style="float: left; position: relative; right: 50%;">
             <form name="options_form" method="get" action="" onsubmit="return false;">
-                <label><input type="radio" name="group_mode" value="mode_comparison" checked/> Сравнение</label><br/>
-                <label><input type="radio" name="group_mode" value="mode_pad"/> Перенос в пад</label><br/>
+                <label><input type="radio" name="group_mode" value="mode_pad" checked/> Перенос в пад</label><br/>
+                <label><input type="radio" name="group_mode" value="mode_comparison"/> Сравнение</label><br/>
                 <label><input type="radio" name="group_mode" value="mode_timeline"/> Таймлайн</label><br/>
             </form>
             <div id="mode_specific">
                 <div id="show_tags_checkbox_div" class="zero_height">
                     <label><input type="checkbox" id="show_tags_checkbox"/>Показывать теги</input></label>
-                </div>
-                <div id="show_accurate_timing_checkbox_div" class="zero_height">
-                    <label><input type="checkbox" id="show_accurate_timing_checkbox"/>Точный тайминг</input></label>
                 </div>
                 <div id="select_result_button_div" class="zero_height">
                     <a href="javascript:void(0)" id="select_result_button">Выделить всё</a>
