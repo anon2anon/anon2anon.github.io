@@ -4,9 +4,15 @@ C: Celestia
 D: Discord
 F: FlutterShy
 FS: FlutterShy
+H: HitchTrailblazer
+HT: HitchTrailblazer
+I: IzzyMoonbow
+IM: IzzyMoonbow
+J: Jamack
 K: Kipo
 L: Luna
 PP: PinkiePie
+PPP: PippPetals
 R: Rarity
 RD: RainbowDash
 S: Spike
@@ -15,6 +21,9 @@ Sc: Scootaloo
 SG: StarlightGlimmer
 Sm: Somepony
 Sp: Spike
-SS: SunsetShimmer
+SS: SunnyStarscout
 T: Twilight
 TS: Twilight
+W: Wolf
+WV: HitchTrailblazer
+ZS: ZippStorm
