@@ -29,6 +29,6 @@ SS: Sunny
 T: Twilight
 TS: Twilight
 W: Wolf
-WV: HitchTrailblazer
+WV: Hitch
 Z: Zipp
 ZS: Zipp
