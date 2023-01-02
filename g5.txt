@@ -1,4 +1,4 @@
-Обновлено 15 сентября 2022
+Обновлено 2 января 2023
 
 MOV0ANG "My Little Pony: A New Generation"
 
@@ -4854,3 +4854,81 @@ TYT26 04:57.23,3.82 Music: Uh-huh, oh, yeah, uh-huh, oh, yeah.  → Ага, о �
 TYT26 05:01.44,2.01 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
 TYT26 05:03.45,2.87 Default: anon2anon\Nsunnysubs.com → anon2anon\Nsunnysubs.com
 
+TYT27 "All That Jazz"
+
+TYT27 00:00.74,1.15 Pipp: Loving it! → Красота!
+TYT27 00:02.05,1.41 Pipp: But what about this? → А как насчёт такого?
+TYT27 00:03.50,2.68 Pipp: Or this? Or this? Or… → Или такого? Или такого? Или…
+TYT27 00:06.18,1.09 Pipp: What about this? → Может, такой?
+TYT27 00:08.08,1.82 Dahlia: It's so me! I love it! → Этот — самое то! Супер!
+TYT27 00:10.25,1.40 Jazz: Great choice, Dahlia! → Отличный выбор, Далия!
+TYT27 00:11.66,1.00 Jazz: Right this way! → Сюда!
+TYT27 00:12.97,1.80 Pipp: I love all your designs Jazz! → Все твои дизайны просто офигенные, Джезз!
+TYT27 00:15.01,4.01 Jazz: Oh, they're not mine. I just copied them from a huge library of hooficures. → О, они не мои. Я просто копирую их из \Nбольшого каталога накопытных узоров.
+TYT27 00:19.46,2.43 Jazz: I've never created my own designs before. → Я ещё ни разу ничего не придумала сама.
+TYT27 00:23.72,3.31 Pipp: Oooh-weee! Those hooves are super gorgeous! → Ого-го! Копытца получились полный отпад!
+TYT27 00:27.03,1.90 Pipp: Mind if I Ponygram them, Dahlia? → Можно я скину их в Пониграм, Далия?
+TYT27 00:33.76,4.24 Somepony: Try something new, take a chance, just believe it. → Ну, не робей, поменяй стиль на новый.
+TYT27 00:38.01,4.38 Somepony: Let out your light, shining bright, can't you see it? → Будь ярче всех, засиять ты попробуй.
+TYT27 00:49.38,3.67 Izzy: Hey! I need a hooftag #Hooficure! → Эй! Мне нужны хуфтег: #блестящиекопытца!
+TYT27 00:54.82,2.33 Izzy: It's music night at the Crystal Tea Room tonight! → Сегодня в Кристальной Чайной будет музыкальный вечер!
+TYT27 00:57.37,0.95 Izzy: Got anything… → У тебя есть что-нибудь…
+TYT27 00:58.54,0.98 Izzy: musicky! → музычное?
+TYT27 00:59.75,2.81 Jazz: Something musicky, huh? Let's see what we got. → Музычное, да? Давай поглядим, что тут есть.
+TYT27 01:05.13,2.24 Izzy: Not sure blank isn't really my color. → Ну не знаю. Пустой — как-то не моё.
+TYT27 01:08.44,0.84 Jazz: No. → Нет.
+TYT27 01:09.53,0.67 Jazz: Hang on! → Подожди!
+TYT27 01:10.68,2.69 Jazz: No the designs! I think I've used them all up! → Ничего не осталось! \NПохоже, я использовала их все!
+TYT27 01:13.48,3.84 Izzy: No biggie. I'll have the same as ol' Rufus here. We can be hoof buddies. → Да ладно, фигня. Сделай мне такие же, как вот у старины Руфуса. Мы будем копытными близняшками.
+TYT27 01:17.54,4.64 Coloratura: No way, Izzy. Nopony with any style would be caught wearing the same design. → Ну уж нет, Иззи. Появиться на вечеринке с одинаковым узором на копытах — полнейшая безвкусица.
+TYT27 01:22.81,1.07 Jazz: Rufus is right! → Руфус прав!
+TYT27 01:23.99,3.97 Jazz: I'm out of designs, nopony will come to Mane Melody for their hooficures! → Раз нет новых дизайнов — никто больше не придёт в наш салон красоты красить копыта.
+TYT27 01:28.95,2.74 Izzy: Don't worry, Jazz. \NYou just gotta make some new ones. → Не волнуйся, Джезз. Просто придумай новые.
+TYT27 01:31.72,1.77 Jazz: That's just it. I don't know how! → В том-то и беда. Я не знаю как!
+TYT27 01:33.63,2.82 Jazz: I've always just copied the designs, and now i've run out… → Я всегда копировала чужие дизайны, а теперь они закончились.
+TYT27 01:36.59,1.17 Jazz: What am I gonna do?! → Что мне теперь делать?!
+TYT27 01:40.81,3.17 Izzy: Stick with me! I know exactly what you need.  → Пошли со мной. Я знаю, что тебе точно поможет!
+TYT27 01:44.27,3.76 Izzy: Jazz Hooves, you've got a date with destiny. → Джезз Хувз, я устрою тебе встречу с судьбой.
+TYT27 01:48.09,0.97 Jazz: Destiny? → Судьбой?
+TYT27 01:51.74,3.83 Izzy: Get ready to have your mind totally blown! → То, что ты увидишь, взорвёт тебе мозг!
+TYT27 02:11.68,4.23 Izzy: Can you feel the artistic, creative-y vibes flowing right through you? → Ну как, ощущаешь уже, как тебя пронизывают художественные вибрации?
+TYT27 02:33.19,2.33 Jazz: Oh, no! Onyx is playing the wrong song! → О нет, Оникс забыла ноты.
+TYT27 02:35.75,1.08 Izzy: Wait for it… → Терпение…
+TYT27 02:36.95,1.28 Izzy: Wait for it… → Терпение…
+TYT27 02:50.30,2.91 Alphabittle: I just love it when they do their own thing. → Обожаю, когда пони дают волю воображению.
+TYT27 02:54.24,1.40 Jazz: This is amazing! → Это потрясающе!
+TYT27 02:55.92,2.82 Izzy: Now that's what you call creative inspiration. → Вот это и называется творческим вдохновением.
+TYT27 02:58.82,4.06 Izzy: Sometimes you just gotta throw out the rules and make something new. → Иногда нужно забыть про правила и просто творить.
+TYT27 03:09.36,2.85 Izzy: See? you can feel it too. → Видишь? Теперь и ты это поняла.
+TYT27 03:12.39,1.98 Izzy: Now all you gotta do is take this feeling, → А теперь возьми это чувство
+TYT27 03:14.61,1.84 Izzy: and put it into your art. → и перенеси на свои узоры.
+TYT27 03:17.74,3.31 Jazz: Maybe I really could create my own hooficure designs! → Может, я и правда могу создать собственные дизайны!
+TYT27 03:21.32,1.08 Izzy: Yeah, you can! → Ещё как можешь!
+TYT27 03:22.41,3.55 Izzy: And I know just the guinea ponies to help you practice. → И я знаю подопытных, на которых ты сможешь попрактиковаться.
+TYT27 03:26.49,1.65 Izzy: Let's do this! → За дело!
+TYT27 03:28.33,1.00 Hitch: Don't hold back! → Не сдерживай себя!
+TYT27 03:29.40,1.12 Sunny: Follow your heart! → Доверься своему сердцу!
+TYT27 03:30.58,1.84 Zipp: Unleash your inner artiste. → Высвободи своего внутреннего художника!
+TYT27 03:36.98,2.37 Somepony: Try something new, take a chance, just believe it. → Ну, не робей, поменяй стиль на новый.
+TYT27 03:41.23,4.15 Somepony: Let out your light, shining bright, can't you see it? → Будь ярче всех, засиять ты попробуй.
+TYT27 03:45.58,3.14 Somepony: At Mane Melody! → В салоне красоты!
+TYT27 03:49.97,3.35 Comment: At Mane Melody! → В салоне красоты!
+TYT27 03:52.28,2.24 Sunny: Jazz, how do you know? → Джазз, как ты догадалась?
+TYT27 03:54.53,2.62 Sunny: Triple-berry is totally my favorite! → Тройной ягодный — мой любимый!
+TYT27 03:57.20,1.02 Jazz: Yay! → Ура!
+TYT27 03:58.37,2.05 Hitch: Ka-chow! Who's yo' daddy?! → Бдыщ! И кто теперь круче всех?
+TYT27 04:02.06,3.50 Pipp: I feel an exclusive hoof reveal video coming on! → Чувствую, эти копыта достойны \Nспециального видеовыпуска!
+TYT27 04:14.03,0.90 Jazz: Thanks, Izzy! → Спасибо, Иззи!
+TYT27 04:14.94,4.22 Jazz: Without your help I would have never been brave enough to create my own designs. → Без твоей помощи я бы никогда не отважилась на создание собственных дизайнов.
+TYT27 04:19.50,3.74 Izzy: Well, looks like you're gonna need \Nall the inspiration you can get. → Что ж, похоже, тебе пригодится всё вдохновение, которое у тебя осталось.
+TYT27 04:23.86,0.59 Izzy: Check it out! → Глянь туда!
+TYT27 04:30.32,0.50 Coloratura: Hey! → Эй!
+TYT27 04:32.00,1.72 Coloratura: Your hooves are fierce, Izzy! → Копыта просто огонь, Иззи!
+TYT27 04:35.13,2.10 Coloratura: Can I get the same design as her, Jazz? → Не сделаешь мне такие же, Джезз?
+TYT27 04:37.23,1.83 Izzy: Fantabuloso! → Фантастично!
+TYT27 04:39.26,2.03 Izzy: Finally! A hoof buddy! → Наконец-то! Копытные близняшки!
+TYT27 04:41.54,4.30 Jazz: Neigh way, Rufus. Everypony gets their own one-of-a-kind design. → Ну уж нет, Руфус, у каждого должен быть неповторимый дизайн.
+TYT27 04:45.85,0.66 Jazz: Follow me. → Следуй за мной.
+TYT27 04:51.04,1.87 Jazz: It'll be worth the wait. I promise. → Ожидание окупится. Обещаю.
+TYT27 04:53.99,1.85 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT27 04:55.86,2.40 Default: anon2anon \N sunnysubs.com → anon2anon \N sunnysubs.com
