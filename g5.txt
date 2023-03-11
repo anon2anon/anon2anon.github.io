@@ -5356,7 +5356,7 @@ TYT33 01:51.28,2.56 Zipp: You're always asking the Pippsqueaks for help. →�
 TYT33 01:54.87,2.23 Pipp: No, wait. I can do this myself. → Так, стоп. Я могу справиться и сама.
 TYT33 01:57.28,5.58 Pipp: Zipp is wrong. I don't always need my fans I am perfectly capable of… → Зипп неправа. Мне не нужна помощь фанов на каждом шагу, я вполне в состоянии…
 TYT33 02:11.90,1.24 Hitch: That's the last of them, Izzy. → Это последняя, Иззи.
-TYT33 02:13.36,1.60 Izzy: Doughty McBakertons, → Доти МакПечка,
+TYT33 02:13.36,1.60 Izzy: Bot-y McBakertons, → Боти МакПечка,
 TYT33 02:14.96,2.04 Izzy: let's make some pie! → время пирогов!
 TYT33 02:22.88,4.39 Sunny: It's the final round in Maretime Bay's first annual pie eating contest. → Это финальный раунд первого ежегодного состязания по поеданию пирогов Мэртайм Бэй.
 TYT33 02:27.43,1.75 Sunny: Just two ponies remain. → Осталось лишь два участника.
