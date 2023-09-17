@@ -10069,3 +10069,1186 @@ SPE2WW 43:26.24,0.69 Izzy: Oops! → Ой!
 SPE2WW 43:27.56,2.73 Izzy: And Warm Wishiehoof ↲ to all ponies. → И тёплого всем Желаньедара.
 SPE2WW 43:36.22,2.61 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
 SPE2WW 43:38.84,2.57 Default: anon2anon ↲ sunnysubs.com → anon2anon ↲ sunnysubs.com
+
+MYM09 "Top Remodel"
+
+MYM09	00:15.82,3.57 Pipp: This is kinda spooky, isn't it? → Страшновато тут, правда?
+MYM09	00:20.46,1.67 Hitch: No. Not at all. → Не-а. Ни капли.
+MYM09	00:25.03,4.59 Sunny: Izzy, what are we doing in the middle ↲ of the Bridlewood forest… at night? → Иззи, скажи, а что мы делаем в самой чаще Брайдлвудского леса… посреди ночи?
+MYM09	00:29.81,1.70 Izzy: It's a surprise! → Это сюрприз!
+MYM09	00:31.56,2.20 Izzy: If I told you, you wouldn't be surprised! → Если я всё вам расскажу, то никакого сюрприза не будет!
+MYM09	00:33.94,1.63 Zipp: She does have a point there. → Да, что-то в этом есть.
+MYM09	00:35.72,2.33 Izzy: You're gonna love it. ↲ Hoof to heart. → Вам понравится. Обещаю.
+MYM09	00:38.22,1.64 Izzy: Come on! It's just up here! → Не отставайте! Тут уже недалеко!
+MYM09	00:39.87,1.09 Pipp: Oh yeah. → Вперёд!
+MYM09	00:50.31,1.41 Izzy: We're here! → Мы пришли!
+MYM09	00:51.80,1.46 Izzy: Ta-da! → Та-да!
+MYM09	00:56.32,2.32 Zipp: Izzy? Is something supposed to happen? → Иззи? А что тут вообще должно быть?
+MYM09	00:59.15,0.75 Izzy: Hush. → Тише.
+MYM09	01:15.73,0.92 Sunny: Wow! → Ух ты!
+MYM09	01:17.01,0.95 Pipp: Gorgeous! → Восхитительно.
+MYM09	01:17.96,0.86 Zipp: Awesome! → Потрясно!
+MYM09	01:19.09,0.77 Hitch: What? → Чего?
+MYM09	01:23.70,3.30 Sunny: Wow. I've never seen anything like this in my life! → Ого. В жизни не видела ничего подобного!
+MYM09	01:27.56,1.21 Sunny: This is amazing, Izzy! → Как здорово, Иззи!
+MYM09	01:31.08,1.42 Sunny: What is it? → Но что это такое?
+MYM09	01:32.51,2.02 Izzy: It's called the "Lumi-Bloom"! → Это "Ясноцвет".
+MYM09	01:34.76,2.39 Izzy: Every moon season, for one week only, → Каждый лунный сезон, всего на одну неделю,
+MYM09	01:37.17,4.37 Izzy: all of the plants and stuff in this part of Bridlewood go all wild and glowy! → и растения, и всё остальное в этой части леса начинает безудержно светиться!
+MYM09	01:43.53,2.28 Zipp: So it's not just some sort of Unicorn spell? → Так это не какое-то единорожье волшебство?
+MYM09	01:46.18,1.33 Zipp: Just a natural phenomenon? → Просто явление природы?
+MYM09	01:47.84,1.54 Izzy: Yup! Do you like it? → Агась! Нравится?
+MYM09	01:49.39,2.30 Pipp: Like it?! Do I like it? → Нравится? Мне?
+MYM09	01:51.69,1.59 Pipp: I love it! → Да я в восторге!
+MYM09	01:53.48,1.73 Pipp: It makes me wanna sing. → Даже спеть захотелось.
+MYM09	02:04.18,1.07 Pipp: Oh my glow. → О мой свет.
+MYM09	02:05.34,1.63 Pipp: Did you guys just see that?! → Ребята, вы это видели?
+MYM09	02:07.14,2.31 Zipp: Yeah, huh, that was actually really cool. → Ага, здорово получилось.
+MYM09	02:09.66,2.73 Pipp: I have to do it again! ↲ Quick, get it on camera this time! → Надо ещё раз попробовать! ↲ И обязательно успеть заснять!
+MYM09	02:13.94,0.69 Pipp: Wait! → Стойте!
+MYM09	02:15.03,0.81 Hitch: What's wrong? → Что такое?
+MYM09	02:15.97,2.81 Pipp: I just had an even better idea. → Я придумала кое-что получше.
+MYM09	02:19.15,4.37 Pipp: We can share this beautiful sight with everypony if we bring them all here… → Все пони смогут увидеть эту красоту, если мы приведём их сюда…
+MYM09	02:24.68,1.62 Izzy: How are we gonna do that? → И что ты предлагаешь?
+MYM09	02:26.68,5.52 Pipp: By hosting the biggest and brightest musical festival that Equestria's ever seen… → Мы устроим самый большой и самый яркий музыкальный фестиваль, какой только видела Эквестрия…
+MYM09	02:32.49,1.12 Pipp: or heard. → Точнее, слышала.
+MYM09	02:33.76,2.00 Sunny: That sounds so magical! → Идея просто волшебная!
+MYM09	02:35.96,0.89 Sunny: I love it! → Я только за!
+MYM09	02:36.97,2.14 Pipp: But Izzy said the bloom only lasts a week. → Но Иззи сказала, что Ясноцвет длится всего неделю.
+MYM09	02:39.17,2.21 Pipp: Which means… we're already ↲ running out of time! → И это значит… что времени у нас в обрез!
+MYM09	02:41.68,1.46 Pipp: We have to get started right now. → Надо начинать сейчас же.
+MYM09	02:50.80,1.42 Somepony: Yes… → Да…
+MYM09	02:52.55,3.42 Somepony: Sing for us, ponies. → Пойте нам, пони.
+MYM09	03:28.24,0.89 Izzy: Whatcha doing? → Что делаешь?
+MYM09	03:29.78,1.86 Pipp: Making my dreams come true! → Воплощаю свои мечты в жизнь!
+MYM09	03:32.01,2.80 Pipp: Because if you can dream it, you can do it, Izzy. → Ведь если ты можешь это вообразить, ты можешь это создать, Иззи!
+MYM09	03:36.18,4.88 Izzy: I just dreamed that I crafted an entire ↲ sailboat out of tortilla chips. → Во сне я видела, что сделала целую лодку с парусом из кукурузных чипсов.
+MYM09	03:41.26,2.76 Pipp: See? I love that for you! → Видишь? Надеюсь, это сбудется!
+MYM09	03:44.19,2.02 Pipp: And I love this for me! → И надеюсь, что вот это тоже!
+MYM09	03:46.47,3.16 Pipp: But if I want to make the Bridlewoodstock ↲ Music Festival happen, → Я очень хочу, чтобы музыкальный фестиваль Брайдлвудсток состоялся,
+MYM09	03:49.94,1.50 Pipp: I can't waste a single minute. → и поэтому нельзя терять ни минуты.
+MYM09	03:51.58,3.16 Pipp: Everypony has to see ↲ the Lumi-Bloom before it's over! → Каждый должен увидеть Ясноцвет, ↲ пока он не закончился!
+MYM09	03:54.88,2.53 Izzy: It is pretty special, huh? → Он и правда что-то с чем-то, да?
+MYM09	03:57.47,2.55 Pipp: Which is why I'm going to need help today. → И поэтому мне сегодня понадобится помощь.
+MYM09	04:02.07,2.02 Pipp: We'll have to bring in ↲ everything and fast. → Надо всё организовать, и организовать быстро.
+MYM09	04:04.96,3.51 Pipp: Tents, stages, sound equipment, decorations, and of course… → Палатки, сцены, звуковое оборудование, декорации и, главное…
+MYM09	04:09.02,1.34 Pipp: musicians! → исполнителей!
+MYM09	04:12.07,1.53 Pipp: Wait. Why does your face look like that? → Погоди, а чего это ты вдруг такая кислая?
+MYM09	04:13.72,0.97 Izzy: Well… → Ну…
+MYM09	04:15.89,2.27 Izzy: I don't want to burst ↲ your excitement bubbles, but… → Не хочу мешать полёту твоей фантазии, но…
+MYM09	04:18.30,4.78 Izzy: there is a little teensy weensy ↲ problem with that particular spot. → с тем местом есть малюсенькая такая проблемка.
+MYM09	04:23.82,1.92 Izzy: Maybe we should have the festival somewhere else! → Может, устроим фестиваль где-нибудь ещё?
+MYM09	04:26.34,0.80 Pipp: A problem? → Проблемка?
+MYM09	04:28.16,1.40 Izzy: It's just that we… → Ну просто мы…
+MYM09	04:29.65,2.13 Izzy: we Unicorns think it's kinda Jinxie → мы, единороги, верим, что это вроде как сглаз —
+MYM09	04:31.78,3.46 Izzy: to sing or make any loud noises during the Lumi-Bloom because of the… → петь или издавать громкие звуки во время Ясноцвета, потому что это…
+MYM09	04:36.06,1.34 Izzy: the Troggles. → привлечёт трогглей.
+MYM09	04:37.81,3.64 Pipp: Is that it? An old "Jinxie" rumor? → Только и всего? Старые слухи о каком-то там сглазе?
+MYM09	04:42.81,2.07 Izzy: No, it's not a rumor! There's even a poem! → Нет, это вовсе не слухи! ↲ У нас про это даже стишок есть!
+MYM09	04:45.02,0.90 Izzy: It goes like this… → Сейчас зачитаю…
+MYM09	04:47.65,2.63 Izzy: "Eyes of the monster, form of the pig → "Чудовищен взгляд их и тело свиньи
+MYM09	04:50.53,2.92 Izzy: Sing laugh or yell, step hoof on a twig" → Споёшь, засмеёшься, заденешь ли прут"…
+MYM09	04:55.08,3.47 Pipp: Iz! Iz! Iz! Iz! ↲ It's going to be fine. → Из! Из! Из! Из! Всё будет нормально.
+MYM09	04:58.89,4.27 Pipp: Once the Unicorns hear the amazing ↲ music with the glowy sights, → Когда единороги услышат нашу обалденную музыку в сочетании с сиянием леса,
+MYM09	05:03.36,2.24 Pipp: they won't even remember that silly poem! → они этот дурацкий стишок даже не вспомнят!
+MYM09	05:05.80,2.08 Pipp: It will be that life-changing. → Они просто не смогут смотреть на жизнь по-прежнему.
+MYM09	05:08.35,0.51 Pipp: Trust me! → Уж поверь мне!
+MYM09	05:09.54,0.96 Izzy: Yeah. → Да.
+MYM09	05:11.77,4.03 Izzy: I guess you could be right. ↲ I've never actually seen a Troggle. → Может, ты и права. Вообще-то я этих трогглей никогда не видела.
+MYM09	05:16.16,0.93 Pipp: See? → Ну так?
+MYM09	05:19.12,2.92 Izzy: Okay, let's do it! → Ладно, за дело!
+MYM09	05:22.29,3.33 Izzy: Bridlewoodstock, here we come! → Брайдлвудсток, мы идём!
+MYM09	05:31.94,1.44 Sunny: Good morning! Breakfast? → Доброе утречко! Завтрак?
+MYM09	05:34.09,1.12 Izzy: Yes, please. → Не откажусь.
+MYM09	05:35.33,2.28 Pipp: Thanks, Sunny, but I've gotta fly. Too much to do! → Спасибо, Санни, но мне надо лететь. Столько всего надо сделать!
+MYM09	05:37.68,3.66 Pipp: Emergency music festival planning meeting at Mane Melody later! Be there! → Жду вас в салоне красоты на срочном обсуждении музыкального фестиваля. До встречи!
+MYM09	05:41.43,1.38 Sunny: At least take a smoothie to go! → Ну хоть смузи захвати в дорогу!
+MYM09	05:43.61,2.24 Sunny: Wow. Who doesn't have time for a smoothie? → Ого. Как можно отказаться от смузи?
+MYM09	05:46.16,1.85 Zipp: A pony on a mission, that's who. → Какое смузи, у неё задание.
+MYM09	05:50.44,0.89 Zipp: Here we go. → Ну, началось.
+MYM09	05:51.64,3.34 Zipp: Everypony, brace yourselves for a wild week. → Готовьтесь — неделя ожидается сумасшедшая.
+MYM09	05:55.39,2.57 Zipp: Pegasi love music festivals. → Пегасы обожают музыкальные фестивали.
+MYM09	05:58.13,1.80 Zipp: They're kind of a big deal in Zephyr Heights. → В Зефир Хайтс это всегда большое событие.
+MYM09	06:00.09,2.27 Zipp: Pipp has always wanted to plan one of her own. → Пипп давно мечтала сама организовать что-то такое.
+MYM09	06:02.38,2.69 Zipp: So she must be feeling the pressure to make it perfect. → Она, наверное, чувствует, что всё должно быть сделано идеально.
+MYM09	06:05.81,0.62 Sunny: What do you mean? → То есть?
+MYM09	06:06.44,2.17 Izzy: She did stay up all night working! → Она и правда всю ночь работала.
+MYM09	06:09.18,1.25 Sunny: Then we have to help her out. → Тогда мы должны ей помочь.
+MYM09	06:12.04,0.66 Izzy: Uh-huh. → Ага.
+MYM09	06:15.09,4.84 Pipp: I want to lean into the Lumi-Bloom theme and go full Flower Fest. → Я хочу взять идею Ясноцвета и сделать весь фестиваль в цветочном стиле.
+MYM09	06:20.49,1.47 Pipp: Flower crowns! → Цветочные венки!
+MYM09	06:21.96,2.73 Pipp: Snack tents featuring edible flowers! → Палатки со съедобными цветами!
+MYM09	06:25.32,1.63 Jazz: Where does the music part come in? → А с музыкой что?
+MYM09	06:27.01,1.82 Pipp: I am glad you asked, Jazz. → Хороший вопрос, Джезз.
+MYM09	06:29.39,2.38 Pipp: The Mane Stage! → Главная сцена!
+MYM09	06:32.80,1.58 Rocky, Hitch: What bands are gonna play? || Yeah! → И кто будет выступать? || Да!
+MYM09	06:34.65,1.61 Pipp: That's where you ponies come in! → А вот это уже работа для вас!
+MYM09	06:37.36,0.59 Zipp: How? → Как это?
+MYM09	06:38.26,1.52 Zipp: We're not a band… → Мы же не группа…
+MYM09	06:40.31,0.79 Izzy: Yet. → Пока что.
+MYM09	06:41.74,0.91 Pipp: No, no, no, no, no. → Нет-нет-нет-нет.
+MYM09	06:42.91,4.69 Pipp: I need you ponies to help me secure some amazing bands while I work on… → Вы поможете мне найти и пригласить каких-нибудь крутых исполнителей, пока я занимаюсь…
+MYM09	06:48.57,0.92 Pipp: Everything else! → всем остальным!
+MYM09	06:49.89,1.85 Pipp: I think we can get Electric Blue. → Думаю, Электрик Блю согласятся прийти.
+MYM09	06:52.41,1.85 Hitch: The super epic Pegasus rock band? → Самая эпичная рок-группа пегасов?
+MYM09	06:54.51,2.90 Pipp: Wow Hitch, I didn't know you were ↲ such a musical expert! → Ого, Хитч, не знала, что ты такой знаток музыки!
+MYM09	06:57.51,1.04 Hitch: I know things. → Кое-что да знаю.
+MYM09	06:58.99,3.95 Sunny: And I am dying to have the incredible new pop artist, → А я бы просто от счастья умерла, если бы выступила новая поп-звезда,
+MYM09	07:03.13,1.75 Pipp: Ruby Jubilee perform. → Руби Джубили.
+MYM09	07:05.15,1.62 Jazz: I love her! → Обожаю её!
+MYM09	07:07.07,3.27 Pipp: Me too! Everypony does. ↲ Her vocals are unreal. → И я! Все её любят. У неё бесподобный вокал.
+MYM09	07:10.37,3.30 Pipp: Which is why she's going to be hard ↲ to lock down on such short notice. → Поэтому непросто будет вот так сразу уговорить её выступить.
+MYM09	07:13.85,1.58 Izzy: But we have to try, right? → Но попробовать стоит, верно?
+MYM09	07:15.45,3.51 Pipp: Right. But we still need ↲ an incredible Earth Pony or Unicorn band → Конечно. И нам ещё нужны какие-нибудь потрясные единороги или земные пони
+MYM09	07:18.96,2.05 Pipp: to round out the lineup. Any ideas? → для полноты картины. Есть идеи?
+MYM09	07:21.63,0.82 Sunny: I know! I know! →  Я знаю! Я знаю!
+MYM09	07:23.09,1.22 Sunny: We could get… → Мы можем пригласить…
+MYM09	07:24.97,1.28 Sunny: The Dreamlands! → Дримлэндс!
+MYM09	07:26.25,0.88 Jazz: No way! → Быть не может!
+MYM09	07:27.25,3.51 Sunny: They're this really famous Earth Pony trio that I loved when I was younger. → Это трио земных пони, они были жутко популярными, я их обожала, когда была помладше.
+MYM09	07:30.98,2.95 Sunny: They practically invented the genre of "girl group" music. → Можно сказать, это они придумали жанр девчачьих групп.
+MYM09	07:34.79,2.02 Jazz: But they haven't performed in moons. → Но они не выступали уже много лун.
+MYM09	07:36.91,0.96 Rocky: How would we find them? → Как мы их найдём?
+MYM09	07:38.01,1.01 Hitch: I have a connection. → У меня есть связи.
+MYM09	07:39.24,0.87 Hitch: I know ponies. → Я кое-кого знаю.
+MYM09	07:40.38,1.93 Hitch: Actually, my Grandma Figgy does. → Точнее, моя бабушка Фигги знает.
+MYM09	07:42.32,1.78 Hitch: She used to bake for the lead singer, Minty! → Их солистка, Минти, покупает у неё пироги!
+MYM09	07:45.11,2.08 Pipp: This is all coming together like perfection! → Всё сходится просто идеально!
+MYM09	07:47.76,1.81 Pipp: Rocky and Jazz, you're on style duty! → Роки и Джезз, вы займётесь оформлением!
+MYM09	07:49.68,1.66 Pipp: Zipp, you go get Electric Blue! → Зипп, заполучи нам Электрик Блю!
+MYM09	07:51.43,0.71 Zipp: You got it! → Без проблем!
+MYM09	07:52.16,1.77 Pipp: Sunny and Hitch, find those Dreamlands! → Санни и Хитч, найдёте Дримлэндс!
+MYM09	07:53.95,4.87 Pipp: And Izzy, you and I will convince ↲ Ruby Jubilee to dazzle us! → Ну а Иззи, мы с тобой убедим Руби Джубили нас поразить!
+MYM09	07:59.01,0.49 Izzy: Yeah! → Ага!
+MYM09	07:59.50,0.53 Sunny: Okay! → Лады!
+MYM09	08:00.11,0.41 Hitch: On it! → Понял!
+MYM09	08:00.73,0.91 Jazz, Rocky: Yeah! || Yeah! → Да! || Да!
+MYM09	08:01.90,3.25 Pipp: Do whatever you have to do, just get those ↲ bands to come to Bridlewoodstock! → Сделайте всё возможное, но убедите их выступать на Брайдлвудстоке!
+MYM09	08:21.09,1.75 Zipp: Alright, how hard could this be? → Ну, чего может быть сложного?
+MYM09	08:27.03,1.73 Zipp: Hey! Electric Blue? → Привет! Электрик Блю?
+MYM09	08:30.60,0.28 Zipp: Zipp. → Зипп.
+MYM09	08:31.79,0.43 Firelight: Who? → Кто?
+MYM09	08:34.08,1.07 Zipp: Princess Zipp? → Принцесса Зипп?
+MYM09	08:35.98,2.05 Firelight: Oh, hey, Princess. How's your sister? → А, привет, принцесса. Как там ваша сестра?
+MYM09	08:38.49,2.61 Zipp: She's great! Actually, that's why I wanted to talk to you. → Отлично! Вообще-то, именно о ней я хотела с вами поговорить.
+MYM09	08:42.11,1.52 Zipp: But it's top-secret. Can we… → Но это — большая тайна. Как бы нам…
+MYM09	08:44.02,2.41 Zipp: Can… Can we get out of here? → Может… может, нам стоит найти другое место?
+MYM09	08:47.27,1.67 Firelight: Yeah. I'm down with that. → Ага, я только за.
+MYM09	08:49.04,1.20 Firelight: Hey, guys, let's go! → Ребята, погнали!
+MYM09	08:58.93,0.57 Firelight: Phew. → Фух.
+MYM09	09:00.40,1.74 Zipp: Hey! Up here! → Эй, я наверху!
+MYM09	09:07.01,2.59 Zipp: Pipp sent me to find you guys ↲ because she wants to invite you… → Пипп послала меня вас найти. ↲ Она хочет пригласить вас…
+MYM09	09:10.81,4.21 Zipp: We want to invite you to play at Bridlewoodstock! → То есть мы хотим пригласить вас выступить на Брайдлвудстоке!
+MYM09	09:16.97,0.67 Firelight: What's that? → А это что такое?
+MYM09	09:17.99,2.47 Zipp: It's the very first music festival in Bridlewood → Это самый первый музыкальный фестиваль в Брайдлвуде.
+MYM09	09:20.66,2.28 Zipp: and it's gonna be so… → И он будет таким…
+MYM09	09:24.36,2.91 Zipp: So… rockin'? Yeah! → Таким… хардроковым? Да!
+MYM09	09:35.45,1.54 Zipp: So, uh… → Ну, так…
+MYM09	09:37.65,0.66 Zipp: What do you think? → Что скажете?
+MYM09	09:39.07,1.70 Firelight: We're not sure. → Что-то мы сомневаемся.
+MYM09	09:40.80,1.84 Zipp: Maybe I didn't explain right! → Давайте я получше объясню!
+MYM09	09:42.82,2.42 Zipp: So there's a thing called the Lumi-Bloom, right? → Значит, есть такая штука, Ясноцвет, да?
+MYM09	09:45.51,2.56 Zipp: And all the plants and flowers and crystals glow! → Когда все цветы, растения и даже кристаллы начинают сиять!
+MYM09	09:48.26,1.14 Zipp: And it looks awesome! → Просто заглядение!
+MYM09	09:49.62,2.11 Zipp:  Imagine those visuals with one of your sets. → Представье, вы на сцене, а вокруг всё сияет!
+MYM09	09:51.93,2.71 Zipp: I mean, really cool and… → В смысле будет круто, и…
+MYM09	09:56.56,1.26 Zipp: You'll be the headliners! → вы будете гвоздём программы!
+MYM09	09:59.12,1.87 Firelight: Well, why didn't you lead with that? → Ну так что же вы сразу не сказали?
+MYM09	10:01.13,1.07 Firelight: Of course we'll play. → Конечно мы выступим.
+MYM09	10:02.82,0.72 Zipp: Great! → Отлично!
+MYM09	10:04.84,0.37 Zipp: Phew! → Фух!
+MYM09	10:08.08,2.12 Pipp: I can't believe we're about to meet Ruby Jubilee! → Поверить не могу, что мы сейчас увидим Руби Джубили!
+MYM09	10:10.33,3.08 Pipp: This is our big chance to work with ↲ the newest, most talented chart-topper! → Наш шанс поработать с самой модной, самой талантливой королевой чартов!
+MYM09	10:13.61,0.99 Pipp: Do I look okay? → Как я выгляжу?
+MYM09	10:15.64,2.26 Izzy: Your sparkle is shining bright! → Твоя искра так ярко сияет!
+MYM09	10:22.62,1.52 Pipp: It's got a cutie mark on it. → Смотри, тут её кьютимарка.
+MYM09	10:24.92,2.56 Pipp: "Your Majesty Princess Petals…" ↲ That's me! → "Ваше величество принцесса Петалс…". Это она про меня!
+MYM09	10:27.58,2.84 Pipp: "…Miss Ruby Jubilee sends her deepest regrets. → "…Мисс Руби Джубили приносит вам самые искренние извинения.
+MYM09	10:30.61,4.02 Pipp: She cannot join you today due to a case of… creative block!" → Она не сможет сегодня с вами встретиться из-за творческого кризиса!"
+MYM09	10:36.18,1.00 Izzy: Maybe we can help her! → Может, мы сможем ей помочь?
+MYM09	10:37.26,1.15 Pipp: My thoughts exactly. → Как раз об этом же подумала.
+MYM09	10:43.76,0.66 Cheerilee: Princess Pipp?! → Принцесса Пипп?!
+MYM09	10:44.53,3.40 Pipp: Sorry to surprise you like this, ↲ but my friend Izzy and I got your note → Прости за вторжение, но мы с моей подругой Иззи получили твоё письмо
+MYM09	10:47.93,1.22 Pipp: and we had to help. → и решили, что обязаны тебе помочь.
+MYM09	10:49.35,1.57 Izzy: We've had creative block, too. → Мы знаем, что такое творческий кризис.
+MYM09	10:51.28,1.02 Izzy: We get it. → Есть опыт.
+MYM09	10:52.64,2.80 Cheerilee: Oh, Princess. It's just… ugh, awful! → О принцесса, это просто… ужасно!
+MYM09	10:55.60,1.87 Pipp: What's going on? You can talk to us. → Так в чём же дело? Мы с радостью выслушаем.
+MYM09	10:57.82,2.21 Cheerilee: After the success of my debut single, → После оглушительного успеха моего первого сингла,
+MYM09	11:00.25,3.64 Cheerilee: I've just been putting so much pressure ↲ on myself to top it with a new hit! → я не могу перестать думать о том, что должна выпустить новый хит, ещё лучше!
+MYM09	11:04.74,2.41 Cheerilee: Ugh, but how do you top ↲ a chart-topper? → Но как, ведь мой сингл уже и так на вершине всех топов?
+MYM09	11:07.38,3.85 Pipp: Ruby, you have no idea how much ↲ I understand what you're going through. → Руби, ты даже не представляешь, как я понимаю твои переживания.
+MYM09	11:11.26,3.47 Izzy: Me too! But luckily, we have some tricks up our hooves to help. → И я! Но, к счастью, у нас есть в запасе пара хитростей.
+MYM09	11:14.99,0.82 Cheerilee: You do? → Правда?
+MYM09	11:16.03,0.54 Pipp: Yes! → Да!
+MYM09	11:16.76,3.70 Pipp: First, try not to be inspired when you watch this. → Для начала посмотри на это и попробуй сказать, что оно тебя не вдохновляет.
+MYM09	11:21.60,1.08 Cheerilee: My stars. → Ничего себе.
+MYM09	11:22.94,2.73 Cheerilee: That is the most magical sight I've ever seen! → Ничего волшебнее я в жизни не видела!
+MYM09	11:26.09,2.72 Cheerilee: It makes me think of… Quick! → Я сразу подумала о… Быстрее!
+MYM09	11:29.31,1.94 Cheerilee: I need to write this idea down before I forget! → Нужно срочно всё записать, пока не забыла!
+MYM09	11:34.01,1.59 Izzy: You're already inspired! → Вот оно, вдохновение!
+MYM09	11:35.72,1.99 Pipp: And it's even better in real life! → А вживую это ещё красивее!
+MYM09	11:38.09,2.97 Pipp: You have to see it. At the Bridlewoodstock festival! → Ты должна сама всё увидеть. ↲ На фестивале Брайдлвудсток!
+MYM09	11:41.07,0.99 Pipp: Onstage! → Со сцены!
+MYM09	11:42.07,1.33 Izzy: Will you perform for us? → Ты выступишь у нас?
+MYM09	11:44.37,1.23 Cheerilee: I don't know. → Не знаю.
+MYM09	11:45.85,2.46 Izzy: Wild rubies are in season in Bridlewood! → Сейчас в Брайдлвуде самый сезон диких рубинов!
+MYM09	11:48.61,2.49 Izzy: You love rubies! → А ты ведь любишь рубины!
+MYM09	11:51.22,1.46 Cheerilee: Mmm, I really do. → Ещё как.
+MYM09	11:52.76,2.64 Pipp: And… you'll be the headliner! → И… ты будешь гвоздём программы!
+MYM09	11:55.54,0.97 Cheerilee: Wow. Okay! → Ого. Согласна!
+MYM09	11:56.99,1.93 Cheerilee: Now I'm really inspired! → Вот теперь вы меня точно вдохновили!
+MYM09	12:00.12,0.65 Cheerilee: I'll do it. → Я спою.
+MYM09	12:05.26,1.38 Sunny: You sure we'll find her here, Figgy? → Ты уверена, что она придёт, Фигги?
+MYM09	12:06.73,4.52 Figgy: Oh yes. This is where Minty comes to do her weekly shop! → О да. Этой дорогой Минти каждую неделю ходит в свой любимый магазин!
+MYM09	12:11.60,1.82 Figgy: I run into her all the time. → Я постоянно её тут вижу.
+MYM09	12:13.51,1.31 Hitch: You're so cool, Granny! → Ты такая классная, бабуля!
+MYM09	12:16.19,2.02 Figgy: So are you, Hitchie. → Как и ты, Хитчи.
+MYM09	12:19.06,1.25 Sunny: Look, over there! → Смотрите, вон там!
+MYM09	12:20.69,1.70 Figgy: That's her all right. → Да, это она.
+MYM09	12:22.47,2.10 Figgy: Well, don't dawdle now. Scoot! → Ну, не копайтесь зря. Айда!
+MYM09	12:26.53,0.80 Sunny: Excuse me. → Простите.
+MYM09	12:27.74,1.26 Sunny: Are you Minty? → Вы Минти?
+MYM09	12:29.29,1.14 TreeHugger: Yes. Why? → Да. А что?
+MYM09	12:30.64,1.74 Sunny: I'm Sunny and this is Hitch. → Я Санни, а это Хитч.
+MYM09	12:32.42,2.20 Sunny: And we're big fans of yours and we wanted to know → Мы ваши большие поклонники, и мы хотим узнать,
+MYM09	12:34.62,3.61 Sunny:  if maybe you would consider getting the group back together to play at our music festival this weekend? → не согласитесь ли вы вновь собрать группу и выступить на нашем фестивале в эти выходные?
+MYM09	12:38.64,3.58 Sunny: After all, coincidentally, it's the ↲ anniversary of your very first hit single! → К тому же, так получилось, что он совпадает с годовщиной выхода вашего первого хитового сингла!
+MYM09	12:42.23,0.69 Sunny, Hitch: Yeah! || Yeah! → Да! || Да!
+MYM09	12:42.93,2.02 Sunny: Anniversaries should be celebrated, don't you think?! → А годовщины нужно отмечать, верно?
+MYM09	12:45.92,3.39 Sunny: Sorry. Sometimes when I get nervous, I talk really fast. → Простите. Иногда, когда я нервничаю, я тараторю как ненормальная.
+MYM09	12:49.51,0.98 Hitch: It's true. She does. → Ага. У неё такое бывает.
+MYM09	12:50.56,1.57 Sunny: So what do you think, Minty? → Так что вы на это скажете, Минти?
+MYM09	12:52.72,0.82 TreeHugger: I don't know. → Ну не знаю.
+MYM09	12:53.85,2.50 TreeHugger: The Dreamlands broke up moons and moons ago. → Дримлэндс распались так много лун назад, что не сосчитать.
+MYM09	12:56.57,4.49 TreeHugger: Even if I could convince Snuzzle ↲ and Blue Belle, we're so out of practice. → Даже если я уговорю Сназзл и Блю Белль, мы так давно не репетировали.
+MYM09	13:01.20,2.44 Sunny: Oh, I know the perfect place you can practice! → О, я знаю прекрасное место для репетиций!
+MYM09	13:03.77,2.82 Sunny: It's called Mane Melody and it's got a stage and everything. → В нашем салоне красоты есть сцена и всё остальное.
+MYM09	13:07.71,1.70 TreeHugger: It's not just that. → Дело не только в этом.
+MYM09	13:10.66,0.79 Hitch: Then what is it? → А в чём же ещё?
+MYM09	13:12.24,3.41 TreeHugger: Does anypony even care about our little girl group anymore? → Кому-то вообще ещё интересна наша маленькая девчачья группа?
+MYM09	13:15.92,2.77 Sunny: Of course they do! You're the originals! → Конечно интересна! Вы же родоначальницы жанра!
+MYM09	13:18.82,1.75 Sunny: You're what started it all! → С вас всё началось!
+MYM09	13:21.18,1.24 TreeHugger: Figgy! → Фигги!
+MYM09	13:22.81,3.76 Figgy: I hope my grandson and his friend ↲ aren't bothering you too much. → Надеюсь, мой внук и его друзья не сильно тебя побеспокоили.
+MYM09	13:26.68,3.79 Figgy: But I told them I'd help convince you to give it a try. → Но я обещала им, что помогу тебя уговорить.
+MYM09	13:31.13,4.13 Figgy: It'd be so wonderful to see you ↲ girls singing together again. → Было бы чудесно услышать, как вы, девочки, вновь поёте вместе.
+MYM09	13:36.43,2.50 TreeHugger: Is there a key lime pie in the deal? → А пирог с лаймом входит в сделку?
+MYM09	13:39.21,1.26 Figgy: Already baked it! → Ещё тёпленький!
+MYM09	13:42.88,2.64 TreeHugger: Okay then… I guess we'll do it. → Ну тогда… Думаю, мы попробуем.
+MYM09	13:45.72,3.28 TreeHugger: As long as we're not pushed aside ↲ at some little stage for "old timers" → Если нас не вытеснят на какую-нибудь маленькую площадку для "старых перечниц",
+MYM09	13:49.00,2.40 TreeHugger: while the flashy new acts play the mane stage. → пока на главной сцене будут выступать напыщенные новые таланты.
+MYM09	13:51.42,2.12 TreeHugger: We have to make a splash if we're making a comeback! → Раз уж мы решили вернуться, нужно делать это с размахом!
+MYM09	13:54.17,0.67 Sunny: You know what? → Знаете что?
+MYM09	13:55.66,1.86 Sunny: I have an even better idea. → У меня есть идея получше.
+MYM09	13:57.82,2.31 Sunny: The Dreamlands will be the headliners! → Дримлэндс будут гвоздём программы!
+MYM09	14:00.39,0.91 TreeHugger: Let's do it! → За дело!
+MYM09	14:01.32,0.50 Sunny: Yes! → Да!
+MYM09	14:02.02,0.59 Hitch: Yeah! → Ага!
+MYM09	14:05.18,0.47 Zipp: Hey! → Эй!
+MYM09	14:06.08,2.40 Zipp: I talked to Electric Blue! They're gonna do it! → Я уговорила Электрик Блю! Они согласны!
+MYM09	14:08.80,2.35 Sunny: We convinced Minty to get the Dreamlands to play! → Мы убедили Минти собрать Дримлэндс!
+MYM09	14:11.61,2.10 Izzy: And we got Ruby Jubilee! → А мы заполучили Руби Джубили!
+MYM09	14:14.00,1.42 Izzy: Which you knew already! → Хотя ты и так это знаешь!
+MYM09	14:15.83,2.74 Pipp: Great work, everypony! I knew I could count on you. → Прекрасная работа, народ! Я знала, что на вас можно рассчитывать.
+MYM09	14:18.64,2.24 Pipp: Now we just have to set up an entire festival! → Осталось взять и организовать целый фестиваль!
+MYM09	14:21.61,0.57 Pipp: Easy peasy! → Легкотня!
+MYM09	14:28.72,1.68 Pipp: Everypony get ready! → Всем приготовиться!
+MYM09	14:30.42,2.22 Pipp: The music is coming-to-town! → Музыка на подходе!
+MYM09	14:32.84,1.59 Pipp: The music festival, that is. → Точнее, музыкальный фестиваль.
+MYM09	14:34.79,2.07 Pipp: It's called "Bridlewoodstock"! → Под названием Брайдлвудсток!
+MYM09	14:37.06,1.42 Pipp: You're gonna love it! → Он вам понравится!
+MYM09	14:40.27,3.76 Fifi: Loud music?! During the Lumi-Bloom? → Громкая музыка? Во время Ясноцвета?
+MYM09	14:44.33,4.05 Pipp: Of course! Isn't it the most beautiful ↲ thing you've ever witnessed? → Конечно! Разве это не самое прекрасное зрелище на свете?
+MYM09	14:48.45,1.54 Pipp: Now it will have a soundtrack! → А теперь оно станет ещё и музыкальным!
+MYM09	14:50.50,1.82 StarlightGlimmer: This is a very bad idea! → Это очень плохая идея!
+MYM09	14:53.07,0.98 Pistachio: Count me out! → Ни за какие коврижки!
+MYM09	14:56.52,2.82 Sunny: Is it just me or do these Unicorns seem kind of… → Мне кажется, или эти единороги и правда как-то…
+MYM09	14:59.45,1.63 Zipp: Not into the idea? → Не прониклись?
+MYM09	15:01.22,0.58 Sunny: Yeah. → Ага.
+MYM09	15:02.02,2.71 Zipp: They are definitely freaked out about something. → Они явно чем-то встревожены.
+MYM09	15:06.98,1.76 Pipp: So… → Что ж…
+MYM09	15:09.19,4.38 Pipp: Are there any amazing local Bridlewood musicians → В Брайдлвуде есть какие-нибудь местные музыканты,
+MYM09	15:13.57,2.05 Pipp: who would love to perform at the show? → которые захотели бы выступить на фестивале?
+MYM09	15:17.25,1.29 Pipp: Onyx! Dapple! → Оникс! Дэппл!
+MYM09	15:19.15,3.68 Pipp: You two would be perfect additions to the lineup, heh. What do you say? → Ваша пара могла бы прекрасно дополнить нашу программу. Что скажете?
+MYM09	15:24.36,0.82 Announcer: No. → Нет.
+MYM09	15:25.41,2.47 Pipp: Oh, well that's okay. → О, всё в порядке.
+MYM09	15:27.89,2.27 Pipp: You still have time to mull it over. → У вас ещё есть время всё обдумать.
+MYM09	15:30.35,1.08 HerdHappily: We don't need time. → И думать тут нечего.
+MYM09	15:31.90,1.04 Pipp: You don't? → Почему?
+MYM09	15:32.96,1.86 HerdHappily: Because we Unicorns know better. → Ведь мы, единороги, знаем,
+MYM09	15:35.01,2.93 HerdHappily: You should never sing during ↲ a Lumi-Bloom because of the… → что никому нельзя петь во время Ясноцвета из-за…
+MYM09	15:38.18,1.06 HerdHappily: Troggles! → Трогглей!
+MYM09	15:42.54,2.31 Announcer: "Eyes of the monster, form of the pig → "Чудовищен взгляд их и тело свиньи
+MYM09	15:44.87,3.09 Announcer: Sing laugh or yell, ↲ step hoof on a twig → Споёшь, засмеёшься, заденешь ли прут
+MYM09	15:48.22,2.34 Announcer: Troggles appear, steal what's to be → Всё, чем владеешь ты, троггли сожрут.
+MYM09	15:50.88,2.83 Announcer: No cure to be found, past the red ruby" → Есть для тебя теперь выход один — коль хочешь спастись, найди красный рубин".
+MYM09	15:57.81,3.42 Pipp: Okay, I… I give up. What are these Troggle thingies? → Так, всё. Я ничего не поняла. Что это вообще за троггли такие?
+MYM09	16:01.30,4.26 HerdHappily: Legend says… that the Troggles are mystical spirit monsters! → Легенды гласят… Троггли — это таинственные призрачные чудовища!
+MYM09	16:05.63,3.58 Fifi: Th-th-they only come out during the bloom! → Он-н-ни появляются только в Ясноцвет!
+MYM09	16:09.43,3.52 RoyalRibbon: And they steal things from you ↲ if you make any noise! → И они что-то у тебя украдут, если будешь шуметь!
+MYM09	16:13.04,4.37 HerdHappily: But they can only work their spirit magic ↲ at night… so beware of singing! → Но их призрачное волшебство имеет силу только по ночам… так что поосторожнее с пением!
+MYM09	16:17.57,1.51 HerdHappily: Or you'll be cursed! → Иначе на вас падёт сглаз!
+MYM09	16:20.08,1.38 HerdHappily: Bing bong! Bing bong! → Бинг-бонг! Бинг-бонг!
+MYM09	16:21.50,3.10 Somepony: Bing bong! Bing bong! ↲ Bing bong! Bing bong! → Бинг-бонг! Бинг-бонг! ↲ Бинг-бонг! Бинг-бонг!
+MYM09	16:25.38,0.60 Pipp: Oh. Is that all? → И всё, что ли?
+MYM09	16:31.49,3.63 Pipp: Come to the Bridlewoodstock ↲ Music Festival and I, Princess Pipp, → Приходите на фестиваль Брайдлвудсток, и я, принцесса Пипп,
+MYM09	16:35.13,2.91 Pipp: guarantee you the greatest sights your eyes have ever seen → лично обещаю вам шоу, какого вы никогда не видели,
+MYM09	16:38.05,1.92 Pipp: and sounds your ears will ever hear! → и музыку, какой вы никогда не слышали!
+MYM09	16:41.85,1.43 Pipp: Yes, that is correct. → Да, всё верно.
+MYM09	16:43.44,1.37 Pipp: It's called the "Lumi-Bloom". → Явление зовётся Ясноцвет.
+MYM09	16:45.10,2.70 Pipp: And we'll have the hottest musical acts in the industry. → А ещё у нас выступят самые крутые музыкальные исполнители.
+MYM09	16:48.02,3.84 Pipp: The Dreamlands, Electric Blue, and… Ruby Jubilee! → Дримлэндс, Электрик Блю и… Руби Джубили!
+MYM09	16:52.22,2.12 Pipp: That's Bridlewoodstock Music Festival, okay! → Запомните: музыкальный фестиваль Брайдлвудсток!
+MYM09	16:54.48,3.07 Pipp: In Bridlewood! Be there or um… You know what? → В Брайдлвуде! Приходите или… Хотя знаете что?
+MYM09	16:57.57,1.17 Pipp: Just be there, everypony! → Просто приходите, точка!
+MYM09	17:00.69,2.19 Pipp: Looking great, everypony! Take five! → Вы просто супер, народ! Так держать!
+MYM09	17:04.56,1.49 Izzy: Hello! → Приве-е-ет!
+MYM09	17:18.02,2.34 Pipp: Home sweet Mare Stream! → Ах, старый уютный Мэрстрим!
+MYM09	17:20.44,1.14 Pipp: Thanks for setting it up! → Спасибо, что всё распаковала!
+MYM09	17:21.85,2.14 Pipp: Isn't luxury glamping the best? → Что может быть лучше роскошного отдыха на природе?
+MYM09	17:25.32,1.74 Izzy: I love to glamp! → Обожаю роскошь!
+MYM09	17:27.53,2.89 Izzy: It helps me forget about all my worries. → Она так хорошо помогает забыть…
+MYM09	17:30.64,1.54 Pipp: What do you have to worry about? → Что забыть, что-то не так, Иззи?
+MYM09	17:33.86,1.34 Izzy: Want a toasted marshmallow? → Может, поджаренный маршмеллоу?
+MYM09	17:37.54,0.82 Pipp: You're right. → И правда.
+MYM09	17:38.63,1.99 Pipp: My worries have melted away! → Все мои заботы сразу словно растаяли!
+MYM09	17:40.85,1.43 Izzy: Yes! Yeah. → Да! Да.
+MYM09	17:42.78,2.14 Izzy: Me too, me too! → И мои, и мои!
+MYM09	17:47.21,0.62 (Sunny):  → Привет, Пипп!
+MYM09	17:53.18,2.74 Pipp: Oh no. What's wrong now? ↲ Did one of the bands back out?! → О нет. Что теперь-то? Кто-то из исполнителей не придет?!
+MYM09	17:56.48,1.33 Zipp: No, nothing like that. → Нет, ничего такого.
+MYM09	17:58.06,5.20 Zipp: It's just… Are you absolutely sure ↲ we should be having the festival here? → Просто… Ты точно уверена, что это подходящее место для фестиваля?
+MYM09	18:04.25,2.90 Pipp: Why wouldn't we? It's literally gorgeous. → Почему нет? Посмотри, какая красота.
+MYM09	18:07.82,3.69 Hitch: But you heard what Onyx ↲ said earlier about the legend, right? → Но ты же помнишь ту легенду, которую нам рассказывала Оникс, да?
+MYM09	18:12.30,1.12 Izzy: With the Troggles? → Про Трогглей?
+MYM09	18:14.50,2.18 Izzy: Why? Have you seen anything… Troggle-y? → А что? Вы тут заметили что-нибудь… трогглевское?
+MYM09	18:16.81,2.15 Pipp: Trust me, there's nothing to worry about. → Поверьте, нам не о чем волноваться.
+MYM09	18:19.24,2.86 Pipp: Besides, look at this place already. → Да и вообще, посмотрите вокруг.
+MYM09	18:22.18,3.66 Pipp: Everything is coming together like ↲ the harmonies on my last single! → Всё идет как по нотам, прямо как в моём последнем сингле!
+MYM09	18:26.57,0.42 Pipp: Izzy! → Иззи!
+MYM09	18:27.45,1.27 Pipp: Is that what I think it is? → Это то, о чём я думаю?
+MYM09	18:28.81,4.03 Izzy: If you think it's my flower crown booth, then yes. → Если ты думаешь, что это моя палатка для создания венков из цветов, тогда — да.
+MYM09	18:33.08,0.81 Izzy: Want a sneaky peek? → Хочешь взглянуть?
+MYM09	18:34.02,1.44 Pipp: Yeah, I do! → Еще бы!
+MYM09	18:35.49,5.39 Pipp: And I want all of you to stay here ↲ in our amazing Mare Stream and relax! → И ещё я хочу, чтобы вы все расположились в нашем потрясающем Мэрстриме и немного расслабились!
+MYM09	18:40.94,1.51 Pipp: Toast some marshmallows! → Поджарьте маршмеллоу на костре!
+MYM09	18:43.30,1.88 Zipp: Should we do something to stop all this? → Как думаете, стоит нам всё отменить?
+MYM09	18:48.44,2.66 Hitch: I don't know. Things do look fine, at least… → Не знаю. Пока всё идёт нормально…
+MYM09	18:51.15,3.07 Sunny: And we worked so hard to get the bands to agree to play. → И мы столько сил приложили, чтобы уговорить всех музыкантов.
+MYM09	18:54.74,1.71 Sunny: Which reminds me, I have to go! → Вспомнила, мне надо бежать!
+MYM09	18:57.39,3.09 Sunny: Minty invited me to watch The Dreamlands dress rehearsal back home → Минти пригласила меня на генеральную репетицию,
+MYM09	19:00.73,1.89 Sunny: and I'm pretty excited about it. → и мне прямо не терпится их послушать.
+MYM09	19:02.81,0.94 Sunny: See you ponies later! → Увидимся, ребята!
+MYM09	19:04.36,2.40 Zipp: I don't really want to ruin Pipp's festival… → Очень не хочется портить Пипп её фестиваль…
+MYM09	19:06.87,3.50 Zipp: but are you still feeling uneasy about ↲ those strange Unicorn warnings, too? → но ты ведь тоже чувствуешь, что в этих единорожьих страхах что-то есть?
+MYM09	19:10.74,1.14 Hitch: Actually, yes. → Вообще-то, да.
+MYM09	19:12.21,1.70 Zipp: You know what I think this calls for? → А знаешь, чем, я думаю, мы должны заняться?
+MYM09	19:14.56,1.30 Hitch: An investigation? → Расследованием?
+MYM09	19:16.44,1.57 Zipp: Boom. You got it. → Бум. Прямо в цель.
+MYM09	19:18.30,0.39 Zipp: Come on! → Погнали!
+MYM09	19:21.05,1.79 WindyWhistles: This isn't working, Minty! → Ничего не получается, Минти!
+MYM09	19:22.86,1.40 SomeponyBlueManePurple: Snuzzle is right. → Сназзл права.
+MYM09	19:24.77,1.68 SomeponyBlueManePurple: Why did we agree to this, anyway? → И почему мы вообще на это согласились?
+MYM09	19:26.68,1.13 SomeponyBlueManePurple: We're washed up! → Мы вышли в тираж!
+MYM09	19:28.23,1.16 TreeHugger: No, we're not! → А вот и нет!
+MYM09	19:29.41,1.87 WindyWhistles: They're going to laugh at us. → Над нами будут смеяться.
+MYM09	19:31.29,2.09 TreeHugger: We just need to run it a few more times. → Надо просто ещё пару раз сыграть.
+MYM09	19:33.48,2.83 TreeHugger: Come on, let's just try it again from the top. → Ну же, давайте снова, с самого начала.
+MYM09	19:36.44,2.24 TreeHugger: And a one, two… A one, two, three. → И раз, два… И раз, два, три.
+MYM09	19:39.63,2.26 Sunny: Sorry I'm late! I came straight from Bridlewood! → Простите за опоздание! Я прямиком из Брайдлвуда!
+MYM09	19:42.10,2.11 Jazz: Sunny! So glad you're here. → Санни! Как хорошо, что ты пришла.
+MYM09	19:44.31,1.90 Rocky: This is not going well… → Не очень-то у них получается.
+MYM09	19:47.12,1.26 WindyWhistles: Hey! Watch where you're going! → Эй! Смотри, куда наступаешь!
+MYM09	19:48.38,0.74 SomeponyBlueManePurple: You're in my way! → Ты мне мешаешь!
+MYM09	19:49.12,1.39 TreeHugger: Stop it, you two! → Прекратите, вы обе!
+MYM09	19:50.56,1.79 Sunny: Has it been like this the whole time? → И что, так всё время?
+MYM09	19:52.76,1.89 Rocky: As soon as they walked in the door. → Стоило им только порог перейти.
+MYM09	19:54.73,1.60 Jazz: They can't agree on anything! → Они спорят по любому поводу!
+MYM09	19:56.39,3.13 Rocky: And they haven't even made it ↲ through their whole song once. → Они даже ни одной песни не смогли допеть до конца.
+MYM09	20:00.39,1.27 Sunny: Maybe I can fix this. → Может, я смогу как-то помочь.
+MYM09	20:02.55,1.37 SomeponyBlueManePurple: That's it, I'm done. → Ну всё, с меня хватит.
+MYM09	20:04.29,0.48 WindyWhistles: Fine! → И пожалуйста!
+MYM09	20:07.65,2.08 Sunny: Ah… Minty! Looking fresh! → Минти! Бодро выглядите!
+MYM09	20:09.74,1.64 Sunny: How is everything going? → Как всё продвигается?
+MYM09	20:11.43,3.58 TreeHugger: Oh, Sunny. Don't act like you didn't just see that. → О, Санни, не делай вид, будто не замечаешь, что происходит.
+MYM09	20:15.22,1.47 TreeHugger: It's a disaster! → Это катастрофа!
+MYM09	20:17.13,3.62 TreeHugger: The dance moves are off, our looks are dated, and… → Хореография не попадает в ритм, выглядим мы старомодно, и вдобавок…
+MYM09	20:20.97,2.53 WindyWhistles: We can't agree on what song to perform. → никак не можем договориться, какую же песню нам исполнять.
+MYM09	20:23.63,2.31 TreeHugger: Blue Belle thinks we should try and update our sound → Блю Белль считает, что нам надо обновить аккомпанемент,
+MYM09	20:25.94,1.63 TreeHugger: to appeal to a younger audience, → чтобы больше нравится моложёжи,
+MYM09	20:28.07,1.57 TreeHugger: but that's not so easy. → но это не так-то просто сделать.
+MYM09	20:29.93,3.46 TreeHugger: I think this might be a no-go ↲ for The Dreamlands. → Кажется, Дримлэндс окончательно развалились.
+MYM09	20:33.61,1.15 TreeHugger: Sorry, Sunny. → Прости, Санни.
+MYM09	20:34.98,1.33 Sunny: Hey, wait! Don't give up! → Постойте! Не сдавайтесь!
+MYM09	20:36.50,1.85 Sunny: And don't try to change yourselves. → И не думайте, как изменить себя.
+MYM09	20:38.57,3.01 Sunny: Your classic sounds are what everypony loves about you! → Пони любят вас именно за ваши старые песни!
+MYM09	20:41.76,3.66 Sunny: You just have to do what you do best and you're gonna rock that stage. → Просто выступайте на все сто, как умеете, и зрители будут в восторге.
+MYM09	20:49.39,0.99 Somepony: Yeah! → Да!
+MYM09	20:59.42,2.06 Hitch: What can you tell us about Troggles? → Расскажи нам всё, что знаешь о трогглях.
+MYM09	21:02.01,1.26 DrWhooves: Troggles? Where? → Троггли? Где?
+MYM09	21:07.98,2.39 Zipp: Hey! Uh, do you ponies know that Jinxie poem? → Привет! Вы же знаете этот стишок про сглаз?
+MYM09	21:10.52,0.71 Zipp: About the Tro… → Тот, что про тро…
+MYM09	21:11.85,2.21 Pulverizer: Yeah, but I don't wanna say it! → Да, но я его читать не буду!
+MYM09	21:15.63,0.48 Hitch: What?! → Чего?
+MYM09	21:16.86,2.97 Dave: Yeah, I mean… like what is a Troggle anyway, you know? → Ну, то есть… Что это вообще такое, троггли, понимаете?
+MYM09	21:21.41,1.63 Dave: Like when you think about it, → А если задуматься,
+MYM09	21:23.47,1.79 Dave: what is anything? → что такое вообще всё?
+MYM09	21:28.41,1.58 Zipp: I think I've come to a conclusion. → Кажется, я поняла.
+MYM09	21:30.74,0.38 Hitch: Well? → Ну?
+MYM09	21:31.69,1.45 Zipp: The results are inconclusive. → Что ничего не поняла.
+MYM09	21:34.15,2.77 Zipp: I can't tell if these monster spirit things are real, → Непонятно даже, существуют ли на самом деле эти призрачные чудовища,
+MYM09	21:37.13,2.08 Zipp: or just another piece of spooky Unicorn lore! → или единороги придумали себе ещё одну страшилку!
+MYM09	21:39.47,2.70 Hitch: Me neither. But I think we need to talk to Pipp again. → Я тоже не понимаю. Но, думаю, нам надо бы снова поговорить с Пипп.
+MYM09	21:42.35,1.11 Hitch: Before it's too late. → Пока ещё не слишком поздно.
+MYM09	21:47.06,0.78 Pipp: Hey, ponies! → Привет, ребята!
+MYM09	21:48.54,1.57 Zipp: We wanna talk to you about something. → Мы хотели бы с тобой кое о чём поговорить.
+MYM09	21:50.46,3.22 Pipp: Wait, wait! Have you seen the mane stage yet? → Да, да! А главную сцену вы уже видели?
+MYM09	21:53.99,0.88 Pipp: Come look first! → Пойдём, посмотрите.
+MYM09	21:59.95,2.45 Hitch: Wow, Pipp. That looks really cool! → Ух ты, Пипп. Здорово получилось!
+MYM09	22:02.54,2.05 Pipp: Don't you love the rubies? → А как вам рубины?
+MYM09	22:06.77,2.57 Pipp: I had them locally harvested from Bridlewood → Все они были собраны тут, в Брайдлвуде,
+MYM09	22:09.34,2.44 Pipp: in honor of Ruby Jubilee's big performance! → в честь выступления Руби Джубили!
+MYM09	22:12.64,4.25 Pipp: I'm just so thrilled with how everything is coming together with no snags at all! → Как же я рада, что подготовка к фестивалю идет по плану, гладко и без проблем!
+MYM09	22:17.29,1.26 Zipp: Well, about that… → Да, на счёт этого…
+MYM09	22:18.99,2.72 Zipp: There's kind of a snag that we wanted to discuss. → Есть тут одна проблемка, которую стоило бы обсудить.
+MYM09	22:22.42,1.03 OldPonyInGlasses: Princess Pipp! → Принцесса Пипп!
+MYM09	22:23.64,2.10 OldPonyInGlasses: We need you at artist tent setup! → Нам нужна помощь в установке палатки для звёзд!
+MYM09	22:26.74,0.59 OldPonyInGlasses: Please! → Пожалуйста!
+MYM09	22:27.64,0.92 Pipp: Be right there! → Уже бегу!
+MYM09	22:28.89,1.13 Pipp: Thanks for stopping by! → Спасибо, что заскочили!
+MYM09	22:31.39,3.54 Zipp: Am I the only one who is worried ↲ about all this Troggle stuff? → Я что, одна тут беспокоюсь насчёт этих трогглей?
+MYM09	22:35.65,3.58 Zipp: Look! There are even Unicorns ↲ on board with the festival now. → Смотри, уже даже единороги фестиваль поддерживают.
+MYM09	22:42.02,3.56 Hitch: Then maybe you are just trying to dig up ↲ trouble where there isn't any. → А может быть, ты просто копаешь там, где никаких проблем не зарыто.
+MYM09	22:46.42,0.73 Zipp: You're right. → Ты прав.
+MYM09	22:47.21,1.12 Zipp: Maybe sometimes… → Может быть…
+MYM09	22:49.11,1.95 Zipp: There just isn't any mystery to solve. → тут и расследовать-то нечего вовсе.
+MYM09	22:51.29,1.37 Hitch: And that's okay. → И это нормально.
+MYM09	22:52.86,2.44 Zipp: You know what? I'm gonna try and have fun tomorrow. → А знаешь что? Завтра я постараюсь просто развлечься.
+MYM09	22:55.41,2.45 Zipp: Lean into the whole music festival experience. → Полностью уйду в атмосферу музыкального фестиваля.
+MYM09	22:58.17,0.75 Zipp: For my sister. → Хотя бы ради сестры.
+MYM09	22:59.39,0.83 Hitch: Me too! → Я с тобой!
+MYM09	23:20.16,2.88 Pipp: Welcome to Bridlewoodstock, everypony! → Добро пожаловать на Брайдлвудсток, народ!
+MYM09	23:25.44,2.79 Hitch: This is all gonna be okay, right? → Все же будет хорошо, да?
+MYM09	23:28.28,1.93 Hitch: Even after all the stuff ↲ those Unicorns said? → Несмотря на всё, что эти единороги наболтали?
+MYM09	23:30.52,1.02 Zipp: I really hope so. → Очень надеюсь.
+MYM09	23:52.13,1.87 Hitch: Pipp really pulled things together fast, huh? → Как быстро Пипп всё организовала, а?
+MYM09	23:55.21,1.38 Zipp: That's my little sister for ya. → Моя сестрёнка в этом вся.
+MYM09	23:57.06,2.32 Zipp: When she wants something, she will make it happen! → Если уж она что-то хочет, она это из-под земли достанет!
+MYM09	23:59.73,1.09 Hitch: Well, I'm impressed. → Ну, я впечатлён.
+MYM09	24:01.01,1.47 Hitch: This place looks awesome! → Это место выглядит потрясно!
+MYM09	24:04.61,0.86 Hitch: Very floral. → Повсюду цветы.
+MYM09	24:05.55,1.22 Zipp: Yeah, it does. → Ага, точно.
+MYM09	24:07.44,2.51 Zipp: Alright, I'll admit it. I am a little excited. → Ладно, скажу честно. Я тоже немного волнуюсь.
+MYM09	24:10.38,2.96 Zipp: And I can't wait to see Electric Blue headline the show! → И мне очень хочется увидеть гвоздь этой программы — группу Электрик Блю!
+MYM09	24:14.76,2.09 Hitch: I thought The Dreamlands were headlining the show? → Погоди, я думал, гвоздём программы будут Дримэндс?
+MYM09	24:17.79,1.37 Zipp: Hey, look! There's Izzy's booth! → Эй, смотри! Вон палатка Иззи!
+MYM09	24:23.30,1.14 Zipp: Hey, Iz. What's all this? → Привет, Из. Что тут у тебя?
+MYM09	24:25.22,4.10 Izzy: The Flower-fication Station! ↲ Station! Station! Station! → Цветофикационный пункт! ↲ Пункт! Пункт! Пункт!
+MYM09	24:29.32,4.68 Izzy: It's so much fun, it's almost making me forget about how super Jinxie this all this. → Тут так весело, что я почти забыла, что всё это просто один громадный сглаз.
+MYM09	24:34.60,0.60 Izzy: Take a seat! → Садитесь!
+MYM09	24:35.77,0.60 Hitch: Okay! → Спасибо!
+MYM09	24:36.67,1.57 Zipp: Wait, what did you just say, Izzy? → Постой, что ты сейчас сказала, Иззи?
+MYM09	24:48.10,0.66 Zipp: How did you just… → Ты сказала, что…
+MYM09	24:48.77,1.76 Izzy: Wait! There's more! → Подождите! Это ещё не всё!
+MYM09	25:06.10,0.93 Hitch: Yeah! → Да!
+MYM09	25:08.06,3.04 Izzy: Wow! Now you're really festival ready! → Ого! Теперь вы точно готовы к фестивалю!
+MYM09	25:13.90,1.23 Hitch: Yeah, we are! → Ага, это точно.
+MYM09	25:17.89,0.66 Zipp: Thanks, Izzy. → Спасибо, Иззи.
+MYM09	25:19.37,0.55 Izzy: You're welcome! → Да не за что!
+MYM09	25:19.92,1.73 Izzy: Have fun and don't let the Troggles bite! → Развлекайтесь и берегитесь трогглей!
+MYM09	25:23.69,0.76 Zipp: What was that? → Это ты о чём?
+MYM09	25:25.41,2.33 Izzy: Just some silly old Jinxie saying! → Да просто старая дурацкая присказка от сглаза!
+MYM09	25:27.76,2.69 Izzy: Nothing to worry about! Probably. → Совершенно не о чем волноваться. Наверное.
+MYM09	25:31.02,1.12 Izzy: Okay, catch ya later! → Ладно, увидимся позже!
+MYM09	25:32.69,2.26 Hitch: Who's hungry? I'm starving. → Кто хочет есть? Я жутко голодный.
+MYM09	25:36.37,1.21 Somepony: Hungry. → Голодный.
+MYM09	25:38.38,2.10 Somepony: Hungry! → Голодный!
+MYM09	25:43.50,1.10 Zipp: Did you just hear that? → Вы тоже это слышали?
+MYM09	25:44.81,2.41 Hitch: Come on, let's get some snacks. Woo! → Пойдём, слопаем уже что-нибудь.
+MYM09	26:00.14,2.12 Zipp: This is taking forever. → На это уйдёт целая вечность.
+MYM09	26:02.43,1.55 Zipp: What are we in line for, again? → Скажи ещё раз, за чем мы встали в очередь?
+MYM09	26:04.64,3.44 Hitch: Fries! With dipping sauces! → За картошкой фри! С особыми соусами!
+MYM09	26:08.69,2.08 Zipp: Oh yeah. Huh. That does sound pretty delicious. → О да. Точно. Просто объеденье.
+MYM09	26:12.35,1.86 Hitch: Dipping sauces. → Особые соусы.
+MYM09	26:21.67,2.55 Hitch: Yay! Zipp! We're almost there! → Ура! Зипп! Мы почти дождались!
+MYM09	26:24.23,1.10 Pipp: There you two are! → Вот вы где!
+MYM09	26:25.86,2.49 Pipp: Thank hoofness, I've been looking everywhere! → Слава копытцам, я вас уже обыскалась!
+MYM09	26:28.54,1.55 Pipp: You look amazing, by the way. → Кстати, круто выглядите.
+MYM09	26:30.85,1.17 Zipp: What the hay, Pipp?! → Какого сена, Пипп?!
+MYM09	26:32.04,2.20 Pipp: I'm sorry, but this is a festival emergency! → Простите, но на нашем фестивале чрезвычайное положение!
+MYM09	26:34.45,0.65 Pipp: Come with me! → Давайте за мной!
+MYM09	26:36.86,3.89 Hitch: But… but… dipping sauces! → Но… Но… Как же особые соусы!
+MYM09	26:43.21,2.61 Pipp: I don't want to alarm you, but this is bad. → Не хочу вас пугать, но случилось кое-что плохое.
+MYM09	26:46.04,1.41 Pipp: Like epically bad. → Типа нереально плохое.
+MYM09	26:47.86,1.80 Zipp: Does this have to do with the Unicorn legend? → Ты это насчёт того единорожьего предания?
+MYM09	26:50.14,1.56 Zipp: We've been worried about that, too. → Нас оно тоже беспокоит.
+MYM09	26:52.29,2.23 Zipp: And so has Izzy, even if she won't admit it. → Как и Иззи, хотя она старается этого не показывать.
+MYM09	26:55.57,1.37 Hitch: We didn't want to upset you, but… → Мы не хотели тебя расстраивать, но…
+MYM09	26:57.54,2.24 Hitch: you can be sure that Zipp and I ↲ will do whatever we can → можешь не сомневаться, мы с Зипп сделаем всё что в наших силах,
+MYM09	26:59.79,3.14 Hitch: to minimize damage and help shut ↲ things down before it's too late. → чтобы снизить ущерб и помочь разобраться со всем этим, пока не стало слишком поздно.
+MYM09	27:03.26,1.55 Pipp: What? Why would you do that?! → Что? И с чего бы вам это делать?
+MYM09	27:05.13,1.37 Zipp: Because of the Troggles? → Из-за трогглей?
+MYM09	27:06.97,2.50 Pipp: Okay, I have no idea what you two are talking about, → Ладно, я вообще не понимаю, о чём вы говорите,
+MYM09	27:09.63,3.24 Pipp: but we actually do have a serious problem on our hooves here. → но мы и правда по самые копыта в серьёзных проблемах.
+MYM09	27:13.14,2.34 Zipp: More serious than ancient ghost monsters? → Серьёзнее, чем древние призрачные чудовища?
+MYM09	27:15.63,5.24 Pipp: Yes! So two of our major musical acts, Electric Blue and Ruby Jubilee, are here! → Да! Итак, двое из наших основных исполнителей, Электрик Блю и Руби Джубили уже здесь!
+MYM09	27:20.90,1.72 Hitch: That's a good thing, though… right? → Так это же здорово… Или нет?
+MYM09	27:23.13,4.13 Pipp: It would be, if they didn't both ↲ think they're the headliner! → Было бы здорово, если б каждый из них не считал себя гвоздём программы!
+MYM09	27:28.21,2.81 Pipp: I just don't understand how this mixup happened. → Даже не понимаю, как могла возникнуть такая путаница.
+MYM09	27:33.30,3.67 Zipp: I may have had something to do with that. → Возможно, тут я слегка в этом виновата.
+MYM09	27:37.24,1.16 Zipp: Whoopsies? → Упс?
+MYM09	27:38.69,2.52 Pipp: Zephyrina! What did you do? → Зефирина! Что ты имеешь в виду?
+MYM09	27:41.36,2.65 Zipp: Hey, I was just trying to help you out! → Эй, я просто пыталась тебе помочь!
+MYM09	27:44.25,3.04 Zipp: Electric Blue were on the fence about performing, so I… → Электрик Блю всё колебались, ↲ выступать им или нет, так что я…
+MYM09	27:47.55,2.65 Zipp: sweetened the deal by promising some stuff? → пообещала им кое-что в обмен на их согласие.
+MYM09	27:50.57,3.64 Pipp: Like I said, this is epically bad. → Как я уже говорила, это нереально плохо.
+MYM09	27:54.97,1.28 Pipp: What are we gonna do?! → Что нам теперь делать?!
+MYM09	27:57.10,2.51 Hitch: We'll just have to tell them the truth about what happened. → Надо просто рассказать им всё как есть.
+MYM09	28:00.02,1.21 Hitch: I'm sure they'll understand. → Я уверен, они поймут.
+MYM09	28:01.43,0.81 Pipp: No, no, no, no, no, no, no! → Нет-нет-нет-нет-нет!
+MYM09	28:02.24,5.01 Pipp: You do not tell a musician that ↲ they've been demoted from headliner! → Нельзя говорить исполнителям, что они больше не гвоздь программы!
+MYM09	28:07.25,0.60 Pipp: You just don't. → Просто нельзя.
+MYM09	28:08.28,2.09 Pipp: Maybe they can double-headline! Is that a thing? → Может, они смогут быть гвоздями вместе? Так вообще бывает?
+MYM09	28:10.31,2.20 Pipp: That's not a thing, is it?! ↲ But it could be! → Не бывает, да? Но ведь всегда есть первый раз!
+MYM09	28:12.63,2.38 Pipp: If we make it one! Yeah! Yeah! That could work. → А если объединить их в одну группу? Точно! Точно! Мы будем первыми!
+MYM09	28:15.16,4.13 Pipp: And then, and then we'll still have plenty of other bands to go on first and open for them. → А потом, потом у нас же ещё есть целая куча групп, чтобы выступить у них на разогреве.
+MYM09	28:19.31,1.24 Pipp: Like The Dreamlands! → Например, Дримлэндс!
+MYM09	28:21.02,1.43 Pipp: Are they here yet? Where's Sunny? → Кстати, они здесь? Где Санни?
+MYM09	28:22.65,2.54 Sunny: Right here! And your headliners have arrived! → Туточки! Встречайте гвоздей нашей программы!
+MYM09	28:25.50,1.12 Sunny: Here they are! → Вот они!
+MYM09	28:27.33,1.71 TreeHugger: Hey, everypony! → Привет, народ!
+MYM09	28:29.05,4.34 SomeponyBlueManePurple: We are really excited to be ↲ headlining a show after all this time! → Мы так рады, что после стольких лет мы всё ещё гвоздь программы!
+MYM09	28:33.39,3.57 WindyWhistles: Thank you so much for this! We feel so special! → Спасибо вам огромное, мы чувствуем себя такими особенными!
+MYM09	28:41.58,3.64 Pipp: On behalf of the royal family ↲ of Zephyr Heights and the um… → От имени королевской семьи Зефир Хейтс и…
+MYM09	28:46.48,3.03 Pipp: friendship fellowship of the Unity Crystals, → содружества Кристаллов Единства,
+MYM09	28:49.91,3.27 Pipp: we are so honored that you have ↲ graced us with your talents → торжественно благодарим вас за то, что украсили наш музыкальный праздник
+MYM09	28:53.21,4.19 Pipp: this fine evening at this celebration of the music. → своими изумительными талантами.
+MYM09	28:57.93,1.65 TreeHugger: So are we! → Это про нас!
+MYM09	29:00.21,2.48 WindyWhistles: We weren't even sure we could perform together anymore, → Мы даже не верили, что снова сможем собраться вместе,
+MYM09	29:02.70,2.06 WindyWhistles: let alone headline a festival! → не то, что стать гвоздём программы!
+MYM09	29:05.07,3.60 Pipp: Yes, yes. Well, please get comfortable ↲ as you warm your vocal chords → Да-да. Теперь устраивайтесь поудобнее и хорошенько разогрейтесь,
+MYM09	29:08.67,2.01 Pipp: and prepare for your grand performance! → чтобы быть готовыми к вашему грандиозному выходу!
+MYM09	29:11.01,2.70 Pipp: And do let us know if you require anything else. → Если вам будет что-то нужно, дайте нам знать.
+MYM09	29:14.04,1.62 Pipp: We shall check in on you later. → Мы ещё навестим вас попозже.
+MYM09	29:19.63,1.79 TreeHugger: Why was she talking like that? → Как-то странно она сейчас говорила.
+MYM09	29:22.28,1.13 Fifi: Royals are fancy? → Принцессы любят вычурность?
+MYM09	29:25.58,4.41 Pipp: Before you say anything, I know that ↲ I was just acting totally weird in there! → Можете не говорить, сама знаю, я вела себя до крайности странно!
+MYM09	29:30.22,0.94 Zipp: As long as you know. → Заметь, не я это сказала.
+MYM09	29:31.26,0.86 Pipp: I just panicked! → Я была в панике!
+MYM09	29:32.35,2.18 Pipp: But it's okay. We will come up with a plan and fast. → Но всё в порядке. Мы что-нибудь придумаем, и быстро.
+MYM09	29:34.64,2.83 Pipp: But for now, all we have to do is keep ↲ the bands separated until the show. → А пока всё, что нам надо — это держать их подальше друг от друга до начала шоу.
+MYM09	29:37.73,1.13 Pipp: We have time to figure it out! → Время ещё есть!
+MYM09	29:40.19,3.83 Izzy: Not to burst any more of your bubbles, but not really. → Не хочу снова мешать полёту твоей фантазии, но не то, чтобы его много.
+MYM09	29:44.29,1.52 Sunny: It is almost dusk. → Солнце почти зашло.
+MYM09	29:46.59,3.11 Izzy: If you want the full effect of the ↲ Lumi-Bloom, we gotta get started! → Если ты хочешь сполна насладиться Ясноцветом, нам пора начинать!
+MYM09	29:50.01,2.38 Izzy: Plus, the sooner we start the show, ↲ the less chance of any uh… → Тем более чем раньше мы начнём, тем меньше шансы дождаться, эм…
+MYM09	29:52.66,1.39 Izzy: unwanted visitors showing up! → появления незванных гостей!
+MYM09	29:55.26,2.56 Pipp: Okay. I'm not going to let anything ruin this. → Хорошо. Я не позволю испортить наш праздник никому на свете.
+MYM09	29:58.01,4.05 Pipp: Not "Troggies", diva musicians, or… the sun setting! → Ни "трогглям", ни капризным исполнителям, ни… закату!
+MYM09	30:02.25,2.11 Zipp: You're sounding pretty weird again, sis. → Ты снова говоришь немного странно, сестрёнка.
+MYM09	30:04.36,0.87 Pipp: I know! → Знаю!
+MYM09	30:05.48,2.89 Pipp: What's even weirder is triple headliners. → Три гвоздя программы, что может быть страннее.
+MYM09	30:08.54,3.18 Pipp: We gotta fix this and convince ↲ one of the groups to open! → С этим надо что-то делать, да ещё и убедить одного из них открыть шоу!
+MYM09	30:12.79,2.17 Zipp: So in conclusion, ↲ when you really think about it, → Так вот, если хорошенько подумать,
+MYM09	30:15.00,2.54 Zipp: opening the show is actually ↲ way better than going last → открывать шоу намного лучше, чем играть в финале,
+MYM09	30:17.60,4.15 Zipp: because you'll be the first band in history to rock out to the visuals of the bloom! → ведь тогда вы будете первыми в истории, кто зажёг под сияние Ясноцвета!
+MYM09	30:27.59,1.32 Firelight: Alright, you got it. → Ладно, убедила.
+MYM09	30:29.74,1.57 Sunny: Hey, that was a great speech! → Эй, это была великолепная речь!
+MYM09	30:31.60,0.48 Zipp: Phew. → Фух.
+MYM09	30:35.73,1.17 Hitch: So you know what I was thinking? → Знаете, что я подумал?
+MYM09	30:37.10,4.20 Hitch: Who wants to go last when everypony ↲ is too tired to sing and dance along? → Чего хорошего в том, чтобы играть последними, когда все устали петь и танцевать?
+MYM09	30:41.37,4.93 Hitch: Really, being first up is the perfect ↲ place to be is what I always say! → Ну правда, я всегда говорил, что кто первым пришёл, лучшее место нашёл!
+MYM09	30:48.95,1.39 TreeHugger: You know… → А знаешь…
+MYM09	30:52.43,1.65 TreeHugger: You have a really good point, Hitch. → Это и правда хорошая мысль, Хитч.
+MYM09	30:54.44,1.46 WindyWhistles: I think so, too. → Я тоже так думаю.
+MYM09	30:56.53,1.15 SomeponyBlueManePurple: Let's do it. → Вперёд!
+MYM09	30:57.72,1.50 SomeponyBlueManePurple: Let's go on first. → Выступим первыми!
+MYM09	30:59.68,0.32 Hitch: Phew. → Фух.
+MYM09	31:01.81,0.67 Cheerilee: Princess Pipp! → Принцесса Пипп!
+MYM09	31:03.23,1.14 Cheerilee: I wanted to talk to you… → Я хотела с вами поговорить…
+MYM09	31:04.39,3.46 Pipp: Okay, Ruby. It's all set. ↲ You are the star of the whole night! → Хорошо, Руби. Всё уже готово. ↲ Этой ночью тебя никто не затмит!
+MYM09	31:08.07,3.08 Pipp: Our magnificent headliner ↲ on our stunning "Ruby stage"! → Наш блистательный гвоздь программы на потрясающей "Рубиновой сцене"!
+MYM09	31:11.27,4.84 Cheerilee: Actually… I was kinda hoping you ↲ wouldn't mind if I go on first instead? → Вообще-то… Я вроде как хотела ↲ попроситься выступить первой.
+MYM09	31:17.28,0.36 Pipp: What?! → Что?!
+MYM09	31:18.04,1.72 Cheerilee: I love to sing during sunset. → Я люблю петь, пока заходит солнце.
+MYM09	31:20.01,4.86 Cheerilee: And it matches the exact vibe of the song ↲ you and Izzy inspired me to write! → И это точь-в-точь в духе песни, ↲ на которую вы с Иззи меня вдохновили!
+MYM09	31:27.15,2.38 Pipp: So you wanna go first now? → Значит, теперь ты хочешь выступать первой?
+MYM09	31:34.69,4.37 Pipp: So now we have three openers and nopony ↲ who wants to be a headliner?! → Итак, теперь у нас три исполнителя на разогреве и никого, кто хотел бы стать гвоздём программы?!
+MYM09	31:39.30,1.41 Hitch: Yup. That's the situation. → Агась. Ну и положеньице.
+MYM09	31:42.15,2.17 Pipp: This just keeps on getting worse! → Становится только хуже и хуже!
+MYM09	31:44.97,2.33 Zipp: Not to point out the obvious or anything, but uh… → Не хочу лишний раз подчёркивать очевидное, но…
+MYM09	31:48.31,2.16 Zipp: Aren't you a major pop star? → Ты ведь тоже у нас поп-звезда первой величины?
+MYM09	31:50.66,2.56 Zipp: A frequent headliner? ↲ A singer who loves attent… → Гвоздь многих программ. Певица, обожающая внима…
+MYM09	31:53.26,1.44 Pipp: Oh. Right. Yes. I am! → О. Ладно. Да, всё так!
+MYM09	31:54.75,3.06 Pipp: I suppose I can perform, if everypony insists. → Если публика будет не против, думаю, я могу выступить.
+MYM09	31:59.45,0.89 Pipp: Okay then, I'll do it. → Ну ладно, так и сделаем.
+MYM09	32:01.46,2.32 Izzy: The show is saved! → Фестиваль спасён!
+MYM09	32:04.72,0.44 Izzy: Maybe. → Наверное.
+MYM09	32:07.47,2.83 Pipp: Alright. Let's get this show started right now. → Отлично. Пора начинать фестиваль.
+MYM09	32:11.76,0.60 Izzy: Hey, Pipp? → Эй, Пипп?
+MYM09	32:12.93,1.05 Pipp: What's wrong now? → Что ещё стряслось?
+MYM09	32:14.44,2.08 Izzy: My tummy feels like it's full of butterflies! → У меня в животике словно целая туча бабочек.
+MYM09	32:16.91,2.28 Izzy: I'm still kinda nervous that ↲ the Troggles might show up. → Я всё ещё немного побаиваюсь, что троггли появятся.
+MYM09	32:19.26,2.03 Pipp: No, no. That's just pre-show jitters! → Нет-нет. Это просто предпраздничное волнение.
+MYM09	32:21.31,0.70 Izzy: It is? → Да?
+MYM09	32:22.03,1.91 Pipp: Don't worry, everypony gets them. → Не волнуйся, у всех так.
+MYM09	32:24.07,1.81 Pipp: Even me! Just go trot it off! → Даже у меня! Просто походи немного и пройдёт.
+MYM09	32:27.25,0.99 Izzy: Okay. → Хорошо.
+MYM09	32:30.07,0.39 Pipp: Phew. → Фух.
+MYM09	32:59.36,3.37 Pipp: Welcome, everypony, to Bridlewoodstock! → Народ, добро пожаловать на Брайдлвудсток!
+MYM09	33:09.48,3.29 Pipp: Please give a glowy, warm welcome to our first artist! → Пожалуйста, сердечно поприветствуйте нашего первого исполнителя!
+MYM09	33:12.96,3.65 Pipp: The one… the only… Ruby Jubilee! → Единственную и неповторимую Руби Джубили!
+MYM09	33:20.65,2.51 Cheerilee: Are you ready to get ↲ this pony party started?! → Ну что, готовы начать эту вечеринку?!
+MYM09	33:23.36,1.78 Cheerilee: Don't be afraid to sing along! → Не стесняйтесь подпевать!
+MYM09	33:31.94,3.53 Cheerilee: ♪ Oh tell me can you hear that rockin' sound ♪ → Скажи, ты слышишь этот чудный звук?
+MYM09	33:37.87,3.74 Cheerilee: ♪ If you listen you can hear it comin' round ♪ → Он уже здесь, только оглядись вокруг.
+MYM09	33:43.95,2.34 Cheerilee: ♪ Yeah we're movin' to a brand new beat ♪ → Это новый легендарный бит.
+MYM09	33:50.26,3.38 Cheerilee: ♪ And you can see us dancin' in the street ♪ → И каждый танцевать уже спешит.
+MYM09	33:55.42,2.90 Cheerilee: ♪ So call your favourite bestie, yeah, and bring 'em along ♪ → Друзей зови скорее, пусть сюда бегут.
+MYM09	33:58.33,3.24 Cheerilee: ♪ 'Cause we're moving and we're shaking to her favourite song ♪ → Здесь танцуют, веселятся, этот бит ведь так крут.
+MYM09	34:03.77,2.39 Cheerilee: ♪ Yeah, it's always in style ♪ → Будет в моде всегда.
+MYM09	34:06.17,1.88 Somepony: ♪ Yeah, it's always in style ♪ → (Будет в моде всегда)
+MYM09	34:08.42,2.70 Cheerilee: ♪ Iconic, oh yeah, you know it's magic ♪ → Легенда - бит волшебством наполнен.
+MYM09	34:11.48,2.71 Cheerilee: ♪ Iconic, oh yeah, you know it's classic ♪ → Легенду все на века запомнят.
+MYM09	34:14.54,2.76 Cheerilee: ♪ Iconic, when we are together ♪ → Легенда. Если мы все вместе.
+MYM09	34:17.69,2.72 Cheerilee: ♪ Iconic, yeah, we are forever ♪ → Легенда. Да, когда мы вместе.
+MYM09	34:20.66,2.89 Cheerilee: ♪ Iconic, yeah, we are forever ♪ → Легенда. Да, когда мы вместе.
+MYM09	34:27.38,1.14 Pipp: Oh, don't bother! → А, даже не пытайтесь!
+MYM09	34:28.69,2.45 Pipp: The service out here is nonexistent. → Тут в лесу ничего не ловится.
+MYM09	34:31.24,4.21 Pipp: In Bridlewood, it's more about forest ↲ streams than streaming, you know? → В Брайдлвуде надо внимать, а не снимать, ага?
+MYM09	34:35.55,2.64 Pipp: Be in the now, ponies! Forget those phonies! → Живите в реальности! Забудьте о виртуальности!
+MYM09	34:38.81,2.26 Cheerilee: ♪ Yeah, you can see them movin' young and old ♪ → В танце кружатся и стар и млад,
+MYM09	34:44.89,3.60 Cheerilee: ♪ Dancin' together, yeah, they feel it in their soul ♪ → Танцуют вместе, это делают с душой.
+MYM09	34:50.57,2.77 Cheerilee: ♪ We're with all of our friends yeah we're singing along ♪ → Мы с теплотой друзьям эту песню поём
+MYM09	34:53.35,3.25 Cheerilee: ♪ To the sparkle and the magic of our favourite song ♪ → О том волшебстве, что в ритме песни нашей найдём.
+MYM09	34:58.84,2.80 Cheerilee: ♪ 'Cause they're always in style ♪ → Это в моде всегда.
+MYM09	35:02.48,0.54 Cheerilee: Oh yeah! → (Всегда, да)
+MYM09	35:03.47,2.80 Cheerilee: ♪ Iconic, oh yeah, you know it's magic ♪ → Легенда - бит волшебством наполнен.
+MYM09	35:06.51,2.84 Cheerilee: ♪ Iconic, oh yeah, you know it's classic ♪ → Легенду все на века запомнят.
+MYM09	35:09.60,2.62 Cheerilee: ♪ Iconic, when we are together ♪ → Легенда. Если мы все вместе.
+MYM09	35:12.63,2.97 Cheerilee: ♪ Iconic, yeah we are forever ♪ → Легенда. Да, когда мы вместе.
+MYM09	35:15.69,2.77 Cheerilee: ♪ Iconic, yeah we are forever ♪ → Легенда. Да, когда мы вместе.
+MYM09	35:18.76,3.05 Cheerilee: ♪ It's magic. It's magic ♪ → Волшебно, волшебно.
+MYM09	35:21.82,1.62 Cheerilee: ♪ It's magic! ♪ → Волшебно!
+MYM09	35:24.82,3.22 Cheerilee: ♪ Iconic. Iconic ♪ → Легенда. Легенда.
+MYM09	35:28.06,1.50 Cheerilee: ♪ Iconic! ♪ → Легенда!
+MYM09	35:35.44,0.81 Sunny: What's happening? → Что случилось?
+MYM09	35:36.37,1.10 Hitch: Technical difficulties? → Технические неполадки?
+MYM09	35:37.60,1.91 Pipp: Oh no, her mic cut out! → О нет, у неё микрофон отключился!
+MYM09	35:41.89,0.52 Zipp: Oh no. → О нет.
+MYM09	35:50.72,1.86 OldPonyInGlasses: Troggles! → Троггли!
+MYM09	35:54.34,1.63 Somepony: Oh no! Oh no! → О нет! О нет!
+MYM09	36:03.01,2.74 Dave: No way, dude! Don't take my voi… → Не надо, чувак! Не забирай мой го…
+MYM09	36:17.45,2.26 Pipp: But… but… The show! → Но… Но… Концерт!
+MYM09	36:22.27,1.81 Zipp: Come on, ponies. We've gotta stop this! → Давайте, ребята. Мы должны их остановить!
+MYM09	36:24.56,1.69 Sunny: Yes! But first, we need a plan! → Да! Но сперва нам надо придумать план!
+MYM09	36:27.41,1.98 Izzy: "Eyes of the monster, form of the pig! → "Чудовищен взгляд их и тело свиньи!
+MYM09	36:29.77,2.12 Izzy: Sing laugh or yell, step hoof on a twig! → Споёшь, засмеёшься, заденешь ли прут!
+MYM09	36:32.10,2.37 Izzy: Troggles appear, steal what's to be! → Всё, чем владеешь ты, троггли сожрут!
+MYM09	36:34.67,2.45 Izzy: No cure to be found, past the red ruby!" → Есть для тебя теперь выход один — коль хочешь спастись, найди красный рубин!"
+MYM09	36:37.12,2.24 Zipp: Izzy, we don't have time for poems right now! → Иззи, на стихи сейчас нет времени!
+MYM09	36:39.97,3.16 Zipp: Wait, did you basically just say that ↲ rubies can defeat the Troggles?! → Подожди, ты только что сказала — рубины могут одолеть трогглей?
+MYM09	36:44.87,0.92 Izzy: I guess I did! → Похоже на то!
+MYM09	36:56.05,0.78 Zipp: What? → Чего?
+MYM09	36:56.84,1.99 Zipp: Everypony, grab those rubies! → Народ, хватайте эти рубины!
+MYM09	37:02.59,2.05 Hitch: They're really stuck on there! → Они тут намертво приклеены!
+MYM09	37:04.78,4.05 Izzy: That's because we used extra strength super-duper-Ruby glue! → Это потому, что мы приклеели их супер-пупер-рубиновым клеем!
+MYM09	37:08.92,2.03 Pipp: Why did we do that? → И зачем мы это сделали?..
+MYM09	37:22.56,2.69 Sunny: Come on. My friends need my help. → Ну же. Моим друзьям нужна помощь.
+MYM09	37:28.15,0.92 Sunny: Yeah! → Да!
+MYM09	37:31.17,2.27 Sunny: Everypony away from the stage! → Все отойдите от сцены!
+MYM09	37:42.18,1.62 Zipp: Everypony! Catch a ruby! → Народ! Хватайте рубины!
+MYM09	37:47.34,1.00 Hitch: Yeah! → Да!
+MYM09	37:49.94,0.71 Zipp: Hey! → Есть!
+MYM09	38:06.42,1.43 DrWhooves: Hello? Hello! → Привет? Привет!
+MYM09	38:08.82,1.26 DrWhooves: My voice is back. → Мой голос вернулся.
+MYM09	38:32.47,1.50 Cheerilee: ♪ Iconic ♪ → Легенда!
+MYM09	38:37.84,0.85 Hitch: It worked! → Сработало!
+MYM09	38:39.48,0.87 Pipp: Ah, thank hoofness! → Слава копытцам!
+MYM09	38:42.83,0.88 Pipp: Is this thing on? → Эта штука работает?
+MYM09	38:44.83,0.57 Pipp: Wow… → Ого…
+MYM09	38:46.13,1.39 Pipp: So I just wanna say… → Я просто хотела сказать…
+MYM09	38:47.75,1.06 Pipp: That I'm sorry. → Прошу прощения.
+MYM09	38:49.20,1.01 Pipp: To everypony. → У всех.
+MYM09	38:50.58,2.56 Pipp: But especially to the residents of Bridlewood. → Но особенно у жителей Брайдлвуда.
+MYM09	38:53.67,2.87 Pipp: This forest is your home and you know it best. → Лес — ваш дом, и вы знаете его лучше всех.
+MYM09	38:56.75,3.37 Pipp: You tried to warn me, but I didn't wanna listen to you → Вы пытались предупредить меня, но я не хотела ничего слышать,
+MYM09	39:00.62,1.29 Pipp: or to my friends. → ни от вас, ни от моих друзей.
+MYM09	39:02.19,3.60 Pipp: Who only wanted to help make my dream of this festival come true. → Хотя они хотели лишь помочь мне воплотить мою мечту о фестивале в реальность.
+MYM09	39:06.56,4.63 Pipp: I guess I just got so focused on planning ↲ the perfect Bridlewoodstock festival, → Кажется, я так увлеклась, работая над тем, чтобы фестиваль Брайдлвудсток стал идеальным,
+MYM09	39:11.45,2.12 Pipp: that I forgot to consider Bridlewood. → что совсем забыла о том, что он проходит в Брайдлвуде.
+MYM09	39:14.21,2.49 Pipp: And all of the history that comes along with it. → Со всей его уникальной историей и культурой.
+MYM09	39:17.29,1.38 Pipp: Even the Jinxie stuff. → Даже той, что касается сглаза.
+MYM09	39:20.17,1.26 Pipp: But I know better now. → Но теперь я поняла свою ошибку.
+MYM09	39:21.63,2.90 Pipp: And I wanna thank you all for coming to the first → И я хочу сказать спасибо всем, кто пришёл на первый
+MYM09	39:24.96,2.12 Pipp: and last Bridlewoodstock. → и последний Брайдлвудсток.
+MYM09	39:27.45,1.36 Pipp: The festival is over! → Фестиваль окончен!
+MYM09	39:30.57,3.08 Dave: What?! Don't stop it now! → Что?! Не останавливайтесь!
+MYM09	39:33.86,2.79 Announcer: This is most fun we've ever had ↲ during the Lumi-Bloom! → Мы никогда так не веселились на Ясноцвет!
+MYM09	39:36.90,3.49 Fifi: Now that the Troggles are gone, ↲ we're not scared anymore! → Теперь, когда троггли ушли, мы больше не боимся!
+MYM09	39:40.47,1.75 RoyalRibbon, SomeponyBlueManePurple: We want more music! || Let's go! → Мы хотим ещё музыки! || Вперёд!
+MYM09	39:42.54,2.30 Somepony: We want more! We want more! → Мы хотим ещё! Мы хотим ещё!
+MYM09	39:45.35,1.21 Pipp: What do you think, Ruby? → Что скажешь, Руби?
+MYM09	39:47.58,1.72 Cheerilee: I think the fans have spoken! → Думаю, фанаты сказали своё слово!
+MYM09	39:49.31,1.55 Pipp: Then the show must go on. → Тогда шоу должно продолжаться.
+MYM09	39:50.99,2.48 Pipp: What are we waiting for? Start the music! → Так чего же мы ждём? Да грянет музыка!
+MYM09	39:57.35,2.28 Pipp: We have more incredible acts coming up! → Впереди ещё куча невероятных выступлений!
+MYM09	39:59.89,2.86 Cheerilee: Please welcome… Electric Blue! → Поприветствуйте… Электрик Блю!
+MYM09	40:04.54,1.57 Firelight: How's everypony doin' tonight?! → Как у вас дела, народ?!
+MYM09	40:06.49,1.19 Firelight: I'm Fretlock. → Я Фрэтлок.
+MYM09	40:10.04,1.72 Firelight: There's Jam Donut on the bass, → Это Джем Донат на басу
+MYM09	40:12.36,2.11 Firelight: and there's Arpeggia on drums! → и Арпеджио на барабанах!
+MYM09	40:15.12,3.41 Firelight: And we are Electric Blue! → Мы — Электрик Блю!
+MYM09	40:25.17,3.05 Pipp: And here to join us are our very special guests… → А ещё у нас здесь очень особенные гости…
+MYM09	40:28.22,1.59 Cheerilee: The original girl group… → самая первая девчачья группа…
+MYM09	40:30.00,2.01 Pipp: The ones who started it all. → Те, с кого всё началось.
+MYM09	40:32.58,1.69 Cheerilee, Pipp: The Dreamlands! || The Dreamlands! → Дримлэндс! || Дримлэндс!
+MYM09	40:36.75,1.00 Somepony: The Dreamlands! → Дримлэндс!
+MYM09	40:43.81,1.82 Somepony: ♪ Put your hooves up! Put your hooves up ♪ → Копытца вскинь вверх, копытца вскинь вверх.
+MYM09	40:45.91,0.65 Somepony: ♪ Hey! ♪ → Хэй!
+MYM09	40:48.01,1.56 Somepony: ♪ Put your hooves up! Put your hooves up ♪ → Копытца вскинь вверх, копытца вскинь вверх.
+MYM09	40:50.04,3.79 Pipp: ♪ Generations coming together ♪ → Возраст разный, но мы все вместе.
+MYM09	40:54.26,3.52 Pipp: ♪ Celebrations dancin' and laughter ♪ → Здесь веселье, танцы и шутки.
+MYM09	40:57.78,4.02 Pipp: ♪ This is a call to you from all walks of life ♪ → Мы просим всех сейчас: кем ты б ни был,
+MYM09	41:02.53,1.87 Pipp: ♪ Lift up your hooves now ♪ → Копытца вскинь вверх —
+MYM09	41:04.66,1.64 Pipp: ♪ Under the starlights ♪ → До звёзд, до светил.
+MYM09	41:06.77,3.82 Pipp: ♪ There's magic rainbows for hundreds of miles ♪ → Чудес путь полный пред нами лежит.
+MYM09	41:10.92,4.71 Somepony: ♪ Me and my ponies never go out of style ♪ → Знаю, мы с вами будем всегда дружить.
+MYM09	41:15.64,4.18 Pipp: ♪ We don't hang our heads when things get too hard ♪ → Наперекосяк всё идёт когда,
+MYM09	41:20.07,3.25 Somepony: ♪ We put our hooves together ♪ → Мы подаём копыто.
+MYM09	41:23.73,2.22 Pipp: ♪ 'Cause we're forever friends ♪ → На то мы и друзья.
+MYM09	41:26.34,5.60 Pipp: ♪ Making our mark and putting hooves together ♪ → Друзья навсегда, мы подаём копыто.
+MYM09	41:33.89,3.92 TreeHugger: ♪ All new places the lengths that we've gone to ♪ → Через столько пройти удалось нам.
+MYM09	41:38.06,3.42 TreeHugger: ♪ Newfound faces the friendships that grew ♪ → И так много друзей нашли там.
+MYM09	41:41.48,4.52 SomeponyBlueManePurple: ♪ This is a call to you from all walks of life ♪ → Мы просим всех сейчас: кем ты б ни был,
+MYM09	41:46.41,3.89 WindyWhistles: ♪ Lift up your hooves now under the starlight ♪ → Копытца вскинь вверх - до звёзд, до светил.
+MYM09	41:50.33,4.15 SomeponyBlueManePurple: ♪ There's magic rainbows for hundreds of miles ♪ → Чудес путь полный пред нами лежит.
+MYM09	41:54.76,5.08 Somepony: ♪ Me and my ponies never go out of style ♪ → Знаю, мы с вами будем всегда дружить.
+MYM09	42:00.49,2.00 Pipp: ♪ We don't hang our heads ♪ → Наперекосяк
+MYM09	42:03.04,1.58 Pipp: ♪ When things get too hard ♪ → Всё идёт когда,
+MYM09	42:04.87,3.18 Somepony: ♪ We put our hooves together ♪ → Мы подаём копыто.
+MYM09	42:08.57,2.32 Pipp: ♪ 'Cause we're forever friends ♪ → На то мы и друзья.
+MYM09	42:11.46,5.63 Pipp: ♪ Making our mark and putting hooves together ♪ → Друзья навсегда, мы подаём копыто.
+MYM09	42:19.54,3.01 Pipp: ♪ We put our hooves together ♪ → Мы подаём копыто.
+MYM09	42:24.12,2.50 Somepony: ♪ Put our hooves together ♪ → Подаём копыто.
+MYM09	42:33.72,3.94 TreeHugger: ♪ If it ever feels like there's something out to get ya ♪ → Если вдруг тебе нужно будет что-то срочно,
+MYM09	42:37.68,2.93 WindyWhistles: ♪ Or if it ever feels like you're wasting time ♪ → Или будешь что-то не успевать,
+MYM09	42:41.95,3.92 SomeponyBlueManePurple: ♪ Yeah we come galloping from across Equestria ♪ → Прибежим сразу через всю Эквестрию.
+MYM09	42:46.42,3.79 Pipp: ♪ You just reach out and touch your hooves to mine ♪ → Копытце лишь вскинь, чтоб нам свои подать.
+MYM09	42:54.88,4.04 Pipp: ♪ We don't hang our heads when things get too hard ♪ → Наперекосяк всё идёт когда,
+MYM09	42:59.30,3.30 Pipp: ♪ We put our hooves together ♪ → Мы подаём копыто.
+MYM09	43:02.91,4.41 Somepony: ♪ 'Cause we're forever friends making our mark ♪ → На то мы и друзья. ↲ Друзья навсегда.
+MYM09	43:07.64,3.80 Somepony: ♪ And putting hooves together ♪ → Мы подаём копыто.
+MYM09	43:14.69,2.33 Pipp: ♪ Put our hooves together ♪ → Подаём копыто.
+MYM09	43:18.29,3.28 Pipp: ♪ Put our hooves together ♪ → Подаём копыто.
+MYM09	43:22.74,2.63 Pipp: ♪ Put our hooves together ♪ → Подаём копыто.
+MYM09	43:26.68,2.71 Pipp: ♪ Put our hooves together ♪ → Подаём копыто.
+MYM09	43:36.06,1.86 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+MYM09	43:37.92,2.12 Default: anon2anon ↲ sunnysubs.com → anon2anon ↲ sunnysubs.com
+
+MYM10 "The Jinxie Games"
+
+MYM10	00:20.67,0.73 Sunny: Hey, Pipp? → Эй, Пипп.
+MYM10	00:22.66,2.01 Sunny: Remind me why we are in here, again? → Напомни, зачем мы сюда пришли?
+MYM10	00:24.76,4.39 Izzy: Yeah, not that it isn't totally cool ↲ to be in a freaky empty building, but… → Ага, не то, чтобы я не любила пошататься по странноватым заброшенным зданиям, но…
+MYM10	00:29.17,1.68 Izzy: It is kinda freaky. → Оно какое-то странноватое.
+MYM10	00:31.39,0.88 Izzy: And empty! → И заброшенное!
+MYM10	00:32.49,1.99 Izzy: Empty, empty, empty… → Брошенное, брошенное, брошенное…
+MYM10	00:34.86,2.79 Izzy: See? I didn't even mean to do that! → Слыхали? А ведь это даже не я!
+MYM10	00:37.90,2.85 Pipp: But that's why I love it! It's thrilling! → Так именно поэтому мне здесь и нравится! Это так интересно!
+MYM10	00:41.02,4.36 Pipp: Can't you just feel the spooky energy in here? → Вы разве не чувствуете, как тут всё пронизано зловещей энергией?
+MYM10	00:45.71,1.09 Hitch: No. Not at all. → Не-а. Ни капли.
+MYM10	00:53.54,1.29 Hitch: This is ridiculous. → Ерунда какая-то.
+MYM10	00:55.04,2.62 Hitch: I've been inside Canterlogic millions of times! → Я был на фабрике "Кантерлоджик" миллион раз!
+MYM10	00:57.75,1.28 Hitch: There's nothing to be afraid of! → Тут нечего бояться!
+MYM10	00:59.63,1.79 Sunny: I think Pipp disagrees. → Кажется, Пипп с тобой не согласна.
+MYM10	01:04.11,2.93 Zipp: Well, Pipp has always had a love of spooky things. → Ну, Пипп всегда любила всякие страшилки.
+MYM10	01:07.06,2.82 Zipp: She once convinced our mom ↲ that an entire wing of the castle → Однажды она даже смогла убедить нашу маму, что целое крыло замка
+MYM10	01:09.88,1.95 Zipp: was being haunted by royal ghosts. → населено королевскими привидениями.
+MYM10	01:12.00,2.11 Zipp: Mom still trots the long way around it. → Мама до сих пор обходит его стороной.
+MYM10	01:14.85,6.36 Pipp: Imagine what kind of terrors lurk in all these mysterious corners… → Только представьте, какие ужасы могут скрываться во всех этих таинственных углах…
+MYM10	01:21.40,3.27 Sunny: I can't believe we haven't thought about this old factory → Мы про эту старую фабрику и не вспоминали
+MYM10	01:24.79,2.41 Sunny: since Sprout and his family closed it down. → с тех пор, как Спраут с семьёй её закрыли.
+MYM10	01:28.31,2.84 Izzy: There's so much space in this place! → А тут так много места!
+MYM10	01:31.25,2.29 Izzy: Place! Place! Place! → Места! Места! Места!
+MYM10	01:33.65,1.23 Izzy: That time it was me. → А вот теперь это уже я.
+MYM10	01:35.30,2.07 Hitch: It's like we all just forgot it existed. → Мы как будто вообще забыли, что она существует.
+MYM10	01:37.76,3.48 Pipp: What if we forgot about it ↲ because the ghosts wanted us to! → А что, если мы забыли о ней потому, что привидения нас заставили!
+MYM10	01:42.91,1.02 Pipp: I have shivers! → Ух, аж мурашки!
+MYM10	01:44.09,1.09 Zipp: Here we go again. → Ну вот, начинается.
+MYM10	01:45.45,2.28 Hitch: This is just an old building made of bricks and concrete. → Это всего лишь старое здание из бетона и кирпича.
+MYM10	01:47.85,3.19 Hitch: Besides, even if it weren't, I'm not afraid of no ghosts! → Да и если бы нет, я не боюсь никаких привидений!
+MYM10	01:54.20,0.68 Hitch: What was that?! → А это что было?!
+MYM10	01:56.22,0.93 Pipp: Not afraid, huh? → Не боишься, да?
+MYM10	01:59.91,2.07 Somepony: ♪ Hey you've gotta let it glow ♪ → Эй! Давай-ка зажигай.
+MYM10	02:02.70,1.40 Somepony: ♪ You've gotta let it shine ♪ → Эй! Давай-ка засияй.
+MYM10	02:06.33,2.29 Somepony: ♪ Oh let's make our mark together ♪ → Мы во всём единодушны.
+MYM10	02:08.82,1.83 Somepony: ♪ Just riding on forever ♪ → И спорить нам не нужно.
+MYM10	02:10.83,3.50 Somepony: ♪ Just keeps on getting better ↲ better better ♪ → Живём теперь так ↲ дружно, дружно, дружно.
+MYM10	02:15.62,0.43 Somepony: ♪ Hey ♪ → Хэй!
+MYM10	02:16.73,2.02 Somepony: ♪ Everypony everywhere ♪ → Я для всех сейчас пою:
+MYM10	02:18.77,2.00 Somepony: ♪ You can feel it in the air ♪ → Искру ощути свою,
+MYM10	02:20.80,3.64 Somepony: ♪ Find your spark ↲ and just glow and shine ♪ → Ярко будешь ты с ней сиять.
+MYM10	02:24.84,2.04 Somepony: ♪ Make a mark ↲ that you can share ♪ → Доброту нести другим
+MYM10	02:26.91,2.01 Somepony: ♪ Hoofed at heart ↲ you know we care ♪ → Всей душою мы хотим.
+MYM10	02:28.94,1.27 Somepony: ♪ Oh ponies come on ♪ → Ну, пони, скорей.
+MYM10	02:30.22,3.63 Somepony, Sunny: ♪ Let's all unite ♪ || ♪ Let's all unite ♪ → Давайте к нам. || Давайте к нам.
+MYM10	02:41.18,1.32 Hitch: How are you all so calm?! → Как вы остаётесь такими спокойными?
+MYM10	02:43.28,2.70 Izzy: Oh, I'm not! This is just my nervous smile! → Я не спокойная. Это моя нервная улыбка.
+MYM10	02:46.04,1.83 Izzy: It looks a lot like my happy smile. → Она очень похожа на мою радостную улыбку.
+MYM10	02:47.88,1.75 Izzy: And also my unhappy smile. → А ещё на мою грустную улыбку.
+MYM10	02:52.42,2.90 Zipp: Now that Canterlogic is gone, ↲ what's gonna happen to this building? → Что будет с этим зданием теперь, когда "Кантерлоджик" закрылся?
+MYM10	02:55.33,3.24 Izzy: Wouldn't it be super if it became something so fun-tastic → Как круто бы было сделать из него что-то весёлое,
+MYM10	02:58.58,1.91 Izzy: that everypony wanted to hangout here? → чтобы все сюда приходили, а?
+MYM10	03:00.49,0.87 Sunny: Izzy's right! → Иззи права!
+MYM10	03:01.43,0.83 Izzy: I am. → Ага.
+MYM10	03:02.42,0.91 Izzy: Wait, I am? → Что, серьёзно?
+MYM10	03:03.33,0.52 Sunny: Yes! → Да!
+MYM10	03:03.92,3.14 Sunny: We should turn this old factory into ↲ something new for the whole community! → Мы превратим эту старую фабрику ↲ во что-то, что нужно всем!
+MYM10	03:07.08,2.87 Izzy: This can be the biggest unicycling project I've ever done! → Это крупнейший проект по рогоделию, над которым я когда-либо работала!
+MYM10	03:10.10,2.23 Izzy: And you ponies can help! → И вы, ребята, мне поможете!
+MYM10	03:13.58,1.78 Zipp: Yeah, it does have potential. → Да, тут есть где разгуляться.
+MYM10	03:15.41,2.62 Zipp: Maybe we can turn this place ↲ into an indoor skatepark. → Может, мы сделаем тут закрытый скейтпарк?
+MYM10	03:19.28,1.67 Pipp: Or a theater-slash-concert hall! → Или театр-дробь-концертный зал!
+MYM10	03:21.04,1.53 Izzy: Now we're talking! → Вот это уже разговор!
+MYM10	03:22.65,1.78 Izzy: Or singing! → Или песня!
+MYM10	03:24.80,2.61 Hitch: Or a community center for official town hall meetings! → Или общественный центр для городских собраний!
+MYM10	03:28.16,0.67 Izzy: Or that. → Или это.
+MYM10	03:28.89,2.36 Sunny: These are all great ideas and I love them. → Всё это отличные идеи, и они мне нравятся!
+MYM10	03:31.93,2.76 Sunny: But how about we ask the town's ponies, too? → Но может, спросить и остальных пони в городе?
+MYM10	03:34.76,3.45 Sunny: That way, our new space will be exactly what everypony wants. → Думаю, каждый сможет найти в нашем новом месте всё что угодно.
+MYM10	03:38.21,2.33 Pipp: Brill idea, Sunny! And while you two do that, → Классная идея, Санни! И пока вы будете этим заниматься,
+MYM10	03:40.71,4.00 Pipp: Hitch, Zipp, and I will clear the building of all its ghosties and spirits, etcetera. → Хитч, Зипп и я избавим это здание от всего призрачного, привиденческого и так далее.
+MYM10	03:44.73,1.86 Pipp: Really cleanse the energies, you know? → Почистим его энергетику, поняли?
+MYM10	03:46.61,0.73 Sunny: Perfect! → Отлично!
+MYM10	03:47.35,1.70 Izzy: Let's ask Toots! Oh and Dahlia! → Давайте спросим Тутса! И Далию!
+MYM10	03:49.74,0.65 Izzy: And Windy! → И Винди!
+MYM10	03:51.12,2.10 Hitch: I don't know if I can help you right now. → Не уверен, что смогу вам с этим помочь.
+MYM10	03:53.23,1.72 Hitch: Sparky is really fussy. → Спарки совсем расшалился.
+MYM10	03:57.92,3.66 Hitch: And I've got a lot of official ↲ Sheriff business to get back to. → А меня ждёт множество шерифских обязанностей.
+MYM10	04:01.59,2.70 Hitch: Paperwork. You know! But ah, maybe Zipp… → Бумажки всякие. Ну, вы знаете. Может, Зипп…
+MYM10	04:04.37,3.38 Zipp: Sorry! But I'm so close to cracking ↲ Twilight Sparkle's message. → Простите! Но я почти разгадала, что хотела сообщить нам Твайлайт Спаркл.
+MYM10	04:07.76,2.65 Zipp: I've gotta focus my attention on that! Have fun! → И я займусь этим прямо сейчас. Успехов!
+MYM10	04:10.53,1.91 Zipp: Don't let the ghosties get you. → Смотрите, не попадитесь призракам.
+MYM10	04:15.14,2.12 Pipp: You know, if I had to guess, → Знаете, если кому интересно моё мнение,
+MYM10	04:17.27,5.98 Pipp: I'd say that spooky, scary ghosts haunting it up in here is totally against regulation. → я бы сказала, что жутким пугающим призракам, захватившим это помещение, совершенно нет дела до правил.
+MYM10	04:23.38,1.03 Pipp: Right? → Верно?
+MYM10	04:24.81,2.76 Hitch: You make a good point. ↲ As Sheriff, I can't allow that! → Точно подмечено. И как шериф я положу этому конец!
+MYM10	04:36.04,2.08 Zipp: Okay, Twilight, let's hear it again. → Ладно, Твайлайт, послушаем ещё раз.
+MYM10	04:38.42,1.43 Twilight: But the spell is broken! → …но заклинание развеялось!
+MYM10	04:40.25,1.97 Twilight: You are exposed to the world once again. → Вы снова беззащитны.
+MYM10	04:42.60,2.78 Twilight: You must watch out before she… → Вы должны остерегаться… пока она не…
+MYM10	04:46.46,1.52 Misty: Is that her? → Это она?
+MYM10	04:48.17,2.74 Misty: Twilight Sparkle? From Opaline's stories? → Твайлайт Спаркл? Из историй Опалин?
+MYM10	04:51.62,1.54 Twilight: But the spell is broken! → …но заклинание развеялось!
+MYM10	04:53.25,2.12 Twilight: You are exposed to the world once again. → Вы снова беззащитны.
+MYM10	04:55.70,1.63 Twilight: You must watch out for Op… → Вы должны остерегаться Оп…
+MYM10	04:57.58,0.96 Twilight: Before she… → …пока она не…
+MYM10	04:58.69,3.28 Zipp: Before what?! What were you trying to warn us about?! → Пока она не… что?! О чём ты пытаешься предупредить нас?!
+MYM10	05:02.65,2.62 Zipp: I still can't believe that's all I was able to record. → Всё ещё не могу поверить, что мне удалось записать только это.
+MYM10	05:05.94,1.93 Misty: Opaline has to know about this! → Опалин должна об этом узнать!
+MYM10	05:08.86,2.53 Twilight: You must watch out, before she… → Вы должны остерегаться… пока она не…
+MYM10	05:11.41,4.20 Opaline: So that nasty little Twilight Sparkle → Так это назойливая маленькая Твайлайт Спаркл
+MYM10	05:15.77,4.03 Opaline: enchanted those crystals with a secret message, did she? → зачаровала эти кристаллы и оставила секретное послание, да?
+MYM10	05:20.17,1.23 Opaline: What else did she reveal? → И что ещё она им рассказала?
+MYM10	05:22.77,4.46 Misty: I don't know. Zipp said that's all she recorded, though. So maybe there was more? → Не знаю. Впрочем, Зипп говорит, что записала только это. Может, там есть ещё что-то?
+MYM10	05:27.25,1.64 Opaline: Of course there was more! → Конечно же есть!
+MYM10	05:29.17,4.41 Opaline: Time is running out before ↲ that Zipp pony pieces things together! → У нас мало времени, скоро эта Зипп обо всём догадается!
+MYM10	05:35.07,2.45 Opaline: I need the rest of that dragon fire! → Мне нужно всё драконье пламя!
+MYM10	05:37.57,2.49 Misty: What if we didn't steal Sparky? → Но может, нам не нужно красть Спарки?
+MYM10	05:40.16,1.20 Opaline: What did you just say? → Что ты только что сказала?
+MYM10	05:41.45,2.63 Misty: I just mean… It's just that… Well, what if… → Это я к тому… может… ч-что, если нам…
+MYM10	05:44.10,1.34 Opaline: Spit it out! → Да говори уже!
+MYM10	05:46.35,2.81 Misty: Twilight said that she put ↲ all of her magic into the crystals! → Твайлайт сказала, что поместила всю свою магию в кристаллы!
+MYM10	05:49.55,2.20 Misty: What if we just steal those instead? → Может, лучше украсть их?
+MYM10	05:51.89,3.41 Misty: Yeah! Crystals don't run away or burp fire. → Да! Кристаллы не убегают прочь и не рыгают огнём.
+MYM10	05:55.44,2.75 Opaline: Oh, that's a great idea! → О, это же прекрасная идея!
+MYM10	05:58.49,0.50 Misty: Really? → Правда?
+MYM10	05:59.05,1.47 Opaline: No. Not really. → Нет. Ни разу.
+MYM10	06:00.70,2.34 Opaline: We can't just steal the crystals! → Мы не можем просто украсть кристаллы!
+MYM10	06:03.32,2.29 Opaline: Now that I know what they truly are: → Теперь, когда я выяснила, что они такое на самом деле:
+MYM10	06:05.85,1.15 Opaline: conduits! → проводники!
+MYM10	06:07.73,4.06 Opaline: Long ago, Twilight Sparkle ↲ channeled all the magic in Equestria → Давным-давно Твайлайт Спаркл заключила всю магию Эквестрии
+MYM10	06:11.80,2.73 Opaline: into those crystals and enchanted them. → в эти кристаллы и зачаровала их.
+MYM10	06:15.18,3.83 Opaline: Stealing them now, before I'm strong enough, → Кража их сейчас, прежде чем я обрету достаточно силы,
+MYM10	06:19.14,2.23 Opaline: could destroy the Prisbeam, → может разрушить Радужный луч —
+MYM10	06:21.61,3.30 Opaline: the very source of magic that I want to possess! → мощный источник магии, которым я собираюсь завладеть!
+MYM10	06:25.57,1.53 Opaline: You were willing to risk that? → Ты готова пойти на такой риск?
+MYM10	06:27.11,1.15 Misty: No, of course not! → Нет, конечно же нет!
+MYM10	06:29.01,2.69 Misty: It was a terrible idea! But um… → Это была ужасная идея! Но…
+MYM10	06:32.43,1.46 Misty: What's a "conduit"? → Что такое "проводник"?
+MYM10	06:34.37,1.14 Opaline: An element! → Элемент!
+MYM10	06:38.04,3.46 Opaline: A crystal that's protected ↲ by a very complex spell containing… → Кристалл, защищённый многоуровневым заклинанием, в котором заключена…
+MYM10	06:42.51,1.19 Opaline: Unity Magic. → Магия Единства.
+MYM10	06:43.97,3.28 Opaline: The only thing that could possibly ↲ drain the crystals permanently → Лишь одно существо способно поглотить их энергию целиком —
+MYM10	06:47.55,2.66 Opaline: is an equal magical power. → которое способно сравниться с ними по силам.
+MYM10	06:50.24,1.41 Misty: Like an Alicorn's? → Как аликорны?
+MYM10	06:51.66,1.73 Opaline: A Fire Alicorn. → Как огненный аликорн.
+MYM10	06:53.88,3.43 Opaline: And for that, there's only one thing I need. → И для этого мне нужно только одно.
+MYM10	06:57.70,1.03 Misty: A baby dragon? → Маленький дракончик?
+MYM10	06:59.45,1.53 Opaline: Don't fail me again. → Не подведи меня вновь.
+MYM10	07:04.45,2.71 Izzy: Oh I know I've got that somewhere! ↲ Did I put it under the macaroni? → Точно помню, где-то оно у меня было! ↲ Может, под макаронами?
+MYM10	07:08.53,2.55 FactoryGuy: There should definitely be balloons. I love balloons. → Там определённо должны быть шарики. Обожаю шарики.
+MYM10	07:11.58,0.75 Izzy: Okay! → Ладно!
+MYM10	07:15.02,2.44 Dahlia: And a glitter banner. We've got to have a glitter banner. → И транспарант с блёстками. Не забудьте транспарант с блёстками.
+MYM10	07:17.50,1.28 PinkiePie: Yeah, that too! → Ага, то что нужно!
+MYM10	07:19.83,0.58 Izzy: Okay! → Ладно!
+MYM10	07:22.00,3.18 FactoryGuy: And an art gallery with a painting of every pony in Maretime Bay. → И картинную галерею с портретами всех жителей Мэртайм Бэй.
+MYM10	07:25.44,1.14 Izzy: Okay… → Ладно…
+MYM10	07:32.33,2.36 Sunny: Lots of color, no color, ↲ extra space for dancing, → Побольше красок, поменьше красок, большая площадка для танцев,
+MYM10	07:34.69,1.48 Sunny: and a cool pony statue in every corner. → и крутая статуя пони в каждом углу
+MYM10	07:36.28,2.34 Sunny: Rainbow ribbons, no ribbons, ↲ and only blue ribbons. → Радужные бантики, никаких бантиков, и только синие бантики.
+MYM10	07:38.61,4.00 Sunny: Balloons, a glitter banner, and a painting of every pony in Maretime Bay. And that's just the decor category. → Шарики, транспарант с блёстками и портреты всех жителей Мэртайм Бэй. И это только декор!
+MYM10	07:43.44,1.27 Sunny: Do we have all that? We do, right? → Мы всё записали? Точно?
+MYM10	07:44.92,1.05 Izzy: I think so… → Надеюсь…
+MYM10	07:46.35,3.33 Sunny: Wow, the town's ponies sure want a lot of different things. → Ого, пожелания у наших пони и правда очень разнообразные.
+MYM10	07:49.81,2.80 Izzy: Yeah, and they don't always go together. → Ага, и не всегда хорошо совместимые.
+MYM10	07:54.16,2.06 Izzy: Maybe there's just too many ideas to… → Кажется, идей даже многовато, чтобы…
+MYM10	07:56.22,0.88 Sunny: Make it work? → Их можно было воплотить?
+MYM10	07:57.86,0.63 Izzy: Uh-huh! → Ага!
+MYM10	07:58.57,3.08 Sunny: But we've got to take everypony's idea into consideration! → Но мы хотели, чтобы все идеи нашли применение!
+MYM10	08:01.78,2.11 Sunny: After all, we're all part of the community. → Ведь мы все жители одного города.
+MYM10	08:04.00,3.10 Sunny: Everypony should all have an equal say ↲ and be able to enjoy the new space. Right? → Все должны иметь равный голос и получить от нового места то, что им хочется. Так ведь?
+MYM10	08:08.40,0.60 Sunny: Right? → Так?
+MYM10	08:10.98,0.64 Izzy: Right! → Так!
+MYM10	08:25.26,2.04 Pipp: Remember when you thought these would protect you → А помнишь, ты думал, что они спасут тебя
+MYM10	08:27.36,2.76 Pipp: from scary brain-melting Unicorn Mind Rays?! → от ужасных, разжижающих мозг ↲ телепатических лучей единорогов?!
+MYM10	08:30.23,1.61 Pipp: Spooky… → Страшно…
+MYM10	08:33.75,2.99 Hitch: Great. Just what we need. More scary thoughts. → Прекрасно. Как раз то, чего нам не хватало — еще страшилок.
+MYM10	08:42.14,2.94 Pipp: Maybe you could loosen ↲ your grip on the baby dragon a bit? → Может, тебе не стоит так сильно сжимать дракончика?
+MYM10	08:48.21,2.96 Hitch: I just… You know, don't want anypony taking Sparky! → Да просто… Знаешь, не хочу, чтобы Спарки снова потерялся!
+MYM10	08:51.35,3.67 Hitch: The last time he went missing was even ↲ scarier than this creepy building. → В прошлый раз, когда он пропал, я перепугался даже сильнее, чем сейчас в этом заброшенном здании.
+MYM10	08:56.85,0.79 Hitch: Let's keep moving. → Пойдем уже.
+MYM10	09:02.55,3.74 Sunny: Alright, are you ready for the biggest unicycling project ever? → Ну что, готова к самому грандиозному проекту по рогоделию в жизни?
+MYM10	09:06.52,4.70 Izzy: I sure am! I think! I hope so! No, I am! I've decided. → На все сто! Вроде бы! Наверное! Нет, точно! Теперь я уверена.
+MYM10	09:11.29,2.05 Sunny: Sure, there are a ton of ideas, → Да, идей просто тонны,
+MYM10	09:13.37,3.99 Sunny: and sure, not all of them go together, and sure, this is a lot, → да, не все их можно совместить, и да, это много работы,
+MYM10	09:17.80,1.35 Sunny: but I know we can do it. → но я знаю, что мы справимся.
+MYM10	09:19.18,1.32 Izzy: I think I agree! → Тут я с тобой. Вроде бы.
+MYM10	09:21.33,3.24 FlutterShy: Hey, I heard you're redesigning the old factory. → Привет, мне сказали, что вы собираетесь что-то сделать со старой фабрикой.
+MYM10	09:24.82,1.35 FlutterShy: Can I add my two bits real quick? → Могу я подкинуть вам пару идеек?
+MYM10	09:26.30,2.15 Sunny: Sure. What's one more idea? → Конечно. Одной больше, одной меньше — какая разница?
+MYM10	09:28.66,2.48 FlutterShy: Perfect! So I was thinking flowers… → Отлично! Значит, я подумала, что цветы…
+MYM10	09:30.48,1.56 Rocky: I have an amazing idea, too! → У меня тоже есть классная идея!
+MYM10	09:34.73,0.97 Glory: A dance studio! → Танцевальная студия!
+MYM10	09:35.87,1.34 PeachFizz: Laser tag arena? → Арена для лазертага?
+MYM10	09:37.37,1.61 Seashell: A science lab could be cool. → Научная лаборатория была бы в самый раз.
+MYM10	09:44.34,1.87 Pipp: I am loving this! → Я обожаю это место!
+MYM10	09:46.22,2.05 Pipp: It's just like in ↲ The Spooky Stables Series → Оно словно вышло из цикла "Стойло страха",
+MYM10	09:48.27,3.90 Pipp: when Esmeralda Ghoulington searches for the old Whinny Mansion looking for her great Grandpony's spirit! → когда Эсмеральда Гулльингтон искала дух своей прапрабабушки в старом Храпящем поместье!
+MYM10	09:52.69,2.06 Pipp: It is bone-chilling. → Продирает до самых косточек.
+MYM10	09:54.91,1.50 Hitch: I must've missed that one. → Что-то не слышал о таком.
+MYM10	09:56.64,2.51 Pipp: Neigh way! You have to read it! → Быть не может! Обязательно посмотри!
+MYM10	09:59.36,3.60 Pipp: Esmeralda thinks she found ↲ her great Grandpony's ghost and then… bam! → Эсмеральда уже думала, что наконец встретила призрак своей прапрабабушки и вдруг… бац!
+MYM10	10:03.60,2.68 Pipp: It's actually her great great Grandpony's ghost. → Оказалось, это был призрак её прапрадедушки.
+MYM10	10:10.12,1.96 Hitch: That's okay, Sparky! I'll keep you safe! → Не бойся, Спарки! Я не дам тебя в обиду!
+MYM10	10:21.17,1.39 Sunny: Yeah, no problems. → Хорошо, без проблем.
+MYM10	10:23.90,0.70 Sunny: Are you sure? → Вы уверены?
+MYM10	10:26.99,1.85 Sunny: Of course! No worries. → Конечно! Не переживайте.
+MYM10	10:31.50,1.35 Sunny: Okay! Got it, thank you! → Хорошо! Я поняла, спасибо!
+MYM10	10:35.10,0.40 Sunny: Phew! → Фух!
+MYM10	10:36.49,2.34 Izzy: I better hurry up and get to unicycling! → Времени нет, надо уже браться за рогоделие!
+MYM10	10:38.90,1.78 Sunny: Yeah, that's probably a good idea. → Да, полностью согласна.
+MYM10	10:44.79,1.26 Sunny: You go ahead. I'll catch up! → Ты пока начинай, а я догоню!
+MYM10	10:46.82,3.62 Hitch: Did it get darker in here? I feel like it got darker in here. → Тут стало темнее? У меня такое чувство, что стало темнее.
+MYM10	10:51.03,1.99 Hitch: Where's a unicorn with a glowing horn when you need one? → Где же единорог со светящимся рогом, когда он так нужен?
+MYM10	10:53.06,1.98 Pipp: Maybe we need to try talking to them. → Думаю, нам надо попробовать с ними поговорить.
+MYM10	10:55.69,1.08 Hitch: I'm not so sure that's… → А я не уверен, что это…
+MYM10	10:56.78,3.37 Pipp: Come on out, you spooky spirits! → Покажитесь, жуткие духи!
+MYM10	11:00.39,2.28 Pipp: We are only here to help! → Мы не желаем вам зла!
+MYM10	11:03.17,4.00 Pipp: If you are here, give us a sign! → Если вы тут, дайте знак!
+MYM10	11:11.90,0.72 Pipp: Sprout?! → Спраут?!
+MYM10	11:12.88,0.68 Pipp: Sprout?! → Спраут?!
+MYM10	11:15.78,1.15 Sprout: What was that?! → Что это было?!
+MYM10	11:18.04,2.73 Izzy: Oopsies! Gotta remember to turn this thing on → Упс! Надо бы запомнить, что сперва надо его включить,
+MYM10	11:21.21,2.25 Izzy: before I trot in the dark, duh. → а потом уже прыгать в темноту.
+MYM10	11:25.63,0.57 Pipp: Ghosts? → Призраки?
+MYM10	11:27.06,1.99 Hitch: Sprout, what are you doing here? → Спраут, а ты что тут делаешь?
+MYM10	11:29.07,3.03 Sprout: I saw you ponies go into the factory → Я увидел, как вы идёте к фабрике
+MYM10	11:32.13,3.72 Sprout: and I figured, since it was my family business, → и подумал, что так как она принадлежала моей семье,
+MYM10	11:35.89,3.71 Sprout: I should make sure ↲ that you don't mess anything up. → мне неплохо бы проследить, чтобы вы не навели тут беспорядка.
+MYM10	11:39.96,1.65 Hitch: That we don't mess anything up? → Чтобы мы не навели тут беспорядка?
+MYM10	11:41.76,4.62 PinkiePie: Yeah! You're the one who crashed a giant robot pony into Sunny's lighthouse! → Да! Это ведь ты обрушил гигантского пони-робота на маяк Санни!
+MYM10	11:47.38,3.00 Sprout: I thought we all agreed to move past that? → Я думал, мы все согласились, что это осталось в прошлом?
+MYM10	11:51.76,3.38 Hitch: Plus, I don't think we could mess this place up more than it already is! → Вдобавок я не уверен, что это ↲ место можно сделать ещё хуже!
+MYM10	11:55.22,2.30 Sprout: Yeah, what happened in here? → Да, что тут вообще произошло?
+MYM10	11:58.01,2.40 Pipp: It's… haunted! → Это… привидения!
+MYM10	12:04.27,4.28 Pipp: But don't worry, Sunny and Izzy have big plans to make this place a-ma-zing! → Но не беспокойся, Санни и Иззи сделают из этого места кон-фет-ку!
+MYM10	12:08.61,1.49 Pipp: We just have to un-spook it first. → Мы только прогоним из него весь страх.
+MYM10	12:10.97,1.24 Pipp: Unless it was just you? → Или это всё твоих копыт дело?
+MYM10	12:14.26,1.03 Hitch: Okay I'll admit it! → Да, должен признаться,
+MYM10	12:15.58,2.64 Hitch: For a second there I thought this place was haunted, → я на секундочку подумал, что тут и правда водятся привидения,
+MYM10	12:18.37,3.17 Hitch: but it was just you this whole… time! → но все это время это был… ты!
+MYM10	12:25.60,1.39 Izzy: Oh hey! The lights work! → Эй! А свет-то работает!
+MYM10	12:36.26,2.18 Sprout: My factory's been infested with rats? → Мой завод заполонили крысы?
+MYM10	12:39.25,1.98 Pipp: Why couldn't it have been ghosties? → Ну почему это не привиденчики?
+MYM10	12:43.76,3.06 Zipp: I remember that Twilight said that she put all of the magic → Я помню, Твайлайт говорила, что заключила всю магию
+MYM10	12:46.95,2.09 Zipp: in the crystals and the blank. → в кристаллы, а потом пробел.
+MYM10	12:49.21,2.51 Zipp: So there's something else ↲ with her magic in it! → Значит, вместе с магией туда попало что-то еще!
+MYM10	12:51.81,0.33 Zipp: Right? → Да?
+MYM10	12:57.68,3.04 Zipp: Case Update: Been studying crystals for days… → Дополнение к делу: я уже столько дней изучаю кристаллы
+MYM10	13:00.92,1.62 Zipp: But I'm still confused. → и всё ещё ничего не понимаю.
+MYM10	13:02.72,2.42 Zipp: And I can't crack this protection spell thing, either. → К тому же я никак не пойму, как работает защитное заклинание.
+MYM10	13:05.57,4.69 Zipp: If I could, maybe I could protect the crystals and us from this evil force… → Если бы я понимала его, возможно, я бы смогла защитить и кристаллы, и нас всех от злобных сил…
+MYM10	13:10.68,1.19 Zipp: Think, Zipp! Think. → Думай, Зипп, думай!
+MYM10	13:12.40,4.28 Zipp: Okay. What I do know is that unicorns now have the ability to cast spells. → Ладно. Мне известно, что единороги теперь снова владеют магией.
+MYM10	13:16.83,1.39 Zipp: So I… → Значит, я…
+MYM10	13:21.67,3.11 Zipp: Must find a unicorn who'd be willing ↲ to do some scientific experiments → Должна найти единорога, который согласится поучаствовать в научных экспериментах
+MYM10	13:24.79,0.95 Zipp: on spell casting! → по применению заклинаний!
+MYM10	13:27.72,2.10 Zipp: I'm getting closer! I can feel it. → Я чувствую, что близка к разгадке!
+MYM10	13:30.26,1.16 Zipp: And once I crack the case, → И когда, как я раскрою это дело,
+MYM10	13:31.71,3.49 Zipp: nopony will be able to steal anything ↲ from us ever again! → больше никто не сможет украсть у нас магию!
+MYM10	13:41.76,2.58 Misty: I feel pretty silly talking to a unicorn made of junk, → Довольно глупо разговаривать с ↲ единорогом, сделанным из мусора,
+MYM10	13:44.40,3.28 Misty: but I just have to have somepony ↲ to talk to about Opaline. → но мне нужно хоть с кем-нибудь обсудить Опалин.
+MYM10	13:48.92,4.53 Misty: You see, she wants me to steal Sparky. ↲ And I really, really don't want to. → Понимаешь, она хочет, чтобы я украла Спарки, но я ну очень не хочу этого делать.
+MYM10	13:53.81,2.96 Misty: I tried that already ↲ and it did not go well. → Я уже пробовала это раньше, но ничего хорошего из этого не вышло.
+MYM10	13:58.37,1.58 Misty: What do you think I should do? → Как думаешь, что мне делать?
+MYM10	14:06.45,2.50 Izzy: And we need this and some glitter.. → А ещё нам нужна вот эта штука и немного блёсток…
+MYM10	14:14.07,1.22 Izzy: Tah dah… → Та-да…
+MYM10	14:25.95,2.81 Pipp: Remember when all the animals were in the Brighthouse? → Помнишь, как все животные решили поселиться в нашем маяке?
+MYM10	14:28.76,0.34 Hitch: Yeah! → Ещё бы!
+MYM10	14:30.29,2.37 Pipp: And we couldn't get them to leave? → И у нас никак не получалось их выдворить?
+MYM10	14:33.01,0.71 Hitch: Yeah? → Да?
+MYM10	14:39.29,1.09 Pipp: Oh, I don't have a solution. → О, я понятия не имею, что делать.
+MYM10	14:40.57,2.55 Pipp: But this is exactly like that. → Но ситуация точь-в-точь.
+MYM10	14:45.36,2.89 Hitch: Okay, that's enough! No more Mr. Nice Sheriff. → Ну всё, с меня хватит! Никакого больше мистера хорошего шерифа!
+MYM10	14:48.64,2.12 Hitch: Listen up, little buddies! You're going to have to leave → Слушай сюда, мелюзга! Вы сейчас же собираетесь
+MYM10	14:50.76,2.22 Hitch: and go back home to Zephyr Heights. → и возвращаетесь домой в Зефир Хайтс.
+MYM10	14:53.05,1.38 Hitch: Please? → Пожалуйста?
+MYM10	14:58.16,1.21 Hitch: I know, I know! → Да знаю, знаю!
+MYM10	14:59.40,3.71 Hitch: It's just that we're trying to turn this ↲ into a cool new space for the community → Но мы просто хотим сделать из этой фабрики классное место для всех,
+MYM10	15:03.41,2.63 Hitch: and it's hard to do that with all of you hanging out in here. → и этим невозможно заниматься, пока вы здесь носитесь.
+MYM10	15:06.20,4.56 Sprout: Yeah, and you've really ratted the place up too! How about you scram? → Ага, а ещё вы превратили это место в крысиное гнездо! Как насчёт того, чтобы свалить отсюда?
+MYM10	15:12.74,1.78 Sprout: Was that a yes? → Это было "да"?
+MYM10	15:14.56,1.65 Hitch: It was… not. → Это было… "нет".
+MYM10	15:19.65,3.60 Hitch: He says that they were bored in Zephyr Heights. → Он говорит, что в Зефир Хайтс им скучно.
+MYM10	15:23.26,4.44 Hitch: But this place has got lots of cool things they can play with. → А тут куча интересных штук, с которыми можно играть.
+MYM10	15:28.83,0.40 Hitch: Uh-huh? → Ага?
+MYM10	15:30.56,1.88 Hitch: They… They need entertainment! → Им... Им нужны развлечения!
+MYM10	15:32.71,4.57 Sprout: That's it! This is my building ↲ and you are all getting evicted! → Нет уж, хватит! Это здание принадлежит мне, и я вас отсюда выгоняю!
+MYM10	15:41.20,0.51 Sprout: Phew! → Фух!
+MYM10	15:45.83,0.48 Sprout: Phew. → Фух.
+MYM10	15:56.25,0.90 Izzy: Too much glitter? → Слишком много блёсток?
+MYM10	15:57.62,2.58 Izzy: Who am I kidding? There can never be enough glitter! → Хотя кого я обманываю? Блёсток много не бывает!
+MYM10	16:00.46,1.58 Sunny: I don't know what to do, Izzy. → Я не знаю, что нам делать, Иззи.
+MYM10	16:02.16,4.00 Sunny: I've made so many promises to the ↲ community, but I can't keep them all! → Я столько всего всем наобещала, что нет никакой возможности всё это выполнить!
+MYM10	16:07.73,2.55 Izzy: Whenever I used to feel super duper overwhelmed, → Каждый раз, когда я чувствовала, что скоро утону в куче дел,
+MYM10	16:10.31,3.58 Izzy: I used to go talk to the oldest pony ↲ in Bridlewood, Elder Flower. → я шла поболтать с самой старой пони в Брайдлвуде — Элдер Флауэр.
+MYM10	16:14.67,4.28 Izzy: And now I will share with you, her wise, sagebrush advice. → И сейчас я поделюсь с тобой её мудрым, как цветы полыни, советом.
+MYM10	16:19.17,2.49 Izzy: You can't please everypony, Izzy. → Нельзя угодить всем сразу, Иззи.
+MYM10	16:21.73,4.11 Izzy: Sometimes being a leader ↲ means making the tough decisions, Izzy. → Иногда, чтобы быть лидером, приходится принимать непростые решения, Иззи.
+MYM10	16:25.91,4.10 Izzy: You, Izzy, must take everypony's opinion under your hoof → Ты, Иззи, должна выслушать мнение каждого, взять себя в копыта
+MYM10	16:30.26,4.13 Izzy: and then make the final call, Izzy. → и принять решение самостоятельно, Иззи.
+MYM10	16:34.62,1.79 Izzy: Just change the Izzy part to a Sunny part. → Просто представь, что там "Санни" вместо "Иззи".
+MYM10	16:36.59,0.74 Sunny: I figured. → Я поняла.
+MYM10	16:37.54,3.42 Izzy: You only got into this situation ↲ because you care so much. → Так получилось только потому, что тебе не всё равно.
+MYM10	16:41.17,2.78 Izzy: That means you're gonna make ↲ the very best decision you can. → Значит, ты примешь самое лучшее решение из возможных.
+MYM10	16:44.05,0.94 Sunny: You really think so? → Ты так думаешь?
+MYM10	16:45.07,1.27 Izzy: Hoof to heart. → Клянусь.
+MYM10	16:46.35,5.03 Sunny: You're right. And I think I know just the way to make this the perfect space for everypony. → Ты права. И, кажется, я знаю, как превратить это место во что-то, что отлично подойдёт всем.
+MYM10	16:52.63,1.53 Pipp: We need to change our strategy. → Нам нужно изменить наш подход.
+MYM10	16:54.28,0.74 Hitch: What do ya got? → Есть идеи?
+MYM10	16:55.53,0.71 Pipp: I know! → Знаю!
+MYM10	16:56.30,3.24 Pipp: ♪ All you need is your beat ↲ All you need is your beat ♪ → Нужен только твой ритм. ↲ Нужен только твой ритм.
+MYM10	17:01.15,1.23 Pipp: ♪ Oh oh yeah ♪ → О да!
+MYM10	17:02.63,1.56 Pipp: ♪ And all you need is your beat ♪ → Нужен только твой ритм.
+MYM10	17:04.21,1.60 Pipp: Come on! Yeah, come on! → Ну же! Вот так, вперёд!
+MYM10	17:05.90,1.24 Pipp: ♪ All you need is your… ♪ → Нужен только твой…
+MYM10	17:13.12,3.16 Pipp: Okay, what gives?! Everypony loves that song! → Ладно, что не так? Все любят эту песню!
+MYM10	17:17.34,3.11 Hitch, Pipp: He says they've heard that song a bajillion times before. || What?! → Он говорит, они уже слышали её базиллион раз. || Чего?!
+MYM10	17:20.45,2.42 Hitch: They play it all over the big screens in Zephyr Heights.  → Её без конца крутят на больших экранах в Зефир Хайтс.
+MYM10	17:22.88,3.12 Hitch: And then she said, "Right! Like every single day." → А она говорит: "Ага! Каждый день с утра до ночи".
+MYM10	17:26.25,0.61 Hitch: And then he said… → А он говорит…
+MYM10	17:26.87,1.67 Pipp: Okay, okay, I get it. → Ладно-ладно, я поняла.
+MYM10	17:29.62,2.33 Zipp: If the crystals hold that much magic, → Если в кристаллах заключено так много магии,
+MYM10	17:32.02,4.02 Zipp: then the pony that wants them must be able to handle a lot of magic themselves. → тогда пони, которая хочет их заполучить, должна быть в состоянии владеть такой мощью.
+MYM10	17:36.14,2.24 Zipp: That must mean this pony is really powerful. → А значит, эта пони должна быть действительно могущественной.
+MYM10	17:38.69,0.79 Zipp: With unique powers… → Уникальной…
+MYM10	17:40.04,1.84 Zipp: Like Sunny! Like a-an Alicorn! → Как Санни! Как… Аликорн!
+MYM10	17:42.99,2.87 Zipp: Alicorns. Alicorns must be the key! → Аликорны. Аликорны. Значит, всё дело в них!
+MYM10	17:50.91,0.87 Sunny: Let's remove that. → Давай это уберём.
+MYM10	17:53.22,0.55 Izzy: On it! → Будет сделано!
+MYM10	17:56.70,1.27 Sunny: And definitely that. → И вот это точно.
+MYM10	17:58.23,1.14 Izzy: Poof! Be gone! → Пуф! И его больше нет!
+MYM10	18:01.18,2.44 Sunny: And definitely, definitely that. → И уж точно вот это!
+MYM10	18:03.86,1.21 Izzy: You got it! → Как скажешь!
+MYM10	18:09.78,5.30 Sprout: So hear me out. What if we just let the rats stay? → Слушайте, а что, если мы просто позволим крысам остаться?
+MYM10	18:15.67,1.73 Pipp, Hitch: What? No way! || That's against code! → Ни за что! || Это против правил!
+MYM10	18:17.83,2.90 Sprout: Okay, then idea number two… → Ладно, идея номер два…
+MYM10	18:20.82,1.10 Sprout: I leave! Good luck! → Я пошёл! Удачи!
+MYM10	18:34.85,1.53 Hitch: Are you thinking what I am? → Ты думаешь о том же, о чём и я?
+MYM10	18:36.42,1.78 Pipp: Oh, I sure hope so. → О, очень надеюсь.
+MYM10	18:38.85,1.73 Pipp: ♪ Making a plan ♪ → Всё просчитать
+MYM10	18:40.96,1.74 Hitch: ♪ Lending a hand ♪ → И поддержать —
+MYM10	18:43.09,4.23 Pipp: ♪ Helping a friend is nice ♪ → Рады помочь друзьям.
+MYM10	18:47.34,1.59 Hitch: ♪ Work together ♪ → Взявшись вместе,
+MYM10	18:49.12,1.95 Pipp: ♪ Two manes are better ♪ → Гораздо легче,
+MYM10	18:51.54,4.31 Somepony: ♪ Finding new ways, to fly ♪ → Справиться с делом нам.
+MYM10	18:56.09,1.79 Pipp: ♪ With a little bit of confidence ♪ → В своих силах мы уверены,
+MYM10	18:58.19,1.75 Hitch: ♪ And a little bit of kindness! ♪ → Доброту свою всем дарим.
+MYM10	19:00.60,3.66 Somepony: ♪ We can make it fun to do ♪ → Все у нас получится.
+MYM10	19:04.85,3.77 Somepony: ♪ Work together ↲ Make it better ♪ → Труд совместный ↲ Расчудесный.
+MYM10	19:09.09,3.73 Somepony: ♪ Working smarter ↲ With each other ♪ → Он полезный, ↲ Интересный.
+MYM10	19:13.34,3.74 Somepony: ♪ Work together ↲ Make it better ♪ → Труд совместный ↲ Расчудесный.
+MYM10	19:17.60,3.70 Somepony: ♪ We are stronger ↲ With each other ♪ → Он полезный, ↲ Интересный.
+MYM10	19:21.84,1.44 Somepony: ♪ Work work let's unite ♪ → Ну-ка, сообща —
+MYM10	19:23.39,2.09 Somepony: ♪ Every pony shining bright ♪ → Все хотят внести свой вклад.
+MYM10	19:25.55,2.12 Somepony: ♪ Work work work it out ♪ → Ну-ка, навались —
+MYM10	19:27.68,2.17 Somepony: ♪ Every pony shout it loud ♪ → Все дела пошли на лад.
+MYM10	19:31.27,0.76 Pipp, Hitch: We did it! || We did it! → Получилось! || Получилось!
+MYM10	19:35.01,2.11 Hitch: He says, "Thank you for that exciting new song." → Он говорит: "Спасибо за эту новую прекрасную песню".
+MYM10	19:37.29,2.42 Hitch: It really invigorated them. ↲ And now they're excited to find → Она придала им сил, и теперь они готовы поискать
+MYM10	19:39.73,1.88 Hitch: fun things to do at home in Zephyr Heights. → интересные занятия дома, в Зефир Хайтс.
+MYM10	19:42.93,3.24 Hitch: She said, "They're sorry if they insulted your song. They love it. → Она говорит: "Извини, если оскорбили твою песню. Она нам нравится.
+MYM10	19:46.18,1.17 Hitch: They just needed something new." → Мы просто хотели разнообразия".
+MYM10	19:48.31,2.37 Pipp: I knew they loved it. Everypony does! → Так и знала, что они её любят! Её все любят!
+MYM10	20:03.08,0.72 Zipp: Yes! → Да!
+MYM10	20:04.47,1.02 Hitch: Wow! → Ого!
+MYM10	20:06.90,2.84 Sunny: Welcome to Canterlove Studios! → Добро пожаловать на студию "Кантерлав"!
+MYM10	20:09.74,3.89 Izzy: A place where everypony can come ↲ hang out and create cool stuff! → Место, где каждый может создать что-то клёвое или просто потусоваться!
+MYM10	20:13.85,0.83 Izzy: Yay! → Ура!
+MYM10	20:15.28,1.30 Pipp: We could put on a play! → Мы могли бы поставить пьесу!
+MYM10	20:16.64,0.64 Sunny: You could! → Ещё как!
+MYM10	20:17.79,1.29 Pipp: Or shoot a music video! → Или снять клип!
+MYM10	20:19.52,0.72 Sunny: Why not! → Почему бы и нет!
+MYM10	20:20.35,4.43 Hitch: Or have a really big community meeting ↲ where we discuss new rules and guidelines! → Или провести огромное всеобщее собрание, чтобы обсудить новые законы и предписания!
+MYM10	20:25.32,1.43 Sunny: Sky's the limit! → Возможности безграничны!
+MYM10	20:27.00,3.02 Sprout: I gotta admit, I like what you did with the place. → Признаю, вы неплохо тут всё обустроили.
+MYM10	20:30.12,2.29 Sprout: It's pretty impressive. And technically… → Довольно впечатляюще. И строго говоря…
+MYM10	20:32.58,2.95 Sprout: It is still mine! Booya! → Это место всё ещё моё! О да!
+MYM10	20:42.38,0.75 Izzy: Is that true?! → Это правда?!
+MYM10	20:43.28,0.86 Sunny: No way. → Ну уж нет.
+MYM10	20:44.25,2.12 Sunny: It belongs to all of us now. → Теперь оно принадлежит нам всем.
+MYM10	20:49.17,2.87 Sunny: We really did make this place shine, didn't we? → Мы и правда сделали из этого места конфетку, да?
+MYM10	20:52.22,1.41 Izzy: We sure did. → Ещё как.
+MYM10	20:53.83,1.01 Izzy: Booya! → О да!
+MYM10	20:57.14,3.47 Misty: And that is why Opaline can't stand strawberry smoothies → И вот поэтому Опалин не любит клубничный смузи,
+MYM10	21:00.77,3.41 Misty: even though they're absolutely the most delicious smoothies in the world! → хотя это самый наивкуснейший смузи на свете!
+MYM10	21:06.18,2.83 Misty: So, Madame Taffytail? What do you say now? → Ну, что скажете, мадам Карамельный Хвостик?
+MYM10	21:09.60,1.78 Misty: I say you better try again. → Я скажу — пытайся лучше.
+MYM10	21:11.53,3.47 Misty: Go get that dragon and ↲ finally make Opaline proud of you. → Иди поймай этого дракона и завоюй уважение Опалин.
+MYM10	21:15.39,0.57 Misty: Really? → Правда?
+MYM10	21:16.16,2.32 Misty: You need that Cutie Mark! → Тебе нужна кьютимарка!
+MYM10	21:18.98,2.77 Misty: Even if it means upsetting Sunny and the others? → Даже если от этого Санни и ее друзья расстроятся?
+MYM10	21:23.51,2.44 Misty: You're right. They already have each other. → Ты права. У них и так уже есть друзья.
+MYM10	21:26.20,1.46 Misty: And their Cutie Marks. → И кьютимарки в придачу.
+MYM10	21:28.72,3.20 Misty: I'm going to get me that dragon. No games this time. → Я заполучу этого дракона. В этот раз — всё по-серьёзному.
+MYM10	21:36.15,1.42 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+MYM10	21:37.57,2.59 Default: anon2anon ↲ sunnysubs.com → anon2anon ↲ sunnysubs.com
+
+MYM11 "Sunny Side Up"
+
+
+
+MYM12 "The Manesquerade Ball"
+
+
+
+MYM13 "A Little Horse"
+
+
+
+MYM14 "Missing the Mark"
+
