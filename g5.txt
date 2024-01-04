@@ -7654,6 +7654,840 @@ TYT60	04:57.76,1.34 Pipp: INCOMING! → ОНИ ИДУТ!
 TYT60	04:59.96,1.97 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
 TYT60	05:01.93,2.74 Default: anon2anon ↲ sunnysubs.com → anon2anon ↲ sunnysubs.com
 
+TYT61 "Attack of the Bunnisus"
+
+TYT61	00:02.94,1.37 Somepony: Новый день. → A brand new day
+TYT61	00:05.69,2.22 Somepony: Шанс новый путь начать скорей. → A brand new chance, a brand new way
+TYT61	00:09.24,2.36 Somepony: Чтоб себя лучше показать. → To be my very best today
+TYT61	00:12.96,2.94 Somepony: И все надежды оправдать. → And live my very best cause you only one now
+TYT61	00:15.91,2.11 Somepony: Надежды все оправдать. → Get only one now
+TYT61	00:24.42,2.80 PinkiePie: Только посмотри на все наши значки, Санни! → Oh, look at all our badges, Sunny!
+TYT61	00:27.26,2.72 PinkiePie: Я знала, что ты будешь рада вступить в Следопрыты, → I knew you'd love being a part of the Trail Trotters
+TYT61	00:29.99,1.64 PinkiePie: прямо как и я! →  just as much as I do!
+TYT61	00:31.74,2.90 Sunny: Смотри, Винди! Здесь место для ещё одного! → Check it out, Windy! There's still room for more!
+TYT61	00:35.67,2.70 Sunny: Погоди. А бывают значки, которые можно заработать с друзьями? → Wait. Are there any badges that you can earn with your friends?
+TYT61	00:38.63,3.37 PinkiePie: Дай-ка я посмотрю в руководстве Следопрытов… → Let me just have a look in the Trail Trotters guide...
+TYT61	00:42.00,5.08 PinkiePie: Есть! Значок за выживание в дикой природе должен быть заработан целой группой. → Oh, yes! The Wilderness Survival Badge has to be earned as a whole group.
+TYT61	00:47.19,3.82 Sunny: У меня есть на примете кое-кто, ↲ кому это точно понравится! → Oh, I think I might know a few ponies who would totally love that!
+TYT61	00:54.56,1.17 PinkiePie: Ах, свежий воздух. →  Ah, the outdoors.
+TYT61	00:55.74,3.54 PinkiePie: Ну разве он не наполняет вас миром и спокойствием? → Doesn't it just make you feel so peaceful and calm?
+TYT61	01:00.02,1.63 Pipp: Ага. Мы точно на… → Yes. We are totally…
+TYT61	01:01.65,2.00 Pipp: …одной волне… → …at one…
+TYT61	01:03.99,1.95 Pipp: …с природой. → …with nature.
+TYT61	01:06.17,1.53 Hitch: Налево, ребята! → Left here, ponies!
+TYT61	01:07.90,3.63 Hitch: Заработать значок за выживание в дикой природе будет легче лё… → Getting that Wilderness Survival Badge is gonna be a piece of…
+TYT61	01:14.15,0.99 Hitch: Этого нет на моей карте. → This wasn't on my map.
+TYT61	01:15.65,2.49 Zipp: Потому что твоя карта — это и не карта вовсе. → That's because that map isn't a map.
+TYT61	01:18.24,1.57 Zipp: Это один из рисунков Спарки! → It's one of Sparky's drawings!
+TYT61	01:20.18,1.33 Hitch: Тогда куда делась карта?! → Then what happened to the map?!
+TYT61	01:23.03,1.17 Somepony: Спарки! → Sparky!
+TYT61	01:24.75,1.51 Pipp: Так теперь мы ещё и заблудились?! → So now we're lost, too?!
+TYT61	01:27.28,1.04 Pipp: Нет-нет-нет-нет! → No, no, no, no!
+TYT61	01:29.89,1.74 Izzy: И нам, пожалуй, стоит найти другую дорогу. → And we might want to find a new path.
+TYT61	01:32.01,2.64 Izzy: Болото слишком топкое. → That bog is way too sinky.
+TYT61	01:34.73,5.25 Izzy: Если мы в него наступим, то навсегда останемся грязевыми пони! → We put one hoof in there, and we're gonna be mud ponies forever!
+TYT61	01:40.16,0.95 Izzy: Что тоже весело. → Could be kind of fun.
+TYT61	01:42.01,4.21 Pipp: Ну уж нет, Из, я пас. Ещё идеи? → Yeah, that's a hard no for me, Iz. Any other ideas?
+TYT61	01:46.92,2.00 Sunny: Не волнуйтесь. Я знаю эту скалу. → Nopony panic. I know that rock.
+TYT61	01:49.04,0.77 Sunny: За мной! → Follow me!
+TYT61	01:52.55,0.74 Izzy: О да! → Oh, yeah!
+TYT61	01:53.56,1.86 Pipp: Что за поход без… → What's a campfire without…
+TYT61	01:56.61,3.36 Pipp: походных песен от меня-ня-ня-ня? → campfire songs from ME-ME-ME-MEEEEE?
+TYT61	02:01.53,1.98 Misty: Периметр лагеря защищён, Санни. → Camp perimeter secured, Sunny.
+TYT61	02:03.73,1.43 Misty: Предоставь дозор мне. → Leave it to me to keep watch.
+TYT61	02:05.19,1.19 Hitch: А я разожгу костёр. → And I'll light the campfire.
+TYT61	02:06.42,1.31 Hitch: В сторонку, Спарки. → Stand back, Sparky.
+TYT61	02:13.84,2.45 Sunny: Всё, что нам осталось приготовить, — это обед! → All that's left to do is… dinner!
+TYT61	02:19.18,2.40 PinkiePie: Такими темпами мы получим этот значок совсем скоро! → We are well on our way to earning that badge!
+TYT61	02:24.28,1.01 Misty: Кыш! Кыш! → Shoo! Shoo!
+TYT61	02:26.40,2.31 Misty: Е-е-если ты не против, пожалуйста. → If-if-if you wouldn't mind, please.
+TYT61	02:44.17,1.38 Misty: Бегите! → Run!
+TYT61	02:48.88,1.89 Sunny: Спасайся кто может! → Everypony, look out!
+TYT61	02:56.76,0.92 Hitch: Да ладно! → Come on!
+TYT61	02:59.12,1.33 Sunny: О нет! → Oh, no!
+TYT61	03:00.46,2.51 Sunny: Кролегас уничтожает всё! → The bunnisus is destroying everything!
+TYT61	03:03.32,3.27 Zipp: Включая всякую надежду на получение значка за выживание в дикой природе. → Including any hope of earning that Wilderness Survival Badge.
+TYT61	03:06.82,3.98 Sunny: Всё что сейчас действительно важно — остановить кролегаса, пока никто не пострадал! → All that matters now is stopping that bunnisus before anypony gets hurt!
+TYT61	03:15.25,1.01 Sunny: Вы со мной? → Everypony with me?
+TYT61	03:23.44,2.11 Misty: Сюда, мистер Прыг-скок! → Over here, Mr. Hippity-Hoppity!
+TYT61	03:25.87,1.87 Misty: Приди и возьми! → Come and get it!
+TYT61	03:29.18,0.57 Misty: Ого! → Whoa!
+TYT61	03:42.20,1.69 Pipp: Сюда! → Over here!
+TYT61	04:16.94,0.53 Sunny: Фух! → Whew!
+TYT61	04:18.77,2.71 Sunny: Осторожней, маленький… большой зверёк. → Careful, little… uh, big critter.
+TYT61	04:21.87,3.48 Sunny: Мы освободим тебя сразу, как только ты станешь прежним. → We'll get you free just as soon as you're back to normal.
+TYT61	04:26.36,1.43 Izzy: Это должно сработать. → These ought to do it.
+TYT61	04:34.45,1.21 Izzy: Ну что за милашка! → What a little cutie!
+TYT61	04:36.86,2.51 Izzy: И берегись гига-самоцветов, слышишь? → Now look out for those giga gems, you hear?
+TYT61	04:41.32,2.90 Misty: Прости, что всё вышло не так, как ты надеялась, Санни. → Sorry things didn't work out how you'd hoped, Sunny.
+TYT61	04:45.17,0.89 Sunny: Спасибо, Мисти. → Thanks, Misty.
+TYT61	04:46.22,3.72 Sunny: Но мы всегда можем попробовать заработать значок за выживание в дикой природе в другой раз. → But we can always try to earn the Wilderness Survival Badge some other time.
+TYT61	04:50.09,0.77 Sunny: Верно, Винди? → Right, Windy?
+TYT61	04:51.63,6.38 PinkiePie: Вообще-то, значок за выживание в дикой природе даётся не за установку палаток и не за разведение костра. → Actually, the Wilderness Survival Badge isn't just about putting up tents or lighting a campfire.
+TYT61	04:58.04,2.06 PinkiePie: Он даётся за командную работу. → It's about working together.
+TYT61	05:00.28,3.46 PinkiePie: Чем мы… сейчас и занимались! → Which… is exactly what we just did!
+TYT61	05:03.76,0.96 Sunny: О да! → Aw, yeah!
+TYT61	05:11.34,2.07 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT61	05:13.41,2.62 Default: anon2anon ↲ sunnysubs.com → anon2anon ↲ sunnysubs.com
+
+TYT62 "Lavarynth"
+
+TYT62	00:01.38,3.77 Zipp: Земли драконов, мы идём! → Dragon Lands, here we come!
+TYT62	00:05.95,1.73 Pipp: Думаешь, она достаточно искрится? → Do you think this has enough sparkle?
+TYT62	00:07.10,1.20 Zipp: Пипп! Я пытаюсь пилотировать! → Pipp! I'm trying to fly!
+TYT62	00:09.21,1.33 Izzy: Мы падаем! → We get down!
+TYT62	00:17.80,0.91 Hitch: Где мы? → What is it?!
+TYT62	00:19.02,1.50 Pipp: Мой наряд испорчен! → My outfit's ruined!
+TYT62	00:20.84,3.19 Pipp: В приглашении специально указывалось, что наши наряды должны искриться. → The invite specifically said to dress with sparkle!
+TYT62	00:32.12,2.38 Hitch: Я думал, мы остановили злое проклятье Опалин! → I thought we stopped Opaline's evil curse!
+TYT62	00:34.70,1.22 Misty: Я знакома со злом. → I know evil.
+TYT62	00:36.32,4.33 Misty: И это не оно. Думаю, это что-то вроде драконьей Ночи кошмаров. →  This isn't it. I think it's some kind of… ↲ dragon-y Nightmare Night?
+TYT62	00:41.15,1.09 Lava: Ночь кошмаров? → Nightmare Night?
+TYT62	00:42.58,1.11 Lava: Не смеши меня. → Give me a break.
+TYT62	00:43.94,4.20 Lava: У нас тут всё куда круче. Это… Лаваринт! → This is way better. This… is a Lavarynth!
+TYT62	00:48.75,1.31 Sunny: Что за Лаваринт? → What's a Lavarynth?
+TYT62	00:50.25,1.52 Lava: Это набор заданий, → They're a series of tasks
+TYT62	00:51.79,2.81 Lava: дабы испытать главные качества драконов: → that challenge a dragon's most important skills –
+TYT62	00:54.90,3.33 Lava: храбрость, мудрость и изобретательность! → bravery, wisdom and creativity!
+TYT62	00:58.51,2.28 Blaize: А ещё это классный способ присоединится к нашему племени. → And a fun way to welcome you to our tribe.
+TYT62	01:01.00,2.71 Pipp: То есть когда вы говорили надеть искрящийся наряд… → So when you said dress with sparkle…
+TYT62	01:03.83,3.37 Blaize: Мы имели в виду настоящие искры. ↲ В Лаваринте очень темно. → We meant actual sparkles. It's very dark in the Lavarynth.
+TYT62	01:07.89,2.11 Tumble: Но от этого только страшнее. → But it makes everything scarier.
+TYT62	01:10.84,0.55 Hitch: Чего-чего? ↲  → It what now?
+TYT62	01:22.43,2.18 Sunny: Кто-нибудь нашёл выключатель? → Anypony find a light switch?
+TYT62	01:36.14,1.16 Hitch: Должно быть, это выход! → That must be the way out!
+TYT62	01:37.59,1.59 Zipp: Лава сказал, что будут испытания, верно? → Lava said these were tests, right?
+TYT62	01:39.32,1.18 Zipp: Должно быть, это первое из них. → This must be the first one.
+TYT62	01:40.65,1.54 Misty: Но как мы туда доберёмся? → But how do we get there?
+TYT62	01:42.90,1.18 Zipp: Проявим храбрость! → By being brave!
+TYT62	01:44.33,0.98 Zipp: Не подбросишь, Хитч? → Give me a boost, Hitch?
+TYT62	01:45.61,1.34 Hitch: О да! → Aw, yeah!
+TYT62	01:48.94,0.39 Hitch: Готова? → Ready?
+TYT62	01:49.57,3.00 Zipp: Лавовая кнопка… я лечу! → Lava button... here I come!
+TYT62	02:12.01,0.87 Zipp: Да! → Yeah!
+TYT62	02:16.80,1.36 Pipp, Sunny: Да! || Ура! → Yes! || Yay!
+TYT62	02:18.17,0.77 Izzy: Блёсточки мои! → Oh, my glitter!
+TYT62	02:20.54,0.83 Misty: Ты справилась!  → You did it!
+TYT62	02:21.37,1.33 Izzy, Pipp: Десять из десяти! || Это было потрясающе! → Ten out of ten! || That was amazing!
+TYT62	02:22.70,1.05 Hitch: Ещё бы чуть-чуть и всё. → That was close.
+TYT62	02:23.84,2.35 Zipp: Я-то думала, испытания будут страшными. → I thought these tests were supposed to be scary.
+TYT62	02:31.68,0.93 Zipp: А вот это страшно! → This is scary!
+TYT62	02:37.27,0.73 Somepony: Бу! → Boo!
+TYT62	02:38.36,1.12 Hitch: Отступаем! → Retreat!
+TYT62	02:44.01,1.23 Pipp: Мисти, что ты делаешь?! → Misty, what are you doing?!
+TYT62	02:45.38,1.37 Izzy: Они тебя раздавят! → You're gonna get smushied!
+TYT62	02:50.42,0.97 Misty: А вот и нет. → No, I'm not.
+TYT62	02:51.60,1.48 Misty: Потому что я не боюсь. → Because I'm not afraid.
+TYT62	02:53.28,1.73 Misty: Меня всю жизнь обижали. → My whole life, I lived with a bully.
+TYT62	02:55.21,3.91 Misty: Но я узнала, что обидчики могут заставить тебя бояться, только если ты сама им позволишь. → But I learned bullies can only make you afraid if you let them.
+TYT62	03:02.67,4.58 Misty: И иногда всё, что тебе нужно, чтобы победить тьму — это немного света! → And sometimes, all you need to beat the darkness is a little light!
+TYT62	03:16.61,1.17 Zipp: Ты невероятна! → You're incredible!
+TYT62	03:17.52,0.91 Izzy: Ты просто прелесть! → You're pretty!
+TYT62	03:18.07,1.25 Pipp: Вперёд, Мисти! → Go, Misty!
+TYT62	03:25.23,1.98 Sunny: Полагаю, нам стоит поискать подсказку? → Guess we should, uh, look for a clue?
+TYT62	03:33.86,1.39 Pipp: Я совсем неподходяще одета. → I did not dress for this.
+TYT62	03:36.79,0.81 Sunny: Ух ты! → Whoa!
+TYT62	03:37.94,0.84 Hitch: Подсказка! → The clue!
+TYT62	03:39.54,1.43 Pipp: Ах, да-а-а-а. → Oh, woooow.
+TYT62	03:41.20,1.15 Misty: Но что нам с этим делать? → What do we do with it?
+TYT62	03:47.12,2.16 Sunny: Храбрость, мудрость и изобретательность. → Bravery, wisdom and creativity.
+TYT62	03:49.77,2.10 Sunny: Нам понадобится изобретательность! Иззи? → So we need to be creative! Izzy?
+TYT62	03:52.17,1.43 Izzy: Приготовьтесь, народ! → Get ready, ponies!
+TYT62	03:53.82,1.98 Izzy: Это будет как м-Иззи-кл! → It's about to get Izz-ical!
+TYT62	03:55.98,0.92 Izzy: М-Иззи-кл! → Izz-ical!
+TYT62	03:57.18,1.12 Izzy: Пипп, продолжай сиять! → Pipp, you keep shining!
+TYT62	03:58.40,2.34 Izzy: Зипп, ты стой тут и расправь свои большие крылья пошире! → Zipp, you stand here and spread those big wings wide!
+TYT62	04:00.76,2.50 Izzy: Хитч, используй свои земнопоньские штучки вот здесь. → Hitch, do your Earth pony thing right here!
+TYT62	04:03.42,1.86 Izzy: И если у нас с Мисти всё получится… → And if me and Misty get all snug here…
+TYT62	04:08.15,2.44 Pipp: Этого недостаточно! Нам нужен ещё один единорог! → Ah, it's not enough! We need another unicorn!
+TYT62	04:12.38,0.78 Sunny: Сейчас будет! → I got it!
+TYT62	04:13.68,0.79 Sunny: Вот так? → How's this?
+TYT62	04:14.76,1.68 Pipp: Да! Шеде-пони-врально! → Yes! A mane-sterpiece!
+TYT62	04:16.44,2.01 Pipp: Но… почему дверь так и не открылась? → But, ugh, why isn't the door opening?
+TYT62	04:22.26,1.74 Izzy: Готовься немного полетать, малыш! → Get ready to fly, little guy!
+TYT62	04:37.42,3.19 Lava: Не ожидал увидеть вас снова, пони. Неплохо. → Never expected to see you ponies again. Not bad.
+TYT62	04:40.87,3.76 Blaize: Вы проявили храбрость, мудрость и изобретательность. → You showed bravery, wisdom, and creativity.
+TYT62	04:44.95,4.58 Blaize: Отныне вы пожизненные члены нашего племени. → You are now and forever members of our tribe!
+TYT62	04:49.62,2.83 Tumble: А теперь пробудите своего внутреннего дракона! → Now, let your inner dragon roar!
+TYT62	05:00.09,1.72 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT62	05:01.81,2.32 Default: sunnysubs ↲ anon2anon → sunnysubs ↲ anon2anon
+
+TYT63 "Nightmare Market"
+
+TYT63	00:02.78,2.24 CauldronsPony: Котлы! Покупайте котлы! → Cauldrons! Get your cauldrons!
+TYT63	00:12.17,1.23 Hitch: Моя голова так выглядит больше? → Does my head look big in this?
+TYT63	00:14.64,4.10 Pipp: Обожа-а-а-аю Ночной рынок! Тут столько контента! → I loooove the Night Market! Look at all this great content!
+TYT63	00:19.09,3.23 Alphabittle: Я так рад, что мы наконец-то ↲ проведём время вместе, Мисти. → So excited to finally get some quality time together, Misty.
+TYT63	00:22.59,2.98 Alphabittle: Мы же теперь сможем наверстать все ↲ упущенные детские воспоминания, да? → Now we can make up for all those foalhood memories we missed, huh?
+TYT63	00:28.61,0.99 Misty: Па-а-а-ап! → Daaaad!
+TYT63	00:31.80,0.61 Zipp: Ого!  → Wow!
+TYT63	00:33.32,1.75 Somepony: Ого!  → Wow!
+TYT63	00:38.22,1.22 Izzy: Блёстки! → Glitter!
+TYT63	00:39.65,1.73 Pipp: Стой! Я уже раньше такие видела! → Hold it! I've seen this stuff before!
+TYT63	00:41.38,3.43 Pipp: С ними нужно быть очень осторожной, или они превратят тебя в… → You've got to be super careful, or it'll totally turn you…
+TYT63	00:46.99,3.18 Alphabittle: Эй, народ! Кто хочет мороженого? → Hey, ponies! Who's ready for some ice cream?
+TYT63	00:55.13,0.40 Alphabittle: Мисти? → Misty?
+TYT63	00:56.01,0.69 Alphabittle: Это ты? →  Is that you?
+TYT63	00:57.51,2.60 Alphabittle: Ладно! Ладно, ладно! Всем стоять! → Okay! Okay, okay! Nopony move!
+TYT63	01:03.36,1.28 Alphabittle: Нет! → No!
+TYT63	01:08.08,1.50 Alphabittle: Ребята?! Мисти! → Ponies?! Misty!
+TYT63	01:10.89,1.04 Alphabittle: Я… не могу… →  I-I can't…
+TYT63	01:12.00,1.69 Alphabittle: Я не потеряю тебя снова! → I won't lose you again!
+TYT63	01:31.89,1.10 Alphabittle: О нет, даже не думай! → Oh, no, you don't!
+TYT63	01:39.57,1.24 Alphabittle: Зипп, спускайся оттуда! → Zipp, get down from there!
+TYT63	01:46.47,1.46 Alphabittle: Не… волнуйтесь… → Don't… worry…
+TYT63	01:48.22,2.24 Alphabittle: Я… помогу вам! → I… got you!
+TYT63	01:55.41,1.25 Alphabittle: Нет-нет-нет-нет! → No, no, no, no!
+TYT63	01:59.26,1.21 Alphabittle: Мои брови! → My eyebrows!
+TYT63	02:16.13,2.28 Alphabittle: Не надо. Не надо! Не надо, не надо, не надо! → Don't do it. Don't do it! D-Don't, don't, don't, don't!
+TYT63	02:22.43,0.57 Alphabittle: О нет! → Oh, no!
+TYT63	02:23.73,0.85 Alphabittle: Куда он подевался?! → Where'd he go?!
+TYT63	02:31.11,1.52 Alphabittle: А, вот он где. → And there he is.
+TYT63	02:34.98,1.70 Alphabittle: Я слишком стар для такого! → I am too old for this!
+TYT63	02:42.19,2.07 Alphabittle: Мисти! Не-е-е-е-е-ет! → Misty! Noooooo!
+TYT63	02:45.49,1.69 Alphabittle: Я всегда буду рядом, Мисти! → I'll always be here for you, Misty!
+TYT63	02:47.48,1.13 Alphabittle: Клянусь! → Hoof to heart!
+TYT63	02:55.39,0.83 Opaline: Посмотрите на них. → Look at them.
+TYT63	02:57.40,2.00 Opaline: Они таки слабые. Уязвимые. → They're weak. Vulnerable.
+TYT63	02:59.42,3.11 Opaline: Это мой шанс забрать их кьютимарки! → Now's my chance to get those cutie marks!
+TYT63	03:03.05,2.08 Opaline: Но я определённо не могу появится там в таком виде. → I certainly can't go out like this.
+TYT63	03:05.32,3.13 Opaline: Нефрит! Уголёк! Принесите мне мою корону! → Jade! Charcoal! Fetch my power crown!
+TYT63	03:14.71,1.37 Alphabittle: Думай, Альфабиттл, думай. → Think, Alphabittle, think.
+TYT63	03:16.29,2.16 Alphabittle: Должен же быть способ сделать их нормальными. → There's got to be some way to get these ponies back to normal.
+TYT63	03:21.54,2.01 Announcer: Поскорее подходите за травяным чаем. → Come get your herbal teas.
+TYT63	03:23.55,2.82 Announcer: Успокаивающим чаем. Расслабляющим чаем. → Calming teas. Relaxing teas.
+TYT63	03:26.38,0.47 Alphabittle: Точно! → That's it!
+TYT63	03:27.55,2.28 Alphabittle: Простите! Чрезвы-чай-ная ситуация! → Excuse me! This is a tea-mergency!
+TYT63	03:41.01,0.62 Alphabittle: Не в этот раз!  → Nice try!
+TYT63	03:46.08,1.31 Alphabittle: Давайте вернём вас в норму. → Let's get you back to normal.
+TYT63	04:15.27,0.87 Alphabittle: Моя маленькая кобылка. → My little filly.
+TYT63	04:16.49,2.18 Alphabittle: Ты такая, какой я тебя помню. → You're just like I remember you.
+TYT63	04:24.82,4.09 Opaline: Время для тебя и твоих жалких маленьких друзей истекло, Санни Старскаут. → Time's up for you and your pathetic ↲ little friends, Sunny Starscout.
+TYT63	04:29.21,1.33 Opaline: Склонитесь пред… → Bow to…
+TYT63	04:31.59,2.02 Opaline: Нет! Они ушли! → No! They're getting away!
+TYT63	04:33.88,1.42 Opaline: Вернитесь! → Get back here!
+TYT63	04:35.64,3.10 Announcer: Похоже, вам не помешает немного расслабляющего чая. → Oh, looks like you could use some nice, relaxing tea.
+TYT63	04:39.32,1.14 Opaline: Чего? Чая? → What? Tea?
+TYT63	04:40.66,1.51 Opaline: Ты думаешь, я хочу чая? → You think I want tea?
+TYT63	04:42.54,1.59 Opaline: Нет. Я не хочу чай. → No. I don't want your tea.
+TYT63	04:44.43,1.56 Opaline: Но я возьму кое-что другое. → But I will take something else.
+TYT63	04:46.11,2.29 Opaline: Не зря же я так наряжалась. → I didn't get all dressed up for nothing.
+TYT63	04:49.53,1.85 Announcer: Эй! Что вы делаете?! → Hey! What are you doing?!
+TYT63	04:51.63,1.58 Announcer: Моя кьютимарка! → My cutie mark!
+TYT63	04:55.05,1.83 Opaline: Ты следующая, Санни. → You're next, Sunny.
+TYT63	04:57.72,2.40 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT63	05:00.12,2.92 Default: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT64 "Bad Hair Day"
+
+TYT64	00:00.53,0.70 Sunny: Приветик! → Yoo-hoo!
+TYT64	00:01.40,3.08 Sunny: Пипп, как только ты попробуешь ↲ эти блинчики, у тебя снесёт… → Pipp, when you taste these pancakes, you are gonna hit the…
+TYT64	00:07.89,1.57 Sunny: крышу. → The… roof.
+TYT64	00:09.97,1.77 Pipp: Уже бегу, Санничка. → Be right with you, Sunny-Bun.
+TYT64	00:12.28,1.95 Pipp: Я… у меня что… → O… M… Me! Am I having a…
+TYT64	00:15.07,1.26 Pipp: день растрёпанной гривы?! → bad hair day?!
+TYT64	00:16.62,2.39 Pipp: Скажи, что у меня не день растрёпанной гривы, Санни! → Tell me I am not having a bad hair day, Sunny!
+TYT64	00:19.18,4.41 Sunny: Ну, она, конечно, выглядит немного странно, но нет-нет-нет! → Uh, well, it's a little weird for sure, but no-no-no!
+TYT64	00:23.61,3.78 Sunny: Но уверена, мы можем всё это исправить, верно? Видишь? → But I-I'm sure we can brush it out, right? See?
+TYT64	00:29.61,1.77 Pipp: Как… я… могу работать… → How… am I… meant to work…
+TYT64	00:31.77,2.12 Pipp: когда выгляжу… вот так?! → When I look… like this?!
+TYT64	00:36.59,1.19 Sunny: Ну… → Well…
+TYT64	00:44.02,1.67 Pipp: Как же неловко! → This is so embarrassing!
+TYT64	00:52.03,1.98 Dahlia: Эй, Пипп. Отличная сегодня погодка. → Hey, Pipp. Lovely weather we're having.
+TYT64	00:54.29,1.87 Pipp: Привет, Далия… → Hey, Dahlia…
+TYT64	00:57.62,1.09 Pipp: У тебя тоже?! → You, too?!
+TYT64	00:58.99,1.46 Pipp: Что… Стоп, что?! → What… Wait, what?!
+TYT64	01:00.76,1.58 Pipp: Что происходит?! → What is happening?!
+TYT64	01:03.36,0.48 Pipp: Фух! → Phew!
+TYT64	01:09.27,1.96 FlutterShy: Пипп! Вот ты где! → Pipp! There you are!
+TYT64	01:11.44,4.13 FlutterShy: Мы все использовали твой новый кондиционер для гривы, и вот что случилось! → We all used your new mane softener, and this is what happened!
+TYT64	01:15.60,2.75 Fifi: Твоя — ещё ничего! Моя вообще жонглирует! → That's nothing! Mine's learned to juggle!
+TYT64	01:19.08,1.81 Rocky: А моя не перестаёт всё есть! → Mine won't stop eating things!
+TYT64	01:21.31,1.33 Rocky: Хватит! Хватит! Хватит! → Stop it! Stop it! STOP IT!
+TYT64	01:22.86,2.39 Pipp: Что же, к счастью для вас, у меня есть решение, → Well, lucky for you ponies, I have the solution
+TYT64	01:25.25,3.01 Pipp: сразу за этой очень надёжной дверью! Ладно, пока! → right behind this very lockable door! Okay, bye!
+TYT64	01:31.88,0.34 PinkiePie: Пипп! → Pipp!
+TYT64	01:34.21,1.40 Pipp: Что ты тут делаешь? → What are you doing here?
+TYT64	01:35.76,2.12 PinkiePie: Как раз тебя искала! → Just the pony I was looking for!
+TYT64	01:37.88,2.48 PinkiePie: Я пришла на свою полировку копыт в девять часов! → I'm right on time for my nine A.M. hooficure!
+TYT64	01:41.65,1.41 PinkiePie: Это новый кондиционер для гривы? → Is this a new mane softener?
+TYT64	01:43.11,1.53 Pipp: Нет-нет-нет, я бы не стала… → Uh, no-no-no, I wouldn't if I…
+TYT64	01:47.67,1.50 Pipp: Ладно, ты меня подловила! → All right, you caught me!
+TYT64	01:49.68,4.79 Pipp: Мой новый кондиционер для гривы ↲ превращает волосы пони в монстров! → My new mane softener is turning everypony's hair into monsters!
+TYT64	01:59.42,2.33 PinkiePie: Уверена, я где-то подобное видела. → I'm sure I've seen this before.
+TYT64	02:01.86,3.31 Pipp: Что мне делать, Винди? Это катастрофа! → Oh, what am I gonna do, Windy? This is a disaster!
+TYT64	02:05.33,5.19 PinkiePie: Что ж, мы, следопрыты, учимся сохранять спокойствие и оценивать ситуацию, → Well, in Trail Trotters, we learn to stay calm and assess the situation,
+TYT64	02:10.52,5.94 PinkiePie: но в данном конкретном случае… ↲ я считаю, нам надо… бежать! → so, in this very particular case… ↲ I believe we should RUUUUN!
+TYT64	02:18.29,0.68 Pipp, PinkiePie: Фух! || Фух! → Phew! || Phew!
+TYT64	02:34.32,0.74 Hitch: Наконец-то. → Finally.
+TYT64	02:36.84,0.66 Hitch: Эй! → Hey!
+TYT64	02:38.48,2.21 Pipp: Всё в порядке! Это я! Пипп! → It's okay! It's me! It's Pipp!
+TYT64	02:40.88,1.70 Hitch: Что с тобой стряслось? → What happened to you?
+TYT64	02:42.88,5.60 Pipp: Ладно, если вкратце, новый кондиционер для гривы превращает волосы в монстров, || монстры преследуют нас, нужно где-то укрыться… → Okay, long story short, new mane softener turns hair into monsters, monsters chasing us, need a hideout…
+TYT64	02:48.49,2.33 Hitch: Погоди. Ты об этом кондиционере для гривы? → Wait. You mean… this mane softener?
+TYT64	02:51.82,0.79 Pipp: Мамочки. → Oh, boy.
+TYT64	02:54.07,0.99 Hitch: Что со мной происходит?! → What's happening to me?!
+TYT64	02:56.49,3.12 Pipp: Не сейчас, Спарки! Мы пытаемся паниковать! → Not now, Sparky! We're trying to panic here!
+TYT64	03:00.48,3.31 PinkiePie: Вот оно! Я — гений! Я знаю, где видела эти волосы раньше! → That's it! Oh, I'm a genius! I know where I've seen this hair before!
+TYT64	03:03.95,3.14 PinkiePie: Вот! Гляди! В справочнике следопрытов по Драконьим землям! → Here! Look! In the Trail Trotters Guide to the Dragon Lands!
+TYT64	03:07.19,0.98 Pipp: Драконьим? → Dragons?
+TYT64	03:08.46,4.81 Pipp: Постой. Хочешь сказать, Спарки ↲ отрастил волосы, выщипал их, → Wait. A-Are you saying that Sparky grew a dragon hair, plucked it out,
+TYT64	03:13.58,3.30 Pipp: уронил в моё средство и случайно создал → dropped it in my product, and accidentally created
+TYT64	03:16.88,3.59 Pipp: что-то вроде пони-драконо-мутирующего-волосяного-монстрозелья? → some sort of mutant pony/dragon magic hair monster potion?
+TYT64	03:20.65,4.11 PinkiePie: Да! О мои копытца, я ведь хотела сказать то же самое, только так короче! → Yes! Oh, my hoofness, that's exactly what I'm saying, just with less words!
+TYT64	03:25.06,1.83 Hitch: Не хочу поднимать тревогу, но… → I don't want to alarm anyone, but…
+TYT64	03:27.12,1.26 Hitch: На помощь! → Help me!
+TYT64	03:28.81,2.49 PinkiePie: Назад, ты, чудовище с непокорной гривой! → Stay back, you unruly mane monster! Oh!
+TYT64	03:42.32,2.33 Pipp: Вот оно! Драконье пламя всё исправит! → That's it! Dragonfire can fix this!
+TYT64	03:44.73,1.38 Pipp: Ладно, вперёд, Спарки! → Okay, here we go, Sparky!
+TYT64	03:46.28,1.77 Pipp: Дай-ка мне немного твоего драконьего пламени! → Give me some of that dragonfire!
+TYT64	03:52.85,1.90 Pipp: Берегись, день растрёпанной гривы! → Look out, bad hair day!
+TYT64	03:55.18,2.11 Pipp: Я иду за тобой! → I'm coming for you!
+TYT64	04:25.18,3.18 PinkiePie: Фух! Считай, что я впечатлена, Пипп Петалз! → Phew! Well, paint me impressed, Pipp Petals!
+TYT64	04:28.58,2.41 PinkiePie: Это было очень изобретательное решение! → That was a very creative solution!
+TYT64	04:31.35,4.03 PinkiePie: За него любой следопрыт непременно получил бы значок… → One that any Trail Trotter would certainly get a badge for…
+TYT64	04:36.12,1.86 PinkiePie: Есть ли у нас что-то с гривой или драконьим пламенем… → Do we have a Dragonfire Hair Mo…?
+TYT64	04:38.04,3.44 PinkiePie: Ага! Значок за блестящую идею! → Aha! The Big Ideas Badge!
+TYT64	04:42.42,2.58 Pipp: Что ж, без тебя бы я не справилась, Винди! → Well, I couldn't have done it without your help, Windy!
+TYT64	04:45.32,2.17 Pipp: А теперь, как насчёт полировки копыт? → Now, how about that hooficure?
+TYT64	04:51.45,1.75 Pipp: Я на секундочку. → Juuuuust a sec.
+TYT64	04:54.09,1.67 Pipp: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT64	04:55.76,2.88 Pipp: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT65 "Misty Moves In"
+
+TYT65	00:00.04,2.65 Misty: Вот и он, Мисти. Твой новый дом. → This is it, Misty. Your new home.
+TYT65	00:02.93,3.03 Misty: И он совсем не страшный. → And it's totally not scary at all.
+TYT65	00:06.74,1.36 Misty: Верно, мадам Карамельный хвостик? → Right, Madame Taffytail?
+TYT65	00:11.50,1.71 Sunny: Добро пожаловать домой, Мисти! → Welcome home, Misty!
+TYT65	00:13.37,0.84 Misty: Ого! → Wow!
+TYT65	00:14.29,1.04 Pipp: Хэштег… → Hashtag…
+TYT65	00:15.36,5.69 Pipp: #МистиВозвращаетсяДомой! → #MistyyyyysCominHooooooome!
+TYT65	00:21.40,3.17 Misty: Вы… Вы приготовили всё это для меня? → You… You did all of this for me?
+TYT65	00:24.62,3.13 Pipp: Здорово, правда?! Тебе здесь понравится! → I know, right?! You are going to love it here!
+TYT65	00:28.07,2.02 Pipp: Идём. Я покажу тебе твою новую комнату. → Come on. We'll show you to your new room.
+TYT65	00:30.47,1.52 Pipp: Представляем твою новую кровать! → Presenting your new bed!
+TYT65	00:34.10,2.49 Misty: Она прямо в центре комнаты. → Oh. It's right in the middle.
+TYT65	00:37.98,4.39 Izzy: Так круто иметь личное пространство, верно? → It is just soooo great to have your own space, right?
+TYT65	00:42.65,2.94 Izzy: Заранее извиняюсь за храп. И левитацию. → Sorry in advance for the snoring. And the levitating.
+TYT65	00:51.21,2.49 Misty: Что ж, я… Я уверена, что смогу ко всему этому привыкнуть. → Well, I'm… I-I'm sure I'll get used to it.
+TYT65	00:54.05,1.79 Misty: Вот только вещи сначала распакую. → Especially once all my stuff's unpacked.
+TYT65	00:55.82,0.95 Zipp: Постой. Мы тебе поможем! → Here, let us help!
+TYT65	00:59.33,0.77 Izzy: Быстро ты. → That was quick.
+TYT65	01:02.07,1.25 Pipp: И это всё, что у тебя есть? → Is that all you have?
+TYT65	01:03.47,0.53 Misty: Ну… → Well…
+TYT65	01:04.52,3.30 Izzy: Знаю! Я смастерю тебе потрясные аксессуары для спальни, → I know! I can craft you some awesome bedroom accessories
+TYT65	01:08.00,1.48 Izzy: чтобы ты чувствовала себя как дома! → so you feel right at home!
+TYT65	01:09.68,1.42 Misty: О нет, тебе совсем не обязательно… → Oh, no, you don't have to…
+TYT65	01:11.10,3.36 Izzy: Мне понадобятся блёстки, кисточки, ↲ подстаканники и атмосферная подсветка! → I'm going to need glitter, tassels, cup holders, and mood lighting!
+TYT65	01:17.16,2.98 Misty: Ого. Вы все так хотите мне помочь. → Wow. Everyone's being so helpful.
+TYT65	01:20.24,1.89 Sunny: Ну, ты ведь теперь одна из нас! → Well, you're one of us now!
+TYT65	01:22.40,3.58 Sunny: И тебе больше никогда, никогда, ↲ НИКОГДА не придётся быть одной! → And you're never, ever, EVER going to be alone ever again!
+TYT65	01:26.08,2.47 Sunny: Никогда! Никогда! Никогда! → Ever again! Ever again! Ever again!
+TYT65	01:29.70,1.34 Misty: Потрясающе… → Awesome…
+TYT65	01:40.13,1.37 Zipp: Берегись! В сторонку! → Look out! Comin' through!
+TYT65	01:44.59,1.17 Sunny: Ну давай… уже! → Come… on!
+TYT65	02:05.32,2.59 Izzy: Блёстки… Блёстки… Блёстки… Блёстки… → Glitter… Glitter… Glitter… Glitter…
+TYT65	02:09.99,2.60 Misty: Наконец-то немного тишины. → Finally, some quiet.
+TYT65	02:13.15,3.53 Izzy: У нас тут тайная ночная вечеринка?! → Are we having a secret sleepover party?!
+TYT65	02:17.24,1.48 Pipp: Обожаю тайные вечеринки! → I love secret parties!
+TYT65	02:18.32,0.98 Sunny: Я приготовлю попкорн! → I'll make popcorn!
+TYT65	02:19.30,0.76 Zipp: А я его съем! → I'll eat it!
+TYT65	02:22.22,1.14 Misty: Я так не могу! →  I can't do this!
+TYT65	02:23.85,3.22 Misty: Простите, но я никогда раньше не жила с другими пони, и… → Sorry, but I've never lived with other ponies before, and…
+TYT65	02:27.46,2.18 Misty: И мне… надо побыть одной! → And I... need to be alone!
+TYT65	02:29.64,0.45 Sunny: Мисти? → Misty?
+TYT65	02:33.70,1.62 Misty: Это уже перебор! → It's just too much!
+TYT65	02:35.57,3.51 Misty: Кругом столько энергии, веселья, шума. → All the energy and fun and noise.
+TYT65	02:39.31,1.82 Alphabittle: Прекрасно понимаю, детка. → Oh, I hear you there, kiddo.
+TYT65	02:41.52,1.52 Alphabittle: Я тоже люблю тишину и покой. → I like my peace and quiet, too.
+TYT65	02:43.61,0.85 Misty: Спасибо, папа. → Thanks, dad.
+TYT65	02:46.73,2.34 Misty: Наверное, я так долго была сама по себе, и… → I guess I've been on my own for so long and…
+TYT65	02:49.68,1.97 Misty: мне кажется, что я там чужая. → it just feels like I don't fit in.
+TYT65	02:51.87,2.59 Alphabittle: Эй, отличаться от друзей — нормально. → Hey, it's okay to be different from your friends.
+TYT65	02:54.80,2.78 Alphabittle: Возможно, потребуется некоторое время, чтобы привыкнуть, но я обещаю, → It might take some getting used to, but I promise
+TYT65	02:57.89,1.40 Alphabittle: ты найдёшь своё место. → you'll find your place.
+TYT65	03:01.13,3.73 Misty: Точно. Вот только теперь они меня наверняка возненавидели. → Yeah. Except I'm pretty sure they hate me now.
+TYT65	03:07.01,0.64 Misty: Ребята? → Ponies?
+TYT65	03:09.04,0.53 Misty: Санни? → Sunny?
+TYT65	03:10.37,0.60 Misty: Иззи? → Izzy?
+TYT65	03:11.42,1.12 Misty: Зипп? Пипп? → Zipp? Pipp?
+TYT65	03:12.98,2.87 Misty: О нет, мне так жаль! → Oh no, I'm so sorry!
+TYT65	03:15.94,1.29 Misty: Я знала, что так и будет! → I knew this would happen!
+TYT65	03:17.41,2.38 Misty: Конечно же они ушли от тебя, Мисти, конечно! → Of course they left you, Misty, of course!
+TYT65	03:28.22,2.23 Misty: Это моя… моя кровать? → Is that my… my bed?
+TYT65	03:31.79,1.47 Misty: Такая уютная! → It's so cozy!
+TYT65	03:35.15,1.29 Misty: И уединённая! → And private!
+TYT65	03:36.72,1.31 Misty: Стоп, а это что? → Wait, what's this?
+TYT65	03:40.84,1.19 Sunny: Скажите "сыр"! → Say cheese!
+TYT65	03:43.23,2.10 Pipp: А теперь налево, и снова налево, и… → And then to the left and to the left and…
+TYT65	03:46.46,1.03 Pipp: Ты справилась, Мисти! → You got it, Misty!
+TYT65	03:48.96,0.37 Misty: Что? → What?
+TYT65	03:49.78,2.54 Misty: Что? У меня что-то на лице? → What? Is there something on my face?
+TYT65	03:52.33,2.37 Somepony, Sunny: Если приуныл, ↲ То не вешай нос. || Эй, Мисти! → If you're down, down, down ↲ Just look up, up, up || Hey, Misty!
+TYT65	03:54.86,2.42 Somepony: Подсобить сумею я ↲ В беде любой. → You know that I got you ↲ Even when it's tough
+TYT65	03:57.31,2.74 Somepony, Misty: Если приуныл, ↲ Ну-ка выше нос. || Я стала своей! → If you're down, down, down ↲ Get back up, up, up || I'm too fit in!
+TYT65	04:00.74,1.58 Izzy: Тут хватит места ещё для одного? → Is there room for one more?
+TYT65	04:02.58,0.63 Misty: Конечно! → Sure!
+TYT65	04:03.29,1.76 Sunny: А для четверых? → How about four more?
+TYT65	04:05.17,2.71 Somepony: Если приуныл, ↲ То не вешай нос. → If you're down, down, down ↲ Just look up, up, up
+TYT65	04:07.92,2.41 Somepony: Подсобить сумею я ↲ В беде любой. → You know that I got you ↲ Even when it's tough
+TYT65	04:10.35,2.71 Somepony, Izzy: Если приуныл, ↲ Ну-ка выше нос. || Да! → If you're down, down, down ↲ Get back up, up, up || Yeah!
+TYT65	04:13.12,2.46 Somepony: Знай, ты не один, ↲ Ведь мы с тобой. → Never on your own ↲ 'Cause you've got us
+TYT65	04:22.82,2.00 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT65	04:24.82,2.79 Default: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT66 "Friday Night Food Fight"
+
+TYT66	00:09.15,2.56 SomeponyGreenManeLightPurple: Сдавайся, Мисти! Бежать некуда! → Give it up, Misty! There's no escape!
+TYT66	00:22.84,0.96 Izzy: Мисти, ложись! → Misty, get down!
+TYT66	00:31.56,1.19 Izzy: Да! → Yeah!
+TYT66	00:32.76,2.85 Izzy: Разве ты не без ума от Пятничного сражения едой? → Don't you just love Friday Night Food Fights?
+TYT66	00:35.88,0.77 Izzy: Ого! Берегись! → Whoa! Look out!
+TYT66	00:36.98,5.11 Izzy: Мы сохраняем всю недоеденную и ↲ испортившуюся еду и применяем её → All the week's food that's old and rotten gets saved up and put to good use
+TYT66	00:42.72,2.01 Izzy: в лучших традициях единорогов! → in the best unicorn tradition!
+TYT66	00:51.95,1.83 Misty: Ну не знаю, Иззи. → I'm not sure about this, Izzy.
+TYT66	00:54.15,2.86 Misty: Может, есть место, откуда я могла бы просто… наблюдать? → Isn't there someplace I can just… watch?
+TYT66	00:57.21,2.07 Izzy: Чайная! Дома — значит, в безопасности! → The Tea House! Home-sies is safe-sies!
+TYT66	00:59.46,2.97 Izzy: Быстрее, Мисти! Сейчас или никогда! → Quick, Misty! Make a break for it!
+TYT66	01:02.46,1.26 Izzy: Я прикрою! → I'll cover you!
+TYT66	01:04.90,3.30 Izzy: Ах так? Получи! И ты! И… → Oh, yeah? Take that! And that! And…
+TYT66	01:12.41,1.73 Izzy: Или меня саму накроют… → Or maybe I'll get covered…
+TYT66	01:14.37,1.50 Izzy: пирогами! → in pies!
+TYT66	01:18.93,0.64 Izzy: Пирогами! → Pies!
+TYT66	01:20.33,0.63 Izzy: Поняли? → Get it?
+TYT66	01:35.95,1.23 Misty: Папа! Скорее! → Dad! Quick!
+TYT66	01:37.32,1.92 Misty: Здесь небезопасно! Нам надо уходить! → It's not safe! We got to get out of here!
+TYT66	01:39.36,1.78 Misty: Это война едой должна закончиться! → This food fight has gotta stop!
+TYT66	01:41.37,2.92 Alphabittle: Хочешь сказать, тебе не нравится Пятничное сражение едой? → You mean to tell me you don't like Friday Night Food Fights?
+TYT66	01:45.72,1.60 Alphabittle: Как же сильно ты изменилась. → Oh, you sure changed your tune.
+TYT66	01:47.57,2.37 Alphabittle: Ну хорошо. Если ты правда этого хочешь, → Very well, then. If that's what you want,
+TYT66	01:50.00,3.23 Alphabittle: я положу конец этому бестолковому швырянию едой. → I will put an end to all this food-flinging nonsense.
+TYT66	01:53.24,2.53 Misty: Нет, пап, постой! Не выходи туда! → No, Dad, wait! Don't go out there!
+TYT66	01:56.49,1.03 Alphabittle: Так, пони, слушайте! → Listen up, ponies!
+TYT66	01:57.71,2.33 Alphabittle: С этого дня я объявляю перемирие! → From this day forth, I declare a ceasefire!
+TYT66	02:00.27,2.83 Alphabittle: Бросайте свою прокисшую лазанью, свои перезрелые бананы… → Lay down your old lasagna, your rotten bananas…
+TYT66	02:09.07,2.41 Misty: Не-е-е-ет! → Nooooo!
+TYT66	02:11.86,3.23 Misty: Нет! Он просто хотел закончить эту битву! → No! He was only trying to end this battle!
+TYT66	02:15.46,1.11 Misty: Поверить не могу! → This can't be happening!
+TYT66	02:16.82,3.40 Misty: За что?! За что, за что, за что?! → Why?! Oh, why, oh, why, oh, why?!
+TYT66	02:20.39,2.02 Alphabittle: Погоди. Хочешь сказать… → Hang on. Are you telling me you…
+TYT66	02:22.88,1.30 Alphabittle: ты ничего не помнишь? → you don't remember?
+TYT66	02:24.62,1.83 Alphabittle: Пегасик летит по небу! → The Pegasus soars through the air!
+TYT66	02:27.22,2.03 Alphabittle: Сейчас сядет! → It's coming in to land!
+TYT66	02:30.80,0.75 Misty: Ура! → Yaaay!
+TYT66	02:36.08,2.80 Izzy: Здесь любовь и дружба будут процветать → It's the place where love and friendship starts
+TYT66	02:38.88,2.77 Izzy: Для тебя, для меня, для всех подряд → It's for me, yeah, it's for you, yeah, it's for everycritter
+TYT66	02:41.65,3.32 Izzy: Так не стесняйся, шагни вперёд, исполни свою роль → Don't be aloof, pick up your hoof and play your part
+TYT66	02:45.47,2.02 Izzy: Лишь сердце ты открой. → Just show a little heart
+TYT66	02:47.53,2.61 Izzy: И если в чувствах наших мы похожи, ↲ Скорей спеши к нему → If you're feelin' what I'm feelin', then get up and show me
+TYT66	02:50.15,3.36 Izzy: Ведь сегодня не время ↲ Быть одиноким. → 'Cause today's not the day for bein' lonely
+TYT66	02:54.14,4.24 Misty: Постой. Ты хочешь мне сказать, что я дала начало этой традиции, когда была маленькой? → Hang on. Are you telling me I started this tradition back when I was a filly?
+TYT66	02:58.51,0.62 Alphabittle: Да, это… → Yes, that's…
+TYT66	03:02.05,0.97 Misty: Ну всё! → That's it!
+TYT66	03:03.30,2.76 Misty: Я всё это начала, я это и закончу! → If I started this, I can finish it, too!
+TYT66	03:08.72,2.76 Izzy: Здесь любовь и дружба будут процветать → It's the place where love and friendship starts
+TYT66	03:11.62,2.68 Izzy: Для тебя, для меня, для всех подряд → It's for me, yeah, it's for you, yeah, it's for everycritter
+TYT66	03:14.41,3.13 Izzy: Так не стесняйся, шагни вперёд, исполни свою роль → Don't be aloof, pick up your hoof and play your part
+TYT66	03:18.03,2.04 Izzy: Лишь сердце ты открой. → Just show a little heart
+TYT66	03:20.12,2.60 Izzy: И если в чувствах наших мы похожи, ↲ Скорей спеши к нему → If you're feelin' what I'm feelin', then get up and show me
+TYT66	03:22.72,3.37 Izzy: Ведь сегодня не время ↲ Быть одиноким. → 'Cause today's not the day for bein' lonely
+TYT66	03:26.46,2.41 Izzy: Дарить другим любовь — → Oh, oh, I'm spreadin' the love…
+TYT66	03:29.35,3.55 Izzy, HerdHappily: Всё, о чём мечтаю я. || Тухлые яйца? Моя грива будет вонять неделю! → It's all I've dreamt of || Rotten eggs? My mane's gonna smell for weeks!
+TYT66	03:32.34,2.49 Izzy, Misty: О нет, отбрось сомненья. || Месть сладка! → Oh, no, don't hesitate… || Revenge is sweet!
+TYT66	03:35.14,3.00 Izzy: Спеши за сердцем скорей, ↲ Оно не станет ждать. → …You better follow your heart, it ain't gonna wait
+TYT66	03:38.21,2.65 Izzy: Любовь все двери откроет. → Love, I'm gonna shout it
+TYT66	03:40.91,3.31 Izzy, Misty: Любовь все двери откроет. || Никто не смеет связываться с моим отцом! → Love, I'm gonna shout it || Nopony messes with my dad!
+TYT66	03:44.23,1.78 Izzy: Поверь, такое бывает. → Ain't no doubt about it
+TYT66	03:46.44,2.97 Izzy: Любовь здесь повсюду витает. → Love's in the air, let's shout it
+TYT66	03:49.96,2.91 Izzy: И не пытайся, не уйти нам от судьбы своей → Don't try to hide now, no, don't run from fate
+TYT66	03:52.88,2.94 Izzy: Любовь повсюду здесь, её вдохни скорей → Love's in the air and, ooh, it's smelling great
+TYT66	03:55.84,3.18 Izzy: Есть ещё время одиночеству дать бой → Don't be afraid, it's not too late for a new start
+TYT66	03:59.53,2.43 Izzy: Лишь сердце ты открой. → Just show a little heart
+TYT66	04:01.85,2.39 Izzy, Misty, Comment: Там где-то ждёт тебя особый пони. || Hasta la vista, pony! || (исп. "До свидания") → It's all about your fellow pony || Hasta la vista, pony!
+TYT66	04:04.02,3.36 SomeponyGreenManeLightPurple, Izzy: Как насчёт дополнительной порции… этого?! || И капелька любви преграды все разрушит. → How'd you like an extra big helping of… this?! || We all need a little love, don't have a heart of stone-y
+TYT66	04:06.96,3.18 Izzy: И если в чувствах наших мы похожи, ↲ Скорей спеши к нему → If you're feelin' what I'm feelin', then get up and show me
+TYT66	04:10.32,3.61 Izzy: Ведь сегодня не время ↲ Быть одиноким. → 'Cause today's not the day for bein' lonely
+TYT66	04:19.67,1.90 Izzy: Мисти, ты просто отпад! → Misty, you were amazing!
+TYT66	04:21.67,1.76 Izzy: Чемпион битвы едой! → Food fight champion!
+TYT66	04:23.64,2.65 Misty: Но что станет со всей этой пищей? → But what about all this food?
+TYT66	04:27.00,3.70 Izzy: Как что? Для леса она словно обед. Видишь? → What, that? Aww, the forest will have that for lunch. See?
+TYT66	04:30.88,3.63 Izzy: Вся эта испортившаяся еда годится лишь на перегной. → All that musty old food was only ever good for one thing – mulch.
+TYT66	04:34.82,3.70 Izzy: А он помогает Брайдлвуду расти, обогащает почву и сохраняет лес здоровым. → It helps grow Bridlewood, enrich the soil, and keep the forest alive.
+TYT66	04:38.77,1.95 Alphabittle: Награда победителю сражения едой! → A prize for the food fight victor!
+TYT66	04:41.01,1.39 Alphabittle: Спасибо, что отплатила им за меня. → Thanks for avenging me.
+TYT66	04:42.49,2.65 Izzy: Наш чемпион Пятничного сражения едой! → Friday Night Food Fight battle champ!
+TYT66	04:46.13,2.60 Izzy: Я точно никогда не видела тебя с такой стороны. → That's sure a side of you I've never seen.
+TYT66	04:52.00,1.96 Izzy: Это больше на тебя похоже. → Thaaaaat's more like it.
+TYT66	04:57.60,2.27 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT66	04:59.87,2.59 Default: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT67 "The Rise and Fall"
+
+TYT67	00:02.67,0.85 Opaline: Start again. → Давай сначала.
+TYT67	00:03.80,1.84 Opaline: It's me, Opal… → Это я, Опал…
+TYT67	00:06.21,2.33 Opaline: Bow to me, Equestria! → Склонись предо мной, Эквестрия!
+TYT67	00:08.61,2.64 Opaline: Nopony can stop me! → Никому меня не остановить!
+TYT67	00:15.64,4.56 Opaline: The time has come for you poonies to bow to… → Пришла пора вам, поми, склониться перед…
+TYT67	00:21.06,0.74 Opaline: What's so funny? → Что смешного?
+TYT67	00:22.20,3.25 Opaline: …you poonies to bow to… || It's quite funny! → …вам, поми, склониться перед… || Это и правда забавно!
+TYT67	00:25.57,1.06 Opaline: "Poonies"! → "Поми"!
+TYT67	00:32.41,1.68 QueenHaven: Oh! A message. → О, сообщение!
+TYT67	00:34.09,0.97 FlutterShy: Do I know you? → Я тебя знаю?
+TYT67	00:35.08,0.44 Thunder: Who's this? → Кто это?
+TYT67	00:35.52,0.96 NotThunder: New message? → Новое сообщение?
+TYT67	00:37.94,1.78 Sunny: Oh, no. This can't be good. → О нет. Это не к добру.
+TYT67	00:39.97,1.92 Opaline: Hello, ponies. → Привет вам, пони!
+TYT67	00:41.91,2.42 Hitch: Don't look! It's the evil Alicorn again! → Не смотри! Там снова злой аликорн!
+TYT67	00:45.49,2.67 Zipp: Pipp, stop screaming! I can't hear what she's saying! → Пипп, хватит кричать! Я не слышу, что она говорит!
+TYT67	00:48.38,2.17 Izzy: Oh, yeah?! Bring it, Opaline! → Вот как? Ну давай, Опалин!
+TYT67	00:51.77,3.75 Opaline: It's a shame that we're getting to know each other so late. → Жаль, что мы с вами познакомились так поздно.
+TYT67	00:55.88,3.29 Opaline: But, you know, I have been ever so busy. → Но, знаете, я была слишком занята.
+TYT67	00:59.45,3.53 Opaline: There are an awful lot of you, pathetic little ponies in Equestria. → Вас, жалких маленьких пони, в Эквестрии ужасно много.
+TYT67	01:03.22,2.90 Opaline: And even with the help of my new dragon friends, → И даже с помощью моих новых друзей — драконов —
+TYT67	01:06.35,4.17 Opaline: taking all of your cutie marks — well, it's been a full-time job. → собрать все ваши кьютимарки оказалось той ещё морокой.
+TYT67	01:12.83,2.28 Alphabittle: Hey! What do you think you're doing?! Give that back! → Эй! Ты чего творишь?! А ну верни!
+TYT67	01:16.14,1.38 Dahlia: Quick, Windy! Run! → Быстрее, Винди! Беги!
+TYT67	01:17.53,2.28 PinkiePie: Oh, this is just terrifying! → Это просто ужасно!
+TYT67	01:21.88,1.21 Dahlia, PinkiePie: No! || No! → Нет! || Нет!
+TYT67	01:23.42,2.41 PinkiePie: I liked that cutie mark. Sad. → Мне нравилась эта кьютимарка. Как жаль.
+TYT67	01:26.03,2.30 Opaline: Not only is all this cutie mark magic → Кьютимарки не только дали мне магию, которая
+TYT67	01:28.67,4.53 Opaline: making me the most powerful Fire Alicorn of all time, → делает меня самым могущественным огненным аликорном всех времён,
+TYT67	01:33.79,2.79 Opaline: they are really sprucing up the place. → они ещё и отлично украшают это место.
+TYT67	01:37.56,1.22 Dazzle: We're doomed! → Мы обречены!
+TYT67	01:38.14,1.61 Announcer, Coloratura: Somepony stop her! || She's awful! → Кто-нибудь, остановите её! || Она ужасна!
+TYT67	01:41.22,1.50 Opaline: Now I must admit, → Должна признать,
+TYT67	01:42.74,5.42 Opaline: there were a few of you that did put up teensy-weensy adorable little fights. → кое-кто из вас действительно отважился оказать мне крошечное сопротивление.
+TYT67	01:48.36,0.49 Hitch: No! → Нет!
+TYT67	01:49.93,0.94 Hitch: Stop right there! → Остановись!
+TYT67	01:56.02,0.45 Hitch: Thief! → Воровка!
+TYT67	01:58.64,1.55 Hitch: Ah! No! → О нет!
+TYT67	02:07.41,0.52 Zipp: Hey! → Эй!
+TYT67	02:14.85,0.47 Pipp: Hey! → Эй!
+TYT67	02:15.66,1.67 Zipp, Pipp: Give that back! || That's mine! → А ну верни! || Она моя!
+TYT67	02:17.33,1.43 Opaline: I'll take these. → Их я забираю!
+TYT67	02:21.15,1.26 Izzy: Take that! → Получи!
+TYT67	02:22.93,1.98 Izzy: And that! And this! → И это! И ещё!
+TYT67	02:27.04,1.06 Izzy: You want that, do ya? → Тебе она нужна, да?
+TYT67	02:28.56,2.36 Izzy: Hah! Well, that's not even the real one! → Ха! Она ведь даже не настоящая!
+TYT67	02:31.08,3.65 Izzy: Not today, Opaline! Not today! → Не сегодня, Опалин! Не сегодня!
+TYT67	02:36.93,1.36 Izzy: I guess maybe today. → Похоже, всё-таки сегодня.
+TYT67	02:39.58,3.29 Misty: I earned that cutie mark through true friendship, Opaline! → Я заслужила эту кьютимарку благодаря истинной дружбе, Опалин!
+TYT67	02:42.96,1.75 Misty: You can't take it from me! → Тебе не забрать её у меня!
+TYT67	02:46.51,5.75 Opaline: Oh, Misty. Really? Aren't you a little old to believe in fairy tales? → О, Мисти. Серьёзно? Разве ты уже не достаточно взрослая, чтобы перестать верить в сказки?
+TYT67	02:52.42,5.67 Opaline: And now only one little Alicorn stands between me and total domination! → И теперь только один маленький аликорн стоит между мной и безграничной властью!
+TYT67	02:58.39,1.74 Sunny: Looking for me, Opaline? → Меня ищешь, Опалин?
+TYT67	03:04.28,2.65 Opaline: Sunny. There you are. → Санни. Вот ты где.
+TYT67	03:07.16,2.64 Opaline: This is going to be fun! → Это будет забавно!
+TYT67	03:17.36,3.22 Opaline: Oh, please. You still think you can defeat me? → Да брось. Ты всё ещё считаешь, ↲ что можешь победить меня?
+TYT67	03:21.74,3.02 Opaline: Even when I have all the cutie mark magic? → Даже когда у меня есть магия всех этих кьютимарок?
+TYT67	03:26.22,3.58 Opaline: You know, for an Alicorn, you really aren't very clever! → Знаешь, для аликорна ты не слишком сообразительна!
+TYT67	03:29.83,1.89 Sunny: All I know is that I have to try! → Всё, что я знаю, — что я должна попытаться!
+TYT67	03:32.91,2.28 Sunny: You may be able to take my cutie mark, Opaline. → Ты можешь забрать мою кьютимарку, Опалин.
+TYT67	03:36.63,3.08 Sunny: But you can never take what makes me… me! → Но тебе никогда не забрать то, что делает меня… мной!
+TYT67	03:39.75,1.34 Opaline: Is that right? → Что, правда?
+TYT67	03:41.84,1.14 Opaline: Watch me! → Гляди!
+TYT67	03:43.94,0.90 Sunny: No! → Нет!
+TYT67	03:49.59,0.41 Hitch: Sunny! → Санни!
+TYT67	03:50.01,1.28 Pipp, Zipp: No, Sunny! || Oh, no! → Нет, Санни! || О нет!
+TYT67	03:55.72,4.65 Pipp: Come on, ponies! No matter how dark or scary things get, we can't ever give up hope! → Ну же, пони! Каким бы мрачным и пугающим ни казалось всё вокруг, нам ни за что нельзя терять надежду!
+TYT67	04:02.33,0.74 Pipp: For Sunny! → За Санни!
+TYT67	04:03.60,2.14 Somepony: We just need a little hope → Найти надежду надо нам
+TYT67	04:06.67,2.88 Somepony: We just need a little unity → Единство должны мы обрести
+TYT67	04:09.93,3.17 Somepony: We just need to find the ma-agic → Должны найти мы магию
+TYT67	04:13.11,3.11 Somepony: That's inside of everypony → У самих себя внутри.
+TYT67	04:16.24,2.77 Somepony: Sometimes it feels a little hopeless → И если выхода не видишь.
+TYT67	04:19.46,2.74 Somepony, Opaline: But things aren't always what they seem || Wait a second. What is this? → Попробуй точку зрения сменить. || Секундочку. Что это?
+TYT67	04:22.80,2.95 Somepony: Can you feel it? The energy? → Энергию сможешь ли ощутить?
+TYT67	04:25.88,0.49 Opaline: No! → Нет!
+TYT67	04:27.55,2.75 Opaline: No! My mark! My power! → Нет! Моя кьютимарка! Моя сила!
+TYT67	04:30.60,1.81 Opaline: I am the Fire Alicorn! → Я — огненный аликорн!
+TYT67	04:32.79,3.94 Opaline: Ah, you ponies and your disgusting friendship magic! → Эти пони и их отвратительная магия дружбы!
+TYT67	04:42.25,3.12 Opaline: This… isn't… over! → Это ещё… не… конец!
+TYT67	04:46.27,2.86 Somepony: Don't look now, things are getting better → Оглянись, уже всё стало лучше.
+TYT67	04:49.14,3.31 Somepony: So hold my hoof 'cause we're glowin' together → Хватай моё копыто, будем вновь неразлучны.
+TYT67	04:52.62,2.80 Somepony: We got the strength to take on whatever → Вместе все преграды мы преодолеем
+TYT67	04:55.59,1.59 Somepony: 'Cause we've got the magic → Ведь есть у нас магия
+TYT67	04:57.19,4.61 Somepony: We've got the magic in us! → Магия есть внутри нас!
+TYT67	05:07.20,1.94 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT67	05:09.14,2.54 Default: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT68 "Crystal Ball"
+
+TYT68	00:00.56,1.64 Izzy: Scratch that musicky itch! → Утоли свой музыкальный голод!
+TYT68	00:02.98,1.27 Comet: Sunny! This came for you! → Санни! Это пришло тебе!
+TYT68	00:09.60,2.91 Sunny: Hey, Comet.… Did you say something arrived? → Привет, Комета. Говоришь, мне что-то пришло?
+TYT68	00:12.82,0.95 Comet: Oh, yes! This! → А, да! Это!
+TYT68	00:13.83,1.14 Comet: It's from Violet Frost! → Оно от Вайолет Фрост!
+TYT68	00:15.05,2.66 Comet: It arrived weeks ago, and then I put it someplace I definitely wouldn't forget, → Пришло неделю назад, и я положил его туда, где точно про него не забуду,
+TYT68	00:17.72,1.94 Comet: but then I did forget, sooooo… → но потом я про него забыл, ну и…
+TYT68	00:21.61,1.51 Sunny: Oh, my glitter! → О мои блестяшки!
+TYT68	00:23.50,0.62 Sunny: Tonight?! → Этим вечером?!
+TYT68	00:24.40,2.23 Sunny: Ponies, we've got to get back to Starlight Ridge! → Ребята, мы возвращаемся в Старлайт Ридж!
+TYT68	00:26.75,2.57 Zipp: But don't we need the Nova Charm to travel through the portal? → Но разве нам не нужен Амулет Новы, чтобы переместиться через портал?
+TYT68	00:29.60,1.80 Zipp: Wait. Izzy, do you have it with you? → Стоп. Иззи, он ведь у тебя?
+TYT68	00:31.50,2.11 Izzy: Do I have it, Zipperoonie? → У меня ли, Зипперуни?
+TYT68	00:33.70,1.21 Izzy: Do I have it?! → У меня ли, спрашиваешь?
+TYT68	00:35.76,1.50 Izzy: Are you kidding me? Of course I… → Ты что, шутишь? Конечно он…
+TYT68	00:37.27,1.14 Izzy: Oh, wait. Maybe I don't. → Ой, погоди. Может, и нет.
+TYT68	00:38.55,2.70 Izzy: Wait! False alarm! Ta-dah! → Стоп. Ложная тревога. Та-да!
+TYT68	00:43.60,1.12 Izzy: Aw, yeah! → О да!
+TYT68	00:44.54,0.53 Misty: Yay! → Ура!
+TYT68	00:45.20,0.48 Pipp: Hey! → Эй!
+TYT68	00:45.71,0.33 Zipp: Hey! → Эй!
+TYT68	00:46.13,0.66 Sunny: Hey! → Эй!
+TYT68	00:48.76,1.80 Pipp: I'm feelin' fresh → Всё так свежо!
+TYT68	00:50.83,1.79 Pipp: Like my mane is on fleek → Грива на высоте
+TYT68	00:52.76,1.76 Pipp: Happiness is all I need → Счастье — всё, что нужно мне
+TYT68	00:54.52,1.76 Pipp: Spreadin' love from you to me → Я любовь дарю тебе
+TYT68	00:56.38,1.77 Pipp: I'm feelin' fresh →  Всё так свежо!
+TYT68	00:58.44,1.36 Pipp: Magic all around my friends… → Ведь вокруг меня друзья…
+TYT68	00:59.82,1.71 Pipp: Say "Auroricorns"! → Скажите "Авроракорны"!
+TYT68	01:03.58,1.85 VioletFrost: You ponies look fabulous! → Вид у вас просто отпад, ребята!
+TYT68	01:05.45,3.05 VioletFrost: But we've gotta hurry. The Crystal Ball has already started! → Но надо поторапливаться. ↲ Кристальный бал уже начался!
+TYT68	01:08.71,0.86 Pipp: Ball? → Бал?
+TYT68	01:10.50,4.03 Pipp: First Auroricorn-styled makeup, fashion makeovers, and now a party?! → Сначала макияж в стиле авроракорнов, затем переодевание, а теперь ещё и вечеринка?!
+TYT68	01:15.37,1.57 Pipp: Could this night get any better?! → Разве этот вечер может стать ещё лучше?!
+TYT68	01:18.01,1.30 Zipp: I sure hope so. → Да уж надеюсь.
+TYT68	01:19.47,1.96 VioletFrost: Come on, ponies! Let's have some fun! → Вперёд, пони! Веселье начинается!
+TYT68	01:28.55,0.65 Hitch: Oh, yeah! → О да!
+TYT68	01:41.52,1.20 Pipp: Awww, Zipp! → Зипп!
+TYT68	01:43.48,1.82 Pipp: It's exactly how I always imagined it! → В точности как я и представляла!
+TYT68	01:46.01,1.97 Izzy: Queen Zipp in the house! → Дорогу королеве Зипп!
+TYT68	01:49.50,1.12 Izzy: Oh, Sunny, having fun? → О, Санни, веселишься?
+TYT68	01:51.16,3.04 Sunny: Don't you just love Starlight Ridge? It's so… → Разве ты не без ума от Старлайт Ридж? Он такой…
+TYT68	01:54.20,1.65 Izzy: Oh, whoa. What is that? → Ого. Что это?
+TYT68	01:56.33,3.01 Izzy: Well, hello, you spooky little hut thingy! → Ну привет, маленький жуткий шатёр!
+TYT68	02:07.43,0.93 Sunny: What was that? → Что это было?
+TYT68	02:08.57,1.02 Pipp: You okay, Sunny? → Ты в порядке, Санни?
+TYT68	02:10.67,1.10 Pipp: What is in there? → Что там такое?
+TYT68	02:11.78,1.98 Pipp: Looks kind of awesomely terrifying! → Похоже, что-то потрясающе-ужасное!
+TYT68	02:13.97,0.87 Sunny: Don't go in there! → Не входите туда!
+TYT68	02:14.94,3.60 Sunny: I think it might have something to do with that evil snow leopard Allura! → Думаю, это может быть как-то связано со злым снежным барсом Аллурой!
+TYT68	02:18.70,1.06 Zipp: It's okay, Sunny. → Всё в порядке, Санни.
+TYT68	02:19.79,1.92 Zipp: I know we've all been through a lot lately. → Я знаю, что в последнее время мы через многое прошли.
+TYT68	02:21.72,1.75 Zipp: But Allura? Opaline? → Но Аллура? Опалин?
+TYT68	02:24.17,1.97 Zipp: We don't have to worry about them anymore. → Нам больше не нужно о них беспокоиться.
+TYT68	02:26.31,2.53 Zipp: Trust me. Whatever is in there is just a bit of fun. → Поверь мне. Чтобы там ни было, всё это просто часть веселья.
+TYT68	02:29.66,5.47 Izzy: The crystal ball told me that there ↲ is a super yummy pie in my future! → Хрустальный шар сказал мне, что в будущем меня ждёт супер-вкусный пирог!
+TYT68	02:35.25,2.26 Hitch: Here you go. Iz. I know how much you love pie. → А вот и ты, Из. Я знаю, как ты любишь пироги.
+TYT68	02:37.65,1.71 Izzy: Whoa! Did you ponies see that?! → Ого! Ребята, вы это видели?!
+TYT68	02:39.49,1.95 Izzy: Mind totally blown! → Обалдеть можно!
+TYT68	02:43.64,2.28 Zipp: See? Told ya. Just a bit of fun. → Видала? Говорила же, это просто часть веселья.
+TYT68	02:46.12,1.39 Pipp: Okay, I gotta try this. → Ладно, я тоже загляну.
+TYT68	02:51.70,2.43 Hitch: The crystal ball said I was gonna lose Sparky! → Хрустальный шар сказал, что я потеряю Спарки!
+TYT68	02:54.24,1.44 Hitch: Sparky?! Sparky?! → Спарки?! Спарки?!
+TYT68	02:55.89,1.47 Hitch: SPARKYYYYY! → Спарки-и-и-и-и-и-и!
+TYT68	02:57.37,1.13 Zipp: Calm down, sheriff.  → Спокойно, шериф.
+TYT68	02:58.55,2.76 Zipp: The crystal ball told me that I would find Sparky. → Хрустальный шар сказал мне, что я найду Спарки.
+TYT68	03:02.08,0.87 Zipp: Would you look at that? → Что у меня там такое?
+TYT68	03:03.51,1.07 Pipp: Get real! → Вот уж точно!
+TYT68	03:04.66,4.25 Pipp: That ball thingy told me I wouldn't be able to stop squawking like a bird. → Этот шар сказал мне, что я буду ↲ не переставая орать как птица.
+TYT68	03:10.12,0.86 Pipp: What? As if. → Ну да, ещё чего.
+TYT68	03:13.37,1.20 Pipp: Oh, no! Oh, no-no-no-no! → О нет! О нет-нет-нет-нет!
+TYT68	03:16.01,1.12 Pipp: No-no-no-no-no! → Нет-нет-нет-нет!
+TYT68	03:17.38,1.41 Sunny: I guess Zipp's right. → Думаю, Зипп права.
+TYT68	03:18.90,1.18 Sunny: Seems harmless enough. → Кажется, бояться нечего.
+TYT68	03:23.66,1.32 Sunny: That's strange. → Странно.
+TYT68	03:25.54,1.05 Sunny: What's that noise? → Что это за звук?
+TYT68	03:26.82,1.86 Sunny: It sounds like… purring? → Похоже на… мурлыканье?
+TYT68	03:29.59,0.97 SomeponyBlueManePurple: Did you say purring?! → Ты сказала, "мурлыканье"?!
+TYT68	03:31.29,1.73 Sunny: Hey! What about my fortune? → Эй! А что насчёт моего будущего?
+TYT68	03:34.50,1.74 Izzy: So? What did it say? → Ну и? Что он сказал?
+TYT68	03:36.39,1.67 Pipp: I hope for your sake it had… → Для твоего же блага, надеюсь, что там…
+TYT68	03:39.04,1.93 Pipp: Nothing to do with birds.  → Не было ничего про птиц.
+TYT68	03:42.73,0.54 Pipp: Why?! → За что?!
+TYT68	03:43.40,2.17 Sunny: Actually, it didn't tell me anything. → Вообще-то, он ничего мне не сказал.
+TYT68	03:45.68,2.00 Sunny: I just heard this purring noise. → Я просто услышала мурлыканье.
+TYT68	03:47.95,2.93 Sunny: It sounded a lot like Allura when she spoke. → Как у Аллуры, когда она разговаривала.
+TYT68	03:51.14,1.85 Sunny: Remember? S-She kind of purred? → Помните? Она словно мурлыкала?
+TYT68	03:53.03,1.93 Zipp: Sunny, that snow leopard is gone. → Санни, этого снежного барса больше нет.
+TYT68	03:54.97,1.63 Zipp: And Izzy has the Nova Charm now. → И у Иззи теперь есть Амулет Новы.
+TYT68	03:56.72,1.88 Zipp: There's nothing to worry about. → Не о чем беспокоиться.
+TYT68	03:58.84,3.47 Misty: Maybe it just means you'll meet a super cute kitten tonight! → Может, это значит, что вечером ты встретишь милейшего котёнка!
+TYT68	04:02.65,1.51 Sunny: I mean, I do like kittens. → Ну, котят я люблю.
+TYT68	04:04.55,1.18 Izzy: Don't worry, Sunny. → Не волнуйся, Санни.
+TYT68	04:05.98,2.03 Izzy: Let's partyyyyy! → Давай развлекаться!
+TYT68	04:15.34,0.79 Sunny: Do you hear that? → Вы слышали?
+TYT68	04:22.68,1.57 Sunny: Now?! Still nothing?! → А сейчас? Ничего?!
+TYT68	04:28.33,1.67 VioletFrost: I hope you ponies had fun. → Надеюсь, вы, ребята, повеселились.
+TYT68	04:30.24,2.16 VioletFrost: We loved having you at our Crystal Ball. → Мы рады были пригласить вас на наш Кристальный бал.
+TYT68	04:32.56,1.88 Sunny: There! There it is again! → Вот! Снова оно!
+TYT68	04:34.55,1.85 Sunny: You ponies must've heard that! → Ребята, вы же не могли этого не слышать!
+TYT68	04:36.99,0.81 Sunny: Sparky? → Спарки?
+TYT68	04:38.00,2.65 Zipp: See, Sunny? It's just Sparky's tummy. → Видишь, Санни? Это просто животик Спарки.
+TYT68	04:40.87,2.40 Zipp: We told you it was nothing to worry about. → Говорили же, беспокоиться не о чем.
+TYT68	04:43.44,2.01 Sunny: Whew! Well, that's a relief. → Ух! Какое облегчение.
+TYT68	04:45.65,2.41 Sunny: I was starting to worry that Allura followed us. → Я начинала волноваться, что Аллура преследует нас.
+TYT68	04:49.06,1.76 Sunny: Come on, ponies. Let's head home. → Давайте, ребята. Возвращаемся домой.
+TYT68	05:04.41,2.76 Twilight: Welcome home, ponies. → Добро пожаловать домой, пони.
+TYT68	05:07.44,1.97 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT68	05:09.43,3.73 Default: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT69 "Equestria's Got Talent"
+
+TYT69	00:00.22,1.33 Pipp: Touch of eyeshadow for you, → Немного теней для тебя,
+TYT69	00:01.71,1.40 Pipp: little bit of blusher for you, → немного румян для тебя,
+TYT69	00:03.11,1.80 Pipp: and mascara for you! Hah! → и тушь для ресниц для тебя! Ха!
+TYT69	00:05.68,3.60 Hitch: Step, heel, heel, step! Shuffle, hop! Jazz hooves! → Носок, пятка, пятка, носок! ↲ Перескок, прыжок! Взмах лапами!
+TYT69	00:11.01,1.74 Misty: Ten minutes 'til showtime! → Десять минут до начала выступления!
+TYT69	00:13.22,2.54 Misty: Nine minutes and fifty-eight seconds 'til showtime! → Девять минут и пятьдесят восемь секунд до начала выступления!
+TYT69	00:19.44,3.30 Sunny: Okay! Is everypony ready for the Winter Wonder Show?! → Ладно! Все готовы к Зимнему шоу талантов?!
+TYT69	00:23.07,2.73 Sunny: You ponies were the best of all the auditions we saw! → По итогам всех прослушиваний, вы, ребята, оказались самыми лучшими!
+TYT69	00:26.06,2.23 Sunny: And we saw… a lot. → А прослушиваний у нас было… много.
+TYT69	00:28.57,1.26 QueenHaven: My little Cloudpuff! → Мой маленький Клаудпафф!
+TYT69	00:30.45,1.55 QueenHaven: My darling little Cloudpuff! → Мой милый маленький Клаудпафф!
+TYT69	00:33.55,3.07 Lyra: Presenting the magic of kindness! → Представляю магию доброты!
+TYT69	00:37.63,1.32 Lyra: No! No! → Нет! Нет!
+TYT69	00:44.75,1.40 Coloratura: Hang on, let me start again. → Постойте, я начну сначала.
+TYT69	00:46.38,1.64 Coloratura: A-five, six, seven, eight! → И пять, шесть, семь, восемь!
+TYT69	00:49.49,2.36 Dahlia: From a seed! The watering! → Рождённый из семечка! И полива!
+TYT69	00:51.89,1.84 Dahlia: And then… bloom! → Он… зацветает!
+TYT69	01:00.96,2.68 Sunny: Now, I don't want to worry you, but… → Не хочу, чтобы вы сильно беспокоились, но…
+TYT69	01:03.92,3.48 Sunny: There's a critic in the crowd, so this needs to be the greatest show of all time, okay?! Good luck! → В толпе есть критик, так что это должно быть ↲ величайшим выступлением всех времён, ладно?! Удачи!
+TYT69	01:07.59,0.76 Hitch: A critic?! → Критик?
+TYT69	01:21.56,3.17 Sunny: Okay. These critic ponies are famously hard to please. → Ну ладно. Как известно, этим пони-критикам сложно угодить.
+TYT69	01:24.99,2.88 Sunny: So your dance needs to be complex but easy to follow. → Так что ваш танец должен быть сложным, но простым для восприятия.
+TYT69	01:27.89,1.68 Sunny: Smart but still a little silly. → Умным, но немного дурашливым.
+TYT69	01:29.78,2.37 Sunny: And it never hurts to do a pie in the face. Got it? → И никогда не бойтесь получить пирогом в лицо. Ясно?
+TYT69	01:32.30,3.29 Misty: Give it up for the titans of tap dance – Hitch and Sparky! → Встречайте титанов чечётки — Хитча и Спарки!
+TYT69	01:35.21,1.08 Sunny: That's you! Go, go, go! → Это вы! Вперёд, вперёд, вперёд!
+TYT69	01:53.20,2.16 Sunny: Give it up for Hitch and Sparky! → Это были Хитч и Спарки!
+TYT69	01:57.00,2.22 Sunny: Well, if you enjoyed that… → Что ж, если уж вам понравилось этот номер…
+TYT69	02:01.30,3.71 Sunny: …then, boy, are you going to enjoy the rest of the show! → то от оставшейся части выступления вы будете в полном восторге!
+TYT69	02:05.27,0.56 Sunny: I think… → Надеюсь…
+TYT69	02:06.88,2.38 Pipp: I remember when I was little → Помню как была я мылышкой
+TYT69	02:09.38,3.35 Pipp: Every year on Winter Wishday → Каждый год, на Желаний день
+TYT69	02:13.21,3.48 Pipp: The sights, the sounds, the foolin' around → Все огни и веселье, что было у нас
+TYT69	02:16.81,3.07 Pipp: With friends and family → В кругу друзей и семьи
+TYT69	02:20.69,3.16 Pipp: Yeah, every moment spent together → И каждый миг, что были мы вместе
+TYT69	02:24.27,2.67 Pipp: Was filled with Winter Wish glee → Духом праздника пропитан был
+TYT69	02:27.61,3.97 Pipp: And twinklin', singin', dancin', laughter-filled → Песни, танцы, смех и веселье
+TYT69	02:31.59,3.11 Pipp: Winter Wishday memories → Вот то, что запомнили мы.
+TYT69	02:34.70,3.96 Somepony: Yeah, these precious moments → Да, эти ценные мгновения
+TYT69	02:38.72,2.64 Somepony: Will make my Winter Wish come true → Осуществили мою мечту
+TYT69	02:41.38,1.58 Hitch: (make it come true) → (Осуществили мечту)
+TYT69	02:42.98,2.99 Pipp: I'm countin' down the days → И я уже считаю дни
+TYT69	02:46.11,3.20 Pipp: 'Til I get to make some memories with you → До того, как смогу разделить их с тобой.
+TYT69	02:49.34,4.34 Pipp: 'Cause the only thing that's missin' → Ведь всё, чего в них не хватает —
+TYT69	02:53.82,3.15 Pipp: Is a little bit of you-ooh-ooh-ooh → Это частичка тебя
+TYT69	03:02.33,2.05 Sunny: Okay! That's intermission, folks!  → Отлично! У нас антракт, ребята!
+TYT69	03:09.31,1.11 Pipp: Sorry, Sunny. → Прости, Санни.
+TYT69	03:10.64,1.56 Pipp: We royally messed that up. → Мы по-королевски облажались.
+TYT69	03:12.48,2.09 Hitch: I think our nerves got the best of us. → Думаю, наши нервы взяли над нами верх.
+TYT69	03:17.14,3.34 Izzy: Yeah. Think we all just got a little carried away. → Да. Думаю, мы все просто немного увлеклись.
+TYT69	03:21.74,1.02 Sunny: No, ponies. → Нет, ребята.
+TYT69	03:23.00,1.49 Sunny: I'm the one who got carried away. → Это я немного увлеклась.
+TYT69	03:24.83,2.20 Sunny: I put way too much pressure on you all. → Я слишком сильно давила на вас.
+TYT69	03:27.30,2.64 Sunny: Come on, everypony. We've got a show to finish! → Ну же, народ. Мы должны закончить выступление!
+TYT69	03:31.22,2.95 Hitch: I'm countin' down the days → И я уже считаю дни
+TYT69	03:34.35,4.06 Hitch: 'Til I get to make some memories with you → До того, как новые мгновения с тобой проведу.
+TYT69	03:38.67,3.24 Somepony: The only thing that's missin' → Ведь всё, чего в них не хватает —
+TYT69	03:42.07,3.14 Somepony: Is a little bit of you-ooh-ooh-ooh → Это частичка тебя
+TYT69	03:45.43,3.60 Somepony: So I am gonna keep on wishin' → Теперь я знаю, на что потратить желнание —
+TYT69	03:49.28,3.27 Somepony: For a little bit of you-ooh-ooh-ooh → Ради частички тебя
+TYT69	03:53.14,2.89 Somepony: And if we can't be together → И даже если мы не сможем быть вместе
+TYT69	03:56.25,3.64 Somepony: You know I'm sendin' love to you-ooh-ooh-ooh → Ты будешь знать, что тебя я люблю.
+TYT69	03:59.95,3.57 Somepony: 'Cause the only thing that's missin' → Ведь всё, чего в них не хватает —
+TYT69	04:03.64,3.21 Somepony: Is a little bit of you-ooh-ooh-ooh → Это частичка тебя
+TYT69	04:06.87,2.00 Somepony: You-ooh-ooh-ooh → 
+TYT69	04:10.44,3.45 Somepony: You-ooh-ooh-ooh, a little bit → Частичка.
+TYT69	04:14.09,1.97 Somepony: You-ooh-ooh-ooh → 
+TYT69	04:17.67,2.25 Somepony: You-ooh-ooh-ooh. → 
+TYT69	04:22.96,1.19 DrWhooves: That was… → Это было…
+TYT69	04:25.43,1.19 DrWhooves: Superb! → Превосходно!
+TYT69	04:28.75,1.74 Sunny: I'm so glad you liked it! → Я так рада, что вам понравилось!
+TYT69	04:30.98,2.20 Sunny: Does that mean you'll give us a good review? → Так значит, вы оставите о нас положительный отзыв?
+TYT69	04:33.36,0.70 DrWhooves: Review? → Отзыв?
+TYT69	04:34.85,4.19 DrWhooves: I'm not a critic. I just like to doodle during shows. → Я не критик. Мне просто нравится рисовать всякое во время выступлений.
+TYT69	04:39.86,1.17 PinkiePie: I'm the critic! → Критик — это я!
+TYT69	04:43.69,6.30 PinkiePie: Well, you probably didn't notice me thanks to my incredible disguise as a theater chair! → Вы, наверное, могли меня не заметить благодаря моей невероятной маскировке под театральное кресло!
+TYT69	04:50.55,3.35 Sunny: So, uh, what did you think of the show? → Ну так… что вы думаете о выступлении?
+TYT69	04:54.68,3.58 PinkiePie: Fantastic! Magnificent! Five stars! → Фантастика! Великолепно! Пять звёзд!
+TYT69	04:58.42,0.61 Somepony: Phew! → Фух!
+TYT69	05:00.10,2.70 PinkiePie: Now I'm gonna need some serious magic → А теперь мне понадобится действительно мощная магия,
+TYT69	05:03.10,2.20 PinkiePie: to get me out of this costume!  → чтобы выбраться из этого костюма!
+TYT69	05:06.28,2.35 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT69	05:08.63,2.21 Default: sunnysubs.com ↲ anon2anon → sunnysubs.com ↲ anon2anon
+
+TYT70 "Snow Business Like Show Business"
+
+TYT70	00:00.87,3.80 Sunny: I promise to save Starlight Ridge and the Auroricorns  → Обещаю, мы спасём Авроракорнов
+TYT70	00:04.67,1.90 Sunny: from the evil snow leopard Allura! → от злобного снежного барса Аллуры!
+TYT70	00:07.07,1.43 Sunny: Or my name isn't… → Или моё имя не…
+TYT70	00:09.49,1.57 Sunny: Sunny Starscout! → Санни Старскаут!
+TYT70	00:14.39,3.24 Pipp: That was fabulous, ponies! Let's move on to the next scene! → Это было чудесно, ребята! ↲ Переходим к следующей сцене!
+TYT70	00:18.72,2.31 Izzy: Hello, cutie wittle fuzzball! → Приветик, милый маленький пушистик!
+TYT70	00:22.00,0.59 Sunny: Pipp?  → Пипп?
+TYT70	00:23.00,3.16 Sunny: I wasn't in Alicorn form when we arrived in Starlight Ridge. → Я не была аликорном, когда мы прибыли в Старлайт Ридж.
+TYT70	00:26.44,3.83 Sunny: And we didn't even know that Allura was controlling the Auroricorns yet.  → И мы тогда даже не знали, что ↲ Аллура контролирует авроракорнов.
+TYT70	00:30.88,0.48 Sunny: Or… → Или что…
+TYT70	00:31.62,2.82 Pipp: Come on! We're giving the ponies what they want, Sunny! → Да ладно! Мы даём пони то, что они хотят, Санни!
+TYT70	00:34.44,4.12 Sunny: But we're supposed to be telling everypony what really happened in Starlight Ridge. → Но предполагалось, что мы расскажем всем о том, что на самом деле произошло в Старлайт Ридж.
+TYT70	00:38.69,1.76 Sunny: You know… The truth? → Ну, знаешь… правду.
+TYT70	00:40.45,3.23 Pipp: And we are. We're just jazzing it up. → Так мы и сделаем. Просто немного её приукрасим.
+TYT70	00:43.86,2.12 Pipp: Show biz sty-y-y-y-yle! → В духе шоубизнеса-а-а-а!
+TYT70	00:51.76,2.66 Hitch: Observe, fellow ponies! 'Tis the Auroricorns! → Узрите, друзья-пони! Это авроракорны!
+TYT70	00:58.10,5.06 Zipp: Hoof-reka! My detective-y senses are telling me that Allura has hypnotized the Auroricorns → Ну дела. Моё детективное чутьё подсказывает мне, что Аллура загипнотизировала авроракорнов,
+TYT70	01:03.18,1.42 Zipp: to collect stars for her! → чтобы собирать для неё звезды!
+TYT70	01:13.15,2.88 Misty: This is bad! Very bad! → Это плохо! Очень плохо!
+TYT70	01:16.30,1.36 Izzy: Oh, my glitter! → Блёсточки мои!
+TYT70	01:18.94,2.80 Izzy: However can we save them, Sunny?! → Как же мы сможем спасти их, Санни?!
+TYT70	01:22.03,2.23 Sunny: We save them together! → Мы спасём их вместе!
+TYT70	01:32.93,2.03 Sunny: This is not what happened! → Такого вообще не было!
+TYT70	01:35.15,3.52 Sunny: Pipp, it was strange to see the Auroricorns in their trance, → Пипп, конечно, было странно увидеть авроракорнов в трансе,
+TYT70	01:38.71,2.85 Sunny: but they weren't brain-eating zom-ponies! → но они не были поедающими мозги пони-зомби!
+TYT70	01:41.66,3.31 Pipp: Let's get ready for another one, everypony! Okay! → Давайте перейдём к следующей сцене, народ! Хорошо?
+TYT70	01:45.45,2.45 Pipp: We're just adding some drama, Sunny. No biggie. → Мы просто добавляем немного драмы, Санни. Только и всего.
+TYT70	01:48.04,1.58 Sunny: But we're not telling the truth. → Но мы не рассказываем правду.
+TYT70	01:49.82,1.91 Sunny: Where's Comet? Or Violet Frost? → Где Комета? Где Вайолет Фрост?
+TYT70	01:51.93,1.39 Sunny: They helped save the day, too. → Они тоже помогали всех спасти.
+TYT70	01:54.47,1.36 FlutterShy: Can we hurry this up, please?! → Не могли бы вы побыстрее, пожалуйста?!
+TYT70	01:55.84,3.02 FlutterShy: I don't like heights, and this harness is itchy! → Я не люблю высоту, и в этом костюме всё чешется!
+TYT70	01:59.08,3.90 Pipp: Yup! Sorry, Posey! Let's move on to our big finale, everypony! → Агась! Прости, Поузи! Переходим к грандиозному финалу, народ!
+TYT70	02:02.98,4.12 Pipp: The introduction of our new hero, Comet the Auroricorn! → Представляем нашего нового героя, авроракорна Комету!
+TYT70	02:08.54,1.70 Comet: H-h-hi, e-e-everypony. → П-п-привет, р-р-ребята.
+TYT70	02:21.28,2.72 FlutterShy: You can't win! The Nova Charrrrm is mine! → Тебе не победить! Амулет Новы мой!
+TYT70	02:24.02,2.70 FlutterShy: Which means I'm the leader of the Aurrrroricorns! → А значит, я командую авроракорнами!
+TYT70	02:26.93,5.17 FlutterShy: Your frrrriends have fallen to my purrsuasive power → Твои друзья уже поддались моей силе убеждения, аликорн!
+TYT70	02:32.25,3.68 Sunny: That's it! Violet Frost said the snow in Starlight Ridge is magic! → Вот оно! Вайолет Фрост говорила, что снег в Старлайт Ридж волшебный!
+TYT70	02:41.15,1.81 Hitch: We have been saved! → Мы спасены!
+TYT70	02:43.73,0.87 Pipp: Not the hair! → Только не волосы!
+TYT70	02:45.90,2.75 Zipp: I detect we're no longer hypnotized. → Я определила, что мы больше не загипнотизированы.
+TYT70	02:48.66,4.84 Misty: The snow has freed us from our diabolical daze! → Снег освободил нас от нашего дьявольского оцепенения!
+TYT70	02:54.82,4.79 Izzy: How ever will we get the Nova Charm and free everypony? → Как нам заполучить амулет Новы и освободить остальных?
+TYT70	02:59.65,2.11 Izzy: There's ever so many of them! → Их слишком много!
+TYT70	03:08.07,3.74 Izzy: I said there's ever so many of them! → Я сказала: их слишком много!
+TYT70	03:12.46,1.54 Pipp: Comet! That's your cue! → Комета! Твой выход!
+TYT70	03:15.35,4.86 Comet: Give me the Nova Charm now, ↲ or say hello to my… snowy friend! → Отдай мне амулет Новы, или ↲ поздоровайся с моим… снежным другом!
+TYT70	03:23.93,1.52 Sunny: Okay, that's enough, ponies! → Ладно, хватит, народ!
+TYT70	03:25.55,0.93 Sunny: This is… Ow! → Это всё… Ох!
+TYT70	03:29.26,0.71 Sunny: Hey! → Эй!
+TYT70	03:31.20,1.12 Pipp: What's the problem, Sunny? → В чём проблема, Санни?
+TYT70	03:32.41,2.40 Sunny: I know you want to make it exciting, Pipp. → Понимаю, что ты хочешь сделать всё более захватывающим, Пипп.
+TYT70	03:35.15,3.77 Sunny: But we're supposed to be telling everypony the truth of Starlight Ridge. → Но предполагалось, что мы расскажем всем правду о Старлайт Ридж.
+TYT70	03:39.60,2.79 Pipp: I guess maybe I did go a bit far. → Полагаю, я немного увлеклась.
+TYT70	03:42.71,2.70 Sunny: The real way we beat Allura was exciting enough. → То, как мы на самом деле победили Аллуру, и так было захватывающим.
+TYT70	03:45.45,2.73 Comet: Yeah! Ponies and Auroricorns teamed up for the first time! → Ага! Пони и авроракорны впервые стали одной командой!
+TYT70	03:48.20,4.33 Comet: And that is way cooler than any, um... giant snow monster? → И это было круче, чем… гигантский снежный монстр?
+TYT70	03:53.36,2.02 Pipp: Okay! Cancel the Snowzilla! → Ладно! Уберите Снегодзиллу!
+TYT70	03:56.06,0.56 Pipp: Please. → Пожалуйста.
+TYT70	03:56.64,2.67 Coloratura: Wha…? Ugh! You got to be kiddin' me! → Что? Да вы издеваетесь!
+TYT70	04:05.38,1.97 Pipp: We're gonna tell the story right! → Мы расскажем, как всё было на самом деле!
+TYT70	04:08.18,3.41 Seashell: Did you see how the ponies and Auroricorns came together? → Вы видели, как пони и авроракорны работали сообща?
+TYT70	04:11.73,3.08 Glory: Who knew snowballs were so magical? → Кто бы мог подумать, что снежки волшебные?
+TYT70	04:14.91,3.61 PeachFizz: Do you think the real Allura will be in the sequel? → Думаете, настоящая Аллура вернётся в продолжении?
+TYT70	04:18.83,3.78 Sunny: Well, we wanted them to know all about Starlight Ridge. → Что ж, мы хотели, чтобы они узнали всё о Старлайт Ридж.
+TYT70	04:22.61,0.88 Sunny: Great job, Pipp. → Отличная работа, Пипп.
+TYT70	04:23.76,3.62 Pipp: You were right, Sunny. The real story was way more awesome. → Ты была права, Санни. Настоящая история была куда потряснее.
+TYT70	04:27.53,2.49 Dazzle: Oh, my glitter! It's the Comet! → Блёсточки мои! Это же Комета!
+TYT70	04:30.26,2.77 Dazzle: The first Auroricorn this reporter has ever met! → Первый авроракорн, которого я когда-либо встречала!
+TYT70	04:33.17,2.32 Dazzle: How are you finding Equestria so far? → Ну и как вам Эквестрия?
+TYT70	04:39.24,2.61 Comet: Yeah. Uh, I think I'm gonna love it here! → Ага, ну… Думаю, я от неё без ума!
+TYT70	04:42.32,1.65 Default: СЧАСТЛИВЫЙ ПОНЕЦ → СЧАСТЛИВЫЙ ПОНЕЦ
+TYT70	04:43.97,2.34 Default: anon2anon ↲ sunnysubs.com → anon2anon ↲ sunnysubs.com
+
+
 MYM01 "Izzy Does It"
 
 MYM01 00:25.99,1.63 Izzy: And a little more of this. → Вот этого побольше.
